@@ -1,0 +1,25 @@
+/*# v8.5: màn hình nhỏ */
+/* ===== v8.5: màn hình nhỏ – không để chữ/nút bị che hoặc tràn ===== */
+.v8full{width:100%;min-width:0}
+.pk-tabs,.pk-cards{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.avgrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+.xmedals{grid-template-columns:repeat(5,minmax(0,1fr))}
+.xmedals b{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:420px){
+ .xmedals{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:10px}
+ .xmedals b{font-size:.82rem}.xmedals small{font-size:.7rem}
+ .wtop .tt b{white-space:normal;line-height:1.05;font-size:1.02rem;overflow:visible;text-overflow:clip}
+ .wtop .tt small{font-size:.74rem;white-space:normal}
+ .top{gap:5px;padding-left:8px;padding-right:8px}
+ .top .ibtn{width:42px;height:42px}
+ .top .tmr{padding:4px 8px}
+ .top .tag{padding:6px 9px;font-size:.85rem}
+ #ans>.row>.btn.sm,.btn.sm.grow{white-space:normal;line-height:1.1;padding:8px 6px;font-size:.88rem;min-height:44px}
+ .btn.sm.block{white-space:normal;line-height:1.15;text-align:center}
+ .hint .hrw{font-size:.6rem;line-height:1.05;text-align:center;overflow-wrap:anywhere}
+}
+@media (max-height:720px){
+ .tprac .pad button{min-height:50px;font-size:1.45rem;border-radius:15px}
+ .pad{gap:6px}
+}
+

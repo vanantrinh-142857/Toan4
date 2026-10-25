@@ -1,0 +1,2 @@
+//# Chọn ngôn ngữ (vi/en) từ ?lang= hoặc bộ nhớ; tạo hàm LT(vi, en) dùng khắp nơi
+(function(){var l="vi";try{var q=location.search.match(/[?&]lang=(vi|en)/);l=q?q[1]:(localStorage.getItem("toan4pl_lang")||"vi")}catch(e){}if(l!=="en")l="vi";window.LANG=l;try{document.documentElement.lang=l;if(l==="en")document.title="Math 4 Adventure"}catch(e){}window.LT=function(v,e){return l==="en"&&e!=null?e:v};window.setLang=function(x){try{localStorage.setItem("toan4pl_lang",x)}catch(e){}location.reload()}})();

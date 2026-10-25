@@ -1,0 +1,101 @@
+/*# Kiểu riêng của các tính năng (features/*.js) */
+/* Tí toàn thân đổi dáng (features/ti-poses.js): hình cao hơn hình Cú nên to hơn một chút, trồi lên khỏi khung phản hồi */
+.fbm .mascot.ti-pose { width: 78px; margin: -22px 0 -8px; align-self: center; }
+.resc .mascot.ti-pose { filter: drop-shadow(0 6px 3px rgba(36,49,75,.22)); }
+/* Phòng nhân vật: nút tủ dạng ô 3D bóng (features/room-tidy.js) */
+.rx .cab.cab3d { width: 60px; }
+.rx .cab3d .dr {
+  width: 52px; height: 52px; border-radius: 17px; border: 2px solid rgba(255,255,255,.95); font-size: 0;
+  background: radial-gradient(120% 95% at 30% 12%, #FFFFFF 0%, var(--c1) 38%, var(--c2) 100%);
+  box-shadow: 0 5px 0 var(--c3), 0 9px 14px rgba(10,20,50,.38), inset 0 -7px 10px rgba(0,0,0,.16), inset 0 3px 5px rgba(255,255,255,.75);
+  overflow: visible; transform: translateY(-2px);
+}
+.rx .cab3d .dr:before { display: none; }
+.rx .cab3d .dr:after {            /* vệt bóng ở nửa trên */
+  content: ""; position: absolute; left: 7px; right: 7px; top: 3px; height: 40%; width: auto;
+  border-radius: 14px 14px 40% 40%; background: linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,0));
+  border: 0; pointer-events: none;
+}
+.rx .cab3d .dr img { position: relative; z-index: 1; width: 44px; height: 44px; object-fit: contain; filter: drop-shadow(0 3px 2px rgba(0,0,0,.35)); }
+.rx .cab3d b { margin-top: 6px; font-size: .6rem; padding: 2px 6px; border-width: 1.5px; background: rgba(20,38,80,.82); }
+.rx .cab3d:active .dr { transform: translateY(2px); box-shadow: 0 2px 0 var(--c3), 0 4px 8px rgba(10,20,50,.35), inset 0 -5px 8px rgba(0,0,0,.16); }
+.rx .cab3d.on .dr { box-shadow: 0 0 0 3px #FFD23F, 0 5px 0 var(--c3), 0 9px 14px rgba(10,20,50,.38), inset 0 3px 5px rgba(255,255,255,.75); }
+.rx .cab3d.on b { background: #FFB000; color: #4A2A00; }
+.rx .cab3d .cnt {
+  position: absolute; z-index: 2; right: -7px; bottom: -6px; font-style: normal; min-width: 22px; height: 20px; padding: 0 5px;
+  border-radius: 10px; background: linear-gradient(#FFE15C, #F5A300); color: #5A3300; font-weight: 900; font-size: .7rem;
+  display: grid; place-items: center; border: 2px solid #fff; box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+/* màu từng tủ */
+.rx .c-nv      { --c1: #9FD3FF; --c2: #3E8EF0; --c3: #245FB0; }
+.rx .c-dau     { --c1: #D9C2FF; --c2: #8A5CF0; --c3: #5B35B5; }
+.rx .c-nguoi   { --c1: #A9F0DF; --c2: #22B39A; --c3: #137766; }
+.rx .c-lung    { --c1: #FFD3A6; --c2: #F08A24; --c3: #B35A0E; }
+.rx .c-tay     { --c1: #C8F5A8; --c2: #4CB848; --c3: #2E7E2B; }
+.rx .c-thucung { --c1: #FFC9DD; --c2: #E8528A; --c3: #A8305E; }
+.rx .c-ke      { --c1: #FFEAA0; --c2: #F5B800; --c3: #B07800; }
+/* Tô màu trong lời giải / gợi ý của bài Tính nhanh (features/quick-methods.js):
+   cam = số giống nhau, cặp nhân vàng · xanh dương = các số còn lại · xanh lá = cặp cộng tròn, số 1 ẩn */
+.qm-o { color: #C2410C; background: #FFE1C4; border-radius: 6px; padding: 0 3px; font-weight: 900; }
+.qm-b { color: #1D5FD1; background: #DCE9FF; border-radius: 6px; padding: 0 3px; font-weight: 900; }
+.qm-g { color: #15803D; background: #D3F5DE; border-radius: 6px; padding: 0 3px; font-weight: 900; }
+/* Khu vực phụ huynh + cổng phép tính (features/parent-area.js) */
+.pg-q{background:#fff;border:2.5px solid #1D355E;border-radius:16px;text-align:center;font:800 2rem 'Baloo 2',sans-serif;padding:6px 8px;margin-bottom:6px}
+.pg-v{display:inline-block;min-width:3ch;border-bottom:4px solid currentColor;padding:0 10px}
+.pg-msg{min-height:22px;text-align:center;color:#B3261E;font-weight:800;font-size:.92rem}
+.pg-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.pg-k{height:52px;border:2.5px solid #1D355E;border-radius:14px;background:#fff;font:900 1.3rem 'Nunito',sans-serif;color:#1D355E;box-shadow:0 3px 0 #1D355E}
+.pg-k:active{transform:translateY(2px);box-shadow:0 1px 0 #1D355E}.pg-k.del{background:#FFD6DE}
+.pa{border:2.5px dashed #F5B800 !important;background:repeating-linear-gradient(45deg,#FFF8DC,#FFF8DC 12px,#FFF3C4 12px,#FFF3C4 24px) !important}
+.pa-list{margin:0 0 10px 18px;padding:0;font-weight:700;line-height:1.6}
+.pa-body{margin-top:12px}.pa-body[hidden]{display:none}
+.pa-sub{background:#fff !important;margin-bottom:10px}
+.pa-kv{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #D5DEEE}
+.pa-bk{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px dashed #D5DEEE}
+.pa-log{max-height:46vh;overflow:auto;font-size:.82rem;background:#F4F7FF;border-radius:10px;padding:8px}
+.pa-log div{padding:4px 0;border-bottom:1px solid #DCE4F2;word-break:break-word}
+/* Màn luyện tập: bàn phím gập khi hiện phản hồi + bàn phím gọn cho màn thấp + vùng chạm >= 44-48 px + tương phản
+   (features/practice-fix.js) */
+.pad.pad-fold { display: none !important; }
+.pf-retry { margin-top: 10px; min-height: 56px; font-size: 1.15rem; }
+@media (max-height: 700px) {
+  .pad button { height: 46px !important; min-height: 46px !important; font-size: 1.15rem; }
+  .pad { gap: 6px; padding-bottom: 6px; }
+}
+[data-act=back], [data-act=leave], [data-act=sayq] { min-width: 48px; min-height: 48px; }
+[data-act=v8lang], [data-act=v8splash] { min-height: 44px; min-width: 44px; }
+[data-act=v8go] { min-height: 44px; }
+.lrow.opt .bn { background: #6D4BD0 !important; color: #fff; }   /* chữ trắng trên tím đậm: tương phản ~5,9:1 (trước 2,7:1) */
+/* Bản đồ gọn (features/flat-map.js) */
+.nextcard { background: linear-gradient(#FFF6CF, #FFE08A) !important; margin-bottom: 14px; }
+.nextcard .bn { background: #1D5FD1 !important; color: #fff; }
+.chap { background: #fff; border: 2.5px solid #1D355E; border-radius: 20px; box-shadow: 0 4px 0 #1D355E; margin: 0 0 12px; overflow: hidden; }
+.chap-h { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 56px; padding: 8px 14px; border: 0; background: transparent; font: 800 1.05rem 'Baloo 2', sans-serif; color: #1D355E; text-align: left; }
+.chap-h .ci { font-size: 1.5rem; }.chap-h b { flex: 1; }
+.chap-h .cbar { width: 64px; height: 8px; border-radius: 5px; background: #DCE5F3; overflow: hidden; flex: none; }.chap-h .cbar i { display: block; height: 100%; background: #22A06B; }
+.chap-h .cn { font: 900 .85rem 'Nunito', sans-serif; opacity: .8; min-width: 2.2em; text-align: right; }
+.chap-h .chev { transition: transform .2s; font-size: 1.1rem; }.chap.open .chev { transform: rotate(180deg); }
+.chap-b { display: none; padding: 4px 10px 12px; border-top: 2px dashed #CBD6EA; }.chap.open .chap-b { display: block; }
+.chap-b .lrow { margin-bottom: 8px; }
+.st9 { font-weight: 800; opacity: .85; }
+.mapall { margin: 4px auto 12px; }
+
+/* Trang bài: 3 chặng (features/lesson-stages.js) */
+.stages { display: flex; flex-direction: column; gap: 10px; }
+.stage { background: #fff; border: 2.5px solid #1D355E; border-radius: 20px; box-shadow: 0 4px 0 #1D355E; overflow: hidden; }
+.stage.full { border-color: #22A06B; box-shadow: 0 4px 0 #22A06B; }
+.stage-h { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 56px; padding: 8px 14px; border: 0; background: transparent; font: 800 1.1rem 'Baloo 2', sans-serif; color: #1D355E; text-align: left; }
+.stage-h .si { font-size: 1.5rem; }.stage-h b { flex: 1; }
+.stage-h .sn { font: 900 .9rem 'Nunito', sans-serif; background: #E8F0FF; border-radius: 999px; padding: 2px 10px; }
+.stage.full .sn { background: #D3F5DE; color: #146C43; }
+.stage-h .chev { transition: transform .2s; }.stage.open .chev { transform: rotate(180deg); }
+.stage-b { display: none; padding: 4px 10px 12px; border-top: 2px dashed #CBD6EA; }.stage.open .stage-b { display: block; }
+.stage-b .stp { margin-bottom: 8px; }
+
+/* Lý thuyết chia phần (features/theory-sections.js) */
+.secbar { margin: 4px 0 2px; }
+.secchips { display: flex; gap: 6px; }
+.sec { flex: none; text-align: center; font: 900 .8rem 'Nunito', sans-serif; padding: 5px 10px; border: 2px solid #1D355E; border-radius: 12px; background: #fff; color: #1D355E; }
+.sec.done { background: #DDF6E8; }
+.sec.cur { background: #FFD23F; flex: 1; text-align: left; }
+.secnote { font: 800 .82rem 'Nunito', sans-serif; margin: 4px 6px 0; opacity: .75; }

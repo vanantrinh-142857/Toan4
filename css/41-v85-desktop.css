@@ -1,0 +1,56 @@
+/*# v8.5: giao diện máy tính, điện thoại thấp, kiểu của các tính năng */
+/* ===== v8.5: giao diện máy tính (màn rộng ≥ 1000px) ===== */
+.kb-only{display:none}
+@media (min-width:1000px) and (hover:hover) and (pointer:fine){.kb-only{display:block}}
+@media (min-width:1000px){
+ /* các màn bản đồ, thành tích, cài đặt: cột giữa rộng hơn */
+ .v8full:not(.rx){max-width:920px}
+ main:not(.two){width:100%;max-width:900px;margin-left:auto;margin-right:auto}
+ main.tprac{max-width:1240px}
+ .lcta,.btn.block{max-width:none}
+ /* phòng nhân vật: sân khấu bên trái, tủ đồ bên phải */
+ .v8full.rx{max-width:1240px}
+ .rx>.v8in{display:grid;grid-template-columns:minmax(0,1fr) 400px;grid-template-rows:auto auto minmax(0,1fr);column-gap:16px;padding:10px 16px calc(92px + var(--sab,0px))}
+ .rx>.v8in>.wtop,.rx>.v8in>.hint{grid-column:1 / -1}
+ .rx>.v8in>.rm-stage,.rx>.v8in>.lunabox{grid-column:1 / -1;grid-row:3}
+ .rx>.v8in:has(.rx-drawer)>.rm-stage,.rx>.v8in:has(.rx-drawer)>.lunabox{grid-column:1}
+ .rx-drawer{grid-column:2;grid-row:3;margin:0;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+ .rx-strip{flex-wrap:wrap;overflow-x:hidden;overflow-y:auto;align-content:flex-start;justify-content:center;touch-action:auto;flex:1;min-height:0}
+ .rx-strip .sep{display:none}
+ .rx-it{width:104px;height:138px;font-size:.72rem;cursor:grab}
+ .rx-it img,.rx-it .sapco{height:80px}
+ .cab{width:78px}.cab .dr{width:66px;height:62px;font-size:1.8rem}.cab b{font-size:.74rem}
+ .rx .rm-arw.l{left:110px}.rx .rm-arw.r{right:110px}
+ .rx .rm-pet{right:104px}
+ .rx .shelf{left:104px}
+ .rx .hint .htx{font-size:.95rem}
+ nav.bar4 .in{max-width:640px}
+ .top{padding-left:24px;padding-right:24px}
+}
+@media (min-width:1000px) and (max-height:760px){
+ .rx>.v8in{padding-bottom:calc(84px + var(--sab,0px))}
+}
+/* Đề đếm góc nhiều ô (vuông / nhọn / tù / bẹt): xếp 2 × 2, thu nhỏ hình
+   để thấy cả hình lẫn ô trả lời trên cùng một màn hình (bàn phím dính đáy). */
+.parts:has(.part:nth-child(3)){display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.parts:has(.part:nth-child(3)) .part{flex-direction:column;align-items:stretch;gap:0;margin:0}
+.parts:has(.part:nth-child(3)) .part .lab{font-size:.95rem;text-align:left;padding-left:6px;line-height:1.1}
+.parts:has(.part:nth-child(3)) .part .unit{display:none}
+.parts:has(.part:nth-child(3)) .field{height:42px;min-height:42px;width:100%;max-width:none;min-width:0}
+.tprac:has(.parts .part:nth-child(3)) .q{font-size:1.05rem;padding:10px 14px}
+.tprac:has(.parts .part:nth-child(3)) .fig svg{max-height:20vh}
+/* điện thoại thấp (≤ 800px): thu gọn thêm */
+@media (max-height:800px){
+  .tprac:has(.parts .part:nth-child(3)) .fig svg{max-height:13vh}
+  .parts:has(.part:nth-child(3)) .field{height:38px;min-height:38px}
+  .parts:has(.part:nth-child(3)){gap:2px 12px}
+  .tprac:has(.parts .part:nth-child(3)) .q{font-size:1rem;padding:8px 12px}
+}
+/* điện thoại rất thấp (≤ 700px): các ô trả lời xếp MỘT HÀNG để không bị bàn phím che */
+@media (max-height:700px){
+  .parts:has(.part:nth-child(3)){grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:1fr;gap:2px 6px}
+  .parts:has(.part:nth-child(3)) .part .lab{font-size:.72rem;white-space:nowrap;padding-left:2px}
+  .parts:has(.part:nth-child(3)) .field{height:38px;min-height:38px}
+  .tprac:has(.parts .part:nth-child(3)) .q{font-size:.95rem;padding:6px 10px}
+  .pad button{height:40px !important;min-height:40px !important}
+}

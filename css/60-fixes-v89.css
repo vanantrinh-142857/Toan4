@@ -1,0 +1,17 @@
+/*# v8.9: sửa tràn ngang ở màn hình rất hẹp (320 px) */
+/* nút xoá mẫu chữ: cho xuống dòng khi tiếng Anh dài trên màn hình hẹp */
+#itx{white-space:normal;max-width:100%;height:auto;line-height:1.25;padding-top:8px;padding-bottom:8px}
+/* màn hình rất hẹp (320px): thanh trên và nút đáp án không được tràn ra ngoài */
+.opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.opt{overflow-wrap:anywhere;min-width:0}
+@media (max-width:340px){
+ .opts{grid-template-columns:minmax(0,1fr)}
+ .opt{font-size:1.1rem;padding:8px 10px}
+ .top{gap:3px;padding-left:6px;padding-right:6px}
+ .top .ibtn{width:40px !important;min-width:40px !important;height:40px !important}
+ .top .tag{padding:4px 7px;font-size:.78rem}
+ .top .tmr{padding:3px 6px}
+ .top .tmr b{min-width:2.4em;font-size:.92rem}
+}
+/* tiêu đề lớn trên màn hình ≤ 340px: từ dài (vd. "Parallelograms") phải vừa một dòng, không tràn ra ngoài thẻ */
+@media (max-width:340px){ h2.disp{font-size:1.15rem;overflow-wrap:break-word} }

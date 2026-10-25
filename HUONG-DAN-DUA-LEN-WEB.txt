@@ -1,0 +1,12 @@
+TOÁN 4 PHIÊU LƯU v9.0.2 – BẢN WEB ĐẦY ĐỦ (đã có đủ 1 404 file giọng đọc)
+Trang chính: index.html. Mọi đường dẫn đều tương đối, đặt ở thư mục nào trên web cũng chạy.
+
+ĐƯA LÊN GITHUB PAGES
+Thư mục này có hơn 1 700 file, nên KHÔNG kéo thả qua trang web GitHub được (trang web chỉ nhận khoảng 100 file mỗi lần).
+Dùng GitHub Desktop: Clone kho về máy -> chép NỘI DUNG thư mục này vào thư mục kho (index.html nằm ở gốc kho)
+-> Commit -> Push. Sau đó vào Settings -> Pages -> Branch: main, thư mục / (root) -> Save.
+Địa chỉ có dạng: https://<tên-tài-khoản>.github.io/<tên-kho>/ (chờ 1-2 phút).
+
+Nhúng vào trang khác: <iframe src="ĐỊA-CHỈ/index.html" style="width:100%;height:100vh;border:0" allow="autoplay"></iframe>
+Tiến độ học lưu trong trình duyệt của từng máy. Cập nhật bản mới: chép đè rồi Commit + Push; nếu máy vẫn hiện bản cũ thì bấm Ctrl+F5.
+Một số iPhone/Safari đời cũ có thể không phát được định dạng .ogg; khi đó app tự đọc bằng giọng máy, không bị lỗi.
