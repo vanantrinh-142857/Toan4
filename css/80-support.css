@@ -1,0 +1,7 @@
+/* ===== 80-support.css – thẻ "Ủng hộ tác giả" (module support-qr) ===== */
+.sup-card{background:linear-gradient(135deg,#FFF6D8,#FFE9F1) !important;border:2px dashed #F5B83D;margin-bottom:12px}
+.sup-card p{margin:0 0 8px}
+.sup-btn{display:block;width:100%}
+.sup-img{display:block;cursor:zoom-in;width:min(100%,260px);margin:8px auto;border-radius:14px;border:1px solid #E6D9B8;background:#fff}
+.sup-note{font-size:.88rem;text-align:center}
+.sup-link{display:block;text-align:center;margin:10px 0 0;padding:10px;border-radius:12px;background:#FFF1C9;font-weight:800;color:#8A5A00;cursor:pointer}

@@ -84,6 +84,7 @@
       (weak.length ? "<ol style=\"margin:0 0 0 20px;padding:0\">" + weak.map(function (k) { return "<li>" + esc(lessonTitle(k)) + " <span class=\"muted\">(" + T("sai ", "missed ") + d.mist[k] + ")</span></li>"; }).join("") + "</ol>" : '<p class="muted" style="margin:0">' + T("Chưa có bài nào sai nhiều.", "No lesson with many mistakes yet.") + "</p>");
     h += "<h3 style=\"margin:12px 0 4px\">" + T("Dạng lỗi hay gặp", "Common kinds of mistakes") + "</h3>" +
       (errs.length ? "<ul style=\"margin:0 0 0 18px;padding:0\">" + errs.map(function (k) { return "<li>" + esc(G.KIND_NAME[k]) + " <span class=\"muted\">(" + d.err[k] + ")</span></li>"; }).join("") + "</ul>" : '<p class="muted" style="margin:0">' + T("Chưa ghi nhận.", "Nothing recorded yet.") + "</p>");
+    h += T4.supportBtn ? T4.supportBtn() : "";
     G.sheet(h + '<button class="btn block" data-k="c" style="margin-top:12px">' + T("Đóng", "Close") + "</button>", function (bg, close) { bg.querySelector("[data-k=c]").onclick = close; });
   }
   function backupsSheet() {
