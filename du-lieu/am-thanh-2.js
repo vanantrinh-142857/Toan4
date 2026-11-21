@@ -333,7 +333,7 @@ moi/VO-0374.ogg | Nhìn số đo để biết loại góc: bé hơn 90° là nh�
 moi/VO-0375.ogg | Hai đường thẳng AB và CD cắt nhau tạo thành 4 góc vuông.
 moi/VO-0376.ogg | Ta nói AB vuông góc với CD. Kiểm tra bằng ê-ke: đặt góc vuông của ê-ke vào chỗ hai đường cắt nhau.
 moi/VO-0377.ogg | Hai đường thẳng MN và PQ kéo dài mãi về hai phía mà không bao giờ cắt nhau: đó là hai đường thẳng song song.
-moi/VO-0378.ogg | Khoảng cách giữa hai đường thẳng song song ở chỗ nào cũng bằng nhau (các nét đỏ dài bằng nhau).
+vi/LT-0120.ogg | Khoảng cách giữa hai đường thẳng song song ở chỗ nào cũng bằng nhau (các nét đỏ dài bằng nhau).
 moi/VO-0379.ogg | Trong hình chữ nhật ABCD, hãy tìm các cạnh song song và vuông góc.
 moi/VO-0380.ogg | Cạnh AB song song với cạnh DC. Cạnh AD song song với cạnh BC.
 moi/VO-0381.ogg | Cùng làm: cạnh AB vuông góc với cạnh nào?
@@ -404,7 +404,7 @@ moi/VO-0446.ogg | 1 phút = 60 giây; 1 giờ = 60 phút
 moi/VO-0447.ogg | Đổi giây ra phút: chia 60 (120 giây = 2 phút).
 moi/VO-0448.ogg | 1 thế kỉ = 100 năm
 moi/VO-0449.ogg | Năm 1 – 100 là thế kỉ I; năm 1801 – 1900 là thế kỉ XIX; năm 1901 – 2000 là thế kỉ XX; năm 2001 – 2100 là thế kỉ XXI.
-moi/VO-0450.ogg | Đây là biểu đồ cột. Trước hết đọc tên biểu đồ (dòng chữ dưới hình): Số trang sách Mai đọc trong bốn ngày.
+vi/LT-0121.ogg | Đây là biểu đồ cột. Trước hết đọc tên biểu đồ (dòng chữ dưới hình): Số trang sách Mai đọc trong bốn ngày.
 moi/VO-0451.ogg | Trục ngang ghi tên các ngày: Thứ Hai, Thứ Ba, Thứ Tư, Thứ Năm. Mỗi cột ứng với một ngày.
 moi/VO-0452.ogg | Trục dọc ghi số trang: 0, 5, 10, 15, … (mỗi vạch hơn nhau 5 trang). Chiều cao cột cho biết số trang đọc được.
 moi/VO-0453.ogg | Cùng làm: cột của ngày Thứ Tư (cột thấp nhất) cao tới vạch nào?
@@ -440,7 +440,7 @@ moi/VO-0482.ogg | Đúng! 5 + 2 = 7, mặt ngửa xuất hiện 7 lần.
 moi/VO-0483.ogg | Mặt ngửa xuất hiện 7 lần, mặt sấp xuất hiện 3 lần. Mặt ngửa xuất hiện nhiều hơn mặt sấp 7 − 3 = 4 lần. Tổng số lần: 7 + 3 = 10 lần, đúng bằng số lần tung.
 moi/VO-0484.ogg | Trong hộp có 3 bóng đỏ và 2 bóng xanh. Lấy ngẫu nhiên 1 quả. Sự kiện "lấy được bóng đỏ" có thể xảy ra (nhưng chưa chắc chắn).
 moi/VO-0485.ogg | Đúng! Có thể lấy được bóng đỏ, cũng có thể lấy được bóng xanh.
-moi/VO-0486.ogg | Trong hộp không có bóng vàng, nên sự kiện "lấy được bóng vàng" không thể xảy ra.
+vi/LT-0119.ogg | Trong hộp không có bóng vàng, nên sự kiện "lấy được bóng vàng" không thể xảy ra.
 moi/VO-0487.ogg | Nếu hộp toàn bóng đỏ, lấy ra 1 quả thì chắc chắn là bóng đỏ. Vậy có ba mức: chắc chắn, có thể, không thể.
 moi/VO-0488.ogg | Nhớ nhé
 moi/VO-0489.ogg | Mỗi lần thực hiện (tung đồng xu, lấy bóng, quay số…) ta ghi lại kết quả.
@@ -474,7 +474,6 @@ moi/VO-0516.ogg | Để tính 4 786 + 2 539, viết số này dưới số kia, 
 moi/VO-0517.ogg | Hàng đơn vị: 6 + 9 = 15. Đủ 10 rồi! Viết 5, và nhớ 1 sang hàng chục (1 chục vừa gom được).
 moi/VO-0518.ogg | Hàng chục: 8 + 3 = 11, cộng thêm 1 nhớ là 12. Viết 2, nhớ 1 sang hàng trăm.
 moi/VO-0519.ogg | Hàng trăm: 7 + 5 + 1 = 13, viết 3, nhớ 1. Hàng nghìn: 4 + 2 + 1 = 7. Vậy 4 786 + 2 539 = 7 325.
-moi/VO-0520.ogg | Trừ thì ngược lại: 7 325 − 2 539. Hàng đơn vị: 5 không trừ được 9, nên mượn 1 chục: 15 − 9 = 6. Hàng chục: 1 không trừ được 3, mượn 1 trăm: 11 − 3 = 8. Cứ mượn tiếp như vậy ở các hàng sau, được 4 786. Thử lại bằng phép cộng nhé!
 moi/VO-0521.ogg | Cẩn thận! Đừng quên cộng số nhớ. 46 + 38: quên nhớ thì ra 74 (sai), nhớ 1 thì ra 84 (đúng).
 moi/VO-0522.ogg | Cùng làm: hàng chục, số trừ 3 thêm 1 (trả) bằng 4; 2 chục không trừ được 4 chục, mượn 1 trăm (bằng 10 chục) thành 12 chục. 12 − 4 = ?
 moi/VO-0523.ogg | Hàng chục: 3 thêm 1 bằng 4; 2 chục không trừ được 4 chục, mượn 1 trăm (bằng 10 chục) thành 12 chục; 12 − 4 = 8, viết 8, nhớ 1.
@@ -573,7 +572,7 @@ moi/VO-0615.ogg | Đổi 1 gà thành 1 thỏ: số con vẫn thế, nhưng châ
 moi/VO-0616.ogg | Có 2 con thỏ. Số gà là 6 − 2 = 4 (con). Thử lại: 4 × 2 + 2 × 4 = 8 + 8 = 16 chân. Đúng rồi!
 moi/VO-0617.ogg | Cẩn thận! Thiếu 4 chân không phải có 4 con thỏ. Mỗi lần đổi chỉ thêm 2 chân, nên phải chia cho 2. Số chân thiếu : 2 = số thỏ.
 moi/VO-0618.ogg | Một cái bánh pizza chia thành 4 miếng bằng nhau. Con ăn 1 miếng. Con đã ăn một phần của cái bánh, và ta có cách viết phần đó bằng một con số đặc biệt: phân số.
-moi/VO-0619.ogg | Muốn nói phân số, trước hết các phần phải bằng nhau như hai miếng pizza cùng cỡ. Hình bên phải chia các phần to nhỏ khác nhau nên không tính được.
+vi/LT-0122.ogg | Muốn nói phân số, trước hết các phần phải bằng nhau như hai miếng pizza cùng cỡ. Hình bên phải chia các phần to nhỏ khác nhau nên không tính được.
 moi/VO-0620.ogg | Đếm xem hình chia thành mấy phần bằng nhau: 4 phần. Số 4 viết dưới gạch ngang và gọi là mẫu số.
 moi/VO-0621.ogg | Tô màu 3 phần: số 3 viết trên gạch ngang, gọi là tử số. Ta được phân số {3/4}, đọc là ba phần tư. Tử số là số phần được tô màu!
 moi/VO-0622.ogg | Đến lượt con! Hình chia thành 5 phần bằng nhau và tô màu 2 phần. Phân số chỉ phần tô màu là gì? Nhớ: tử số ở trên, mẫu số ở dưới.
@@ -676,7 +675,7 @@ moi/VO-0718.ogg | Hai cạnh đối diện của hình bình hành còn bằng n
 moi/VO-0719.ogg | Hình thoi cũng có hai cặp cạnh đối diện song song, nhưng nó đặc biệt hơn: cả 4 cạnh đều bằng nhau. Giống viên gạch lát hình thoi!
 moi/VO-0720.ogg | Chu vi là độ dài đi vòng quanh hình. Hình bình hành: lấy cạnh dài cộng cạnh ngắn rồi nhân 2: (6 + 4) × 2 = 20 cm. Cạnh 8 cm và 3 cm thì chu vi?
 moi/VO-0721.ogg | Hình thoi có 4 cạnh bằng nhau nên không cần cộng từng cạnh: chu vi = cạnh × 4. Cạnh 5 cm thì 5 × 4 = 20 cm. Cạnh 7 cm thì chu vi?
-moi/VO-0722.ogg | Cẩn thận! Hình bên trái có các cạnh không bằng nhau (gạch khác nhau), nên không phải hình thoi. Có phải hình bình hành nào cũng có 4 cạnh bằng nhau không?
+vi/LT-0123.ogg | Cẩn thận! Hình bên trái có các cạnh không bằng nhau (gạch khác nhau), nên không phải hình thoi. Có phải hình bình hành nào cũng có 4 cạnh bằng nhau không?
 moi/VO-0723.ogg | Gói gạo nhỏ nặng 1 ki-lô-gam. Bao gạo to nặng 10 kg. Xe tải chở được cả nghìn ki-lô-gam! Vật càng nặng, ta càng cần đơn vị lớn hơn kg.
 moi/VO-0724.ogg | Gom 10 kg lại thành một bó, ta gọi là 1 yến. Vậy 1 yến = 10 kg.
 moi/VO-0725.ogg | 10 yến gom lại thành 1 tạ. Một yến là 10 kg, mười yến là 100 kg. Vậy 1 tạ = 10 yến = 100 kg.
@@ -810,10 +809,123 @@ moi/VO-0852.ogg | Giờ 9 phần n bằng 351. Hỏi: n = 351 : 9 = ?
 moi/VO-0853.ogg | Luôn thử lại: 394 − 39 = 355. Đúng như đề bài!
 moi/VO-0854.ogg | Mẹo khác: đổi chỗ hai chữ số thì hiệu hai số luôn bằng 9 × (hiệu hai chữ số). Ví dụ 93 − 39 = 54 = 9 × 6, mà 9 − 3 = 6.
 moi/VO-0855.ogg | Con là nhà vô địch Toán lớp 4!
-moi/VO-0856.ogg | Bộ váy mới đã vào tủ đồ của con!
-moi/VO-0857.ogg | Phụ kiện đi cùng váy Denim xinh.
-moi/VO-0858.ogg | Phụ kiện đi cùng váy Xanh lá kem.
-moi/VO-0859.ogg | Phụ kiện đi cùng váy Tím lavender.
-moi/VO-0860.ogg | Phụ kiện đi cùng váy Hồng tweed.
-moi/VO-0861.ogg | Phụ kiện đi cùng váy Hồng corset đen.
+# === v9.3.1 lời khen "Cùng làm" (An thu, cắt từ 123caudocai.mp3) ===
+vi/LT-0001.ogg | Giỏi lắm!
+vi/LT-0002.ogg | Đúng! 8 × 25 = 25 × 8 = 200.
+vi/LT-0003.ogg | Đúng! 5 × 2 = 10, rồi 10 × 17 = 170.
+vi/LT-0004.ogg | Đúng! Số nào nhân với 0 cũng bằng 0.
+vi/LT-0005.ogg | Đúng! 150 + 30 = 180.
+vi/LT-0006.ogg | Giỏi! 4 + 2 = 6, chèn vào giữa: 462.
+vi/LT-0007.ogg | Đúng! 6 + 7 = 13, viết 3, nhớ 1: 737.
+vi/LT-0008.ogg | Đúng! 300 − 15 = 285.
+vi/LT-0009.ogg | Đúng! 4 800 : 4 = 1 200.
+vi/LT-0010.ogg | Đúng! 9 × 30 = 270.
+vi/LT-0011.ogg | Tuyệt! 4 × 5 = 20, 5 × 5 = 25: 2 025.
+vi/LT-0012.ogg | Đúng! 4 400 : 4 = 1 100.
+vi/LT-0013.ogg | Đúng! 25 + 75 = 100, tròn trăm.
+vi/LT-0014.ogg | Đúng! 36 × (7 + 3) = 36 × 10.
+vi/LT-0015.ogg | Đúng! 4 × 3 = 12 trước, rồi 5 + 12 = 17.
+vi/LT-0016.ogg | Đúng! 46 + 54 = 100, rồi 100 + 128 = 228.
+vi/LT-0017.ogg | Đúng! 540 − 100 = 440.
+vi/LT-0018.ogg | Đúng! 2 × 50 = 100, 100 × 39 = 3 900.
+vi/LT-0019.ogg | Đúng! 45 × 10 = 450.
+vi/LT-0020.ogg | Đúng! 57 × (15 − 5) = 57 × 10 = 570.
+vi/LT-0021.ogg | Đúng! 83 × 100 = 8 300.
+vi/LT-0022.ogg | Đúng! 64 × (25 + 75) = 6 400.
+vi/LT-0023.ogg | Đúng! 240 + 24 = 264.
+vi/LT-0024.ogg | Đúng! (96 − 56) : 4 = 40 : 4 = 10.
+vi/LT-0025.ogg | Đúng! 1 000 × 23 + 1 000 × 77 = 1 000 × 100 = 100 000.
+vi/LT-0026.ogg | Đúng! Ta chia từ hàng lớn nhất, bên trái.
+vi/LT-0027.ogg | Đúng! 152 không quá 159, nên chọn 4.
+vi/LT-0028.ogg | Đúng! Dư 6 thì còn chia được thêm một nhóm 5.
+vi/LT-0029.ogg | Đúng! 96 : 3 = 32.
+vi/LT-0030.ogg | Đúng! 3 600 : 100 = 36.
+vi/LT-0031.ogg | Đúng! 360 : 3 = 120, 120 : 5 = 24.
+vi/LT-0032.ogg | Đúng! (1 300 + 26) : 13 = 100 + 2.
+vi/LT-0033.ogg | Đúng! 630 : 90 = 63 : 9 = 7.
+vi/LT-0034.ogg | Đúng! Bằng số bị chia, phép chia đúng.
+vi/LT-0035.ogg | Đúng! 4 800 : 100 = 48.
+vi/LT-0036.ogg | Đúng! Thêm hai chữ số 0.
+vi/LT-0037.ogg | Đúng! Bỏ ba chữ số 0 còn 8.
+vi/LT-0038.ogg | Đúng! 1 000 có ba chữ số 0.
+vi/LT-0039.ogg | Đúng! 4 bài thì chia cho 4, được 7.
+vi/LT-0040.ogg | Đúng! Rồi trừ ba số đã biết: 160 − 123 = 37.
+vi/LT-0041.ogg | Đúng! 18 : 3 = 6, nằm giữa 3 và 9.
+vi/LT-0042.ogg | Đúng! 6 bao, vì 27 × 6 = 162.
+vi/LT-0043.ogg | Đúng! Luôn rút về một phần trước.
+vi/LT-0044.ogg | Đúng! 20 − 6 = 14.
+vi/LT-0045.ogg | Đúng! Mai: 7 + 6 = 13. Thử lại: 13 + 7 = 20.
+vi/LT-0046.ogg | Đúng! (10 − 2) : 2 = 4. Số lớn là 4 + 2 = 6.
+vi/LT-0047.ogg | Đúng! 20 : 5 = 4 khoảng, 4 + 1 = 5 cây.
+vi/LT-0048.ogg | Đúng! Đường khép kín: số cây = số khoảng.
+vi/LT-0049.ogg | Đúng! 30 : 5 = 6 khoảng, 6 + 1 = 7 cây.
+vi/LT-0050.ogg | Đúng! 6 × 2 = 12 chân.
+vi/LT-0051.ogg | Đúng! Tô 2 trong 5 phần: {2/5}.
+vi/LT-0052.ogg | Đúng! {1/3} lớn hơn {1/6}, vì chia 3 phần thì mỗi phần to hơn.
+vi/LT-0053.ogg | Đúng! 3 : 5 = {3/5}.
+vi/LT-0054.ogg | Đúng! 7 : 4 = {7/4}.
+vi/LT-0055.ogg | Đúng rồi! 5 × 2 = 10 nên 3 × 2 = 6.
+vi/LT-0056.ogg | Đúng! {3/5} nhân cả hai với 2 được {6/10}.
+vi/LT-0057.ogg | Đúng! Chia cả hai cho 5: {10/25} = {2/5}.
+vi/LT-0058.ogg | Đúng! 3 và 8 không có số chung nào ngoài 1.
+vi/LT-0059.ogg | Đúng! {3/4} = {9/12} > {7/12}.
+vi/LT-0060.ogg | Đúng! Chia 4 phần thì mỗi phần to hơn chia 8 phần.
+vi/LT-0061.ogg | Đúng! 2 + 3 = 5, mẫu số 7 giữ nguyên.
+vi/LT-0062.ogg | Đúng! {2/6} + {1/6} = {3/6} = {1/2}.
+vi/LT-0063.ogg | Đúng! 3 × 2 = 6 và 5 × 7 = 35.
+vi/LT-0064.ogg | Đúng! Đổi chỗ tử và mẫu: {3/7} thành {7/3}.
+vi/LT-0065.ogg | Đúng! 20 : 5 = 4, rồi 4 × 2 = 8.
+vi/LT-0066.ogg | Đúng! 40 : 5 = 8, rồi 8 × 1 = 8.
+vi/LT-0067.ogg | Đúng rồi! Góc vuông là 90°.
+vi/LT-0068.ogg | Đúng! 70° lớn hơn 40°, dù cạnh B ngắn hơn.
+vi/LT-0069.ogg | Đúng! 15 − 1 = 14 góc.
+vi/LT-0070.ogg | Đúng! 4 + 3 + 2 + 1 = 10 góc.
+vi/LT-0071.ogg | Đúng! Cạnh OA nằm bên phải nên đọc hàng số bắt đầu 0 ở bên phải.
+vi/LT-0072.ogg | Đúng! Góc nhọn thì bé hơn 90°.
+vi/LT-0073.ogg | Đúng! Có 4 góc vuông.
+vi/LT-0074.ogg | Đúng! Song song là không bao giờ cắt nhau.
+vi/LT-0075.ogg | Đúng! (8 + 3) × 2 = 22 cm.
+vi/LT-0076.ogg | Đúng! 7 × 4 = 28 cm.
+vi/LT-0077.ogg | Đúng! Chỉ hình thoi mới có cả 4 cạnh bằng nhau.
+vi/LT-0078.ogg | Đúng! 5 × 10 = 50 kg.
+vi/LT-0079.ogg | Đúng! 3 yến = 30 kg, lớn hơn 25 kg.
+vi/LT-0080.ogg | Đúng! 2 × 100 = 200 dm².
+vi/LT-0081.ogg | Đúng rồi! 180 : 60 = 3 phút.
+vi/LT-0082.ogg | Đúng! 20 + 1 = 21, thế kỉ XXI.
+vi/LT-0083.ogg | Đúng! Lê nằm giữa 10 và 20, là 15 quả.
+vi/LT-0084.ogg | Đúng! 30 − 15 = 15 trang.
+vi/LT-0085.ogg | Đúng! 9 lớn nhất, 5 bé nhất.
+vi/LT-0086.ogg | Đúng! Đó là 7, 8 và 9: có 3 bạn.
+vi/LT-0087.ogg | Đúng! 7 − 3 = 4 lần.
+vi/LT-0088.ogg | Đúng! 2 047 tận cùng 7 là số lẻ, nên không được chọn.
+vi/LT-0089.ogg | Đúng! 1 + 0 + 1 + 9 = 11 và 1 019 bé nhất.
+vi/LT-0090.ogg | Đúng! 6 137 tận cùng là 7, là số lẻ.
+vi/LT-0091.ogg | Đúng! 100 có hai chữ số 0 giống nhau; 102 là bé nhất.
+vi/LT-0092.ogg | Đúng! 2 + 9 + 9 = 20 và 299 bé nhất.
+vi/LT-0093.ogg | Đúng rồi! 3 × 3 = 9 cách.
+vi/LT-0094.ogg | Đúng! Hàng chục 3 cách (bỏ 0), hàng đơn vị 3 cách: 3 × 3 = 9 số.
+vi/LT-0095.ogg | Đúng! 4 × 4 = 16 số.
+vi/LT-0096.ogg | Đúng! 102, 120, 201, 210: có 4 số.
+vi/LT-0097.ogg | Đúng! Chọn một món: 4 + 3 = 7 cách.
+vi/LT-0098.ogg | Đúng rồi! Cần 252 chữ số.
+vi/LT-0099.ogg | Đúng! Sách có 99 + 37 = 136 trang.
+vi/LT-0100.ogg | Đúng! 9 + 90 × 2 = 189.
+vi/LT-0101.ogg | Đúng! 120 − 100 + 1 = 21.
+vi/LT-0102.ogg | Đúng rồi! 3 480 tận cùng là 0.
+vi/LT-0103.ogg | Đúng! 2 + 5 + 7 + 4 = 18 chia hết cho 9. (3 462 có tổng 15, chỉ chia hết cho 3.)
+vi/LT-0104.ogg | Đúng! 7805 tận cùng là 5.
+vi/LT-0105.ogg | Đúng! 40 tận cùng là 0.
+vi/LT-0106.ogg | Đúng! x − 15 = 20 thì x = 20 + 15 = 35.
+vi/LT-0107.ogg | Đúng! 24 : 6 = 4, x = 10 − 4 = 6.
+vi/LT-0108.ogg | Đúng! x = 6 + 9 = 15.
+vi/LT-0109.ogg | Đúng! 18 : 3 = 6, x = 11 − 6 = 5.
+vi/LT-0110.ogg | Đúng rồi! 19 + 4 = 23.
+vi/LT-0111.ogg | Đúng! 19 × 4 = 76, cộng 3 được 79.
+vi/LT-0112.ogg | Đúng rồi! 24 + 5 = 29.
+vi/LT-0113.ogg | Đúng! 3 cặp, mỗi cặp 7: 3 × 7 = 21.
+vi/LT-0114.ogg | Đúng! (20 − 2) : 2 + 1 = 10.
+vi/LT-0115.ogg | Đúng! 9 × n = 351.
+vi/LT-0116.ogg | Đúng! n = 39: số cũ là 39, số mới là 394.
+vi/LT-0117.ogg | Đúng! 66 = 6 × 11.
+vi/LT-0118.ogg | Đúng! 4 × 10 + 7 = 47.
 `;

@@ -64,12 +64,6 @@ window.BANG_AM_THANH = `
 44_file_am_thanh_nhan_vat_game/08_lam_tron_chuan_ghe.ogg | Làm tròn chuẩn ghê!
 44_file_am_thanh_nhan_vat_game/09_phi_thuyen_da_co_lai_dong_co.ogg | Phi thuyền đã có lại động cơ!
 44_file_am_thanh_nhan_vat_game/10_bip_vay_duoi_chao_con.ogg | Bíp vẫy đuôi chào con!
-# (THIẾU FILE mp3 – có file thì xoá dấu # ở đầu dòng) 44_file_am_thanh_nhan_vat_game/11_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/15_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/20_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/24_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/28_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/29_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/30_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/35_bo_vay_moi_da_vao_tu_do_cua_con.mp3 ; 44_file_am_thanh_nhan_vat_game/36_bo_vay_moi_da_vao_tu_do_cua_con.mp3 | Bộ váy mới đã vào tủ đồ của con!
-# (THIẾU FILE mp3 – có file thì xoá dấu # ở đầu dòng) 44_file_am_thanh_nhan_vat_game/12_phu_kien_di_cung_vay_denim_xinh.mp3 ; 44_file_am_thanh_nhan_vat_game/13_phu_kien_di_cung_vay_denim_xinh.mp3 ; 44_file_am_thanh_nhan_vat_game/14_phu_kien_di_cung_vay_denim_xinh.mp3 | Phụ kiện đi cùng váy Denim xinh.
-# (THIẾU FILE mp3 – có file thì xoá dấu # ở đầu dòng) 44_file_am_thanh_nhan_vat_game/16_phu_kien_di_cung_vay_xanh_la_kem.mp3 ; 44_file_am_thanh_nhan_vat_game/17_phu_kien_di_cung_vay_xanh_la_kem.mp3 ; 44_file_am_thanh_nhan_vat_game/18_phu_kien_di_cung_vay_xanh_la_kem.mp3 ; 44_file_am_thanh_nhan_vat_game/19_phu_kien_di_cung_vay_xanh_la_kem.mp3 | Phụ kiện đi cùng váy Xanh lá kem.
-# (THIẾU FILE mp3 – có file thì xoá dấu # ở đầu dòng) 44_file_am_thanh_nhan_vat_game/21_phu_kien_di_cung_vay_tim_lavender.mp3 ; 44_file_am_thanh_nhan_vat_game/22_phu_kien_di_cung_vay_tim_lavender.mp3 ; 44_file_am_thanh_nhan_vat_game/23_phu_kien_di_cung_vay_tim_lavender.mp3 | Phụ kiện đi cùng váy Tím lavender.
-# (THIẾU FILE mp3 – có file thì xoá dấu # ở đầu dòng) 44_file_am_thanh_nhan_vat_game/25_phu_kien_di_cung_vay_hong_to_it.mp3 ; 44_file_am_thanh_nhan_vat_game/26_phu_kien_di_cung_vay_hong_to_it.mp3 ; 44_file_am_thanh_nhan_vat_game/27_phu_kien_di_cung_vay_hong_to_it.mp3 | Phụ kiện đi cùng váy Hồng tweed.
-# (THIẾU FILE mp3 – có file thì xoá dấu # ở đầu dòng) 44_file_am_thanh_nhan_vat_game/31_phu_kien_di_cung_vay_hong_corset_den.mp3 ; 44_file_am_thanh_nhan_vat_game/32_phu_kien_di_cung_vay_hong_corset_den.mp3 ; 44_file_am_thanh_nhan_vat_game/33_phu_kien_di_cung_vay_hong_corset_den.mp3 ; 44_file_am_thanh_nhan_vat_game/34_phu_kien_di_cung_vay_hong_corset_den.mp3 | Phụ kiện đi cùng váy Hồng corset đen.
 44_file_am_thanh_nhan_vat_game/37_hom_nay_minh_mac_gi_nhi.ogg | Hôm nay mình mặc gì nhỉ?
 44_file_am_thanh_nhan_vat_game/38_minh_thich_bo_do_be_chon.ogg | Mình thích bộ đồ bé chọn!
 44_file_am_thanh_nhan_vat_game/39_minh_san_sang_thu_mon_tiep_theo.ogg | Mình sẵn sàng thử món tiếp theo!
@@ -153,7 +147,6 @@ window.BANG_AM_THANH = `
 78_file_am_thanh_phieu_luu_toan_lop_4/076_da_hoi_bat_dau_dung_gio_xem_dong_ho_chuan_de_nhan_mon_do.ogg | @truyen:bai:time:gai
 78_file_am_thanh_phieu_luu_toan_lop_4/077_mon_do_danh_cho_ai_doc_dung_bieu_do.ogg | @truyen:bai:chart:gai
 78_file_am_thanh_phieu_luu_toan_lop_4/078_phep_mau_da_tro_lai_lau_dai_ky_dieu_da_hoi_anh_sao_bat_dau.ogg | @truyen:ket:gai
-# Chưa dùng: 2 file đọc nhầm {ten} thành 'Ten' – nên thu lại bắt đầu bằng 'Con và Cú Tí…' / 'Con và Cú Mi…'
 # 78_file_am_thanh_phieu_luu_toan_lop_4/001_ten_va_cu_ti_lai_phi_thuyen_tri_thuc_cho_vien_ngoc_con_so.mp3 | @truyen:mo1:trai
 # 78_file_am_thanh_phieu_luu_toan_lop_4/040_ten_va_cu_mi_dang_chuan_bi_da_hoi_anh_sao_o_lau_dai_ky_die.mp3 | @truyen:mo1:gai
 moi/truyen_ten_the_gioi_trai.ogg | @truyen:ten-the-gioi:trai

@@ -50,66 +50,30 @@ ph | botruong | trai | Captain Outfit | Captain Tee is ready to steer the spaces
 ph | cuti | trai | Tee the Owl | 
 ph | cumi | trai | Mimi the Owl | 
 ph | bip | trai | Beep the Robot Dog | Beep wags its tail to say hi!
-ph | approved-7 | gai | Pretty Denim Dress | A new dress is in your closet!
-ph | bow-denim | gai | Denim Hair Bow | A matching accessory for the Denim dress.
-ph | necklace-denim | gai | Denim Choker | A matching accessory for the Denim dress.
-ph | earring-denim | gai | Denim Earrings | A matching accessory for the Denim dress.
-ph | approved-5 | gai | Lime Cream Dress | A new dress is in your closet!
-ph | bow-kem | gai | Lime Cream Hair Bow | A matching accessory for the Lime Cream dress.
-ph | necklace-kem | gai | Lime Cream Choker | A matching accessory for the Lime Cream dress.
-ph | earring-kem | gai | Lime Cream Earrings | A matching accessory for the Lime Cream dress.
-ph | brooch-kem | gai | Lime Cream Brooch | A matching accessory for the Lime Cream dress.
-ph | approved-8 | gai | Lavender Dress | A new dress is in your closet!
-ph | bow-lavender | gai | Lavender Hair Bow | A matching accessory for the Lavender dress.
-ph | necklace-lavender | gai | Lavender Choker | A matching accessory for the Lavender dress.
-ph | earring-lavender | gai | Lavender Earrings | A matching accessory for the Lavender dress.
-ph | approved-9 | gai | Pink Tweed Dress | A new dress is in your closet!
-ph | bow-tweed | gai | Pink Tweed Hair Bow | A matching accessory for the Pink Tweed dress.
-ph | necklace-tweed | gai | Pink Tweed Choker | A matching accessory for the Pink Tweed dress.
-ph | earring-tweed | gai | Pink Tweed Earrings | A matching accessory for the Pink Tweed dress.
-ph | approved-3 | gai | Starry Sky Dress | A new dress is in your closet!
-ph | approved-6 | gai | Pearl Wave Dress | A new dress is in your closet!
-ph | approved-1 | gai | Pink and Black Corset Dress | A new dress is in your closet!
-ph | bow-corset | gai | Black Corset Hair Bow | A matching accessory for the Pink and Black Corset dress.
-ph | necklace-corset | gai | Black Corset Choker | A matching accessory for the Pink and Black Corset dress.
-ph | earring-corset | gai | Black Corset Earrings | A matching accessory for the Pink and Black Corset dress.
-ph | brooch-corset | gai | Black Corset Brooch | A matching accessory for the Pink and Black Corset dress.
-ph | approved-2 | gai | Crystal Purple Butterfly Dress | A new dress is in your closet!
-ph | approved-4 | gai | Shiny Gold Dress | A new dress is in your closet!
-ph | earring-ruby_drop | gai | Ruby Pink Earrings | 
-ph | newbow | gai | Jade Bow | 
-ph | brooch-ruby | gai | Ruby Pink Brooch | 
-ph | newneck | gai | Rainbow Necklace | 
-ph | newshoes | gai | Purple Jeweled Shoes | 
-ph | newcrown | gai | Butterfly Crown | 
-ph | earring-ruby_cluster | gai | Rose Earrings | 
-ph | pinkbow | gai | Crystal Bow | 
-ph | brooch-amethyst | gai | Amethyst Brooch | 
-ph | pinkneck | gai | Pink Crystal Necklace | 
-ph | pinkshoes | gai | Pink Shoes | 
-ph | mooncrown | gai | Moon Crown | 
-ph | earring-amethyst_long | gai | Long Purple Earrings | 
-ph | purplebow | gai | Purple Bow | 
-ph | brooch-frost | gai | Frost Brooch | 
-ph | blueneck | gai | Blue Crystal Necklace | 
-ph | lilacshoes | gai | Lilac Shoes | 
-ph | pinkcrown | gai | Pink Crown | 
-ph | earring-amethyst_drop | gai | Purple Drop Earrings | 
-ph | bluebow | gai | Blue Bow | 
-ph | brooch-gold | gai | Golden Brooch | 
-ph | goldneck | gai | Sunshine Sparkle Necklace | 
-ph | goldshoes | gai | Golden Glow Shoes | 
-ph | silvercrown | gai | Silver Crown | 
-ph | earring-frost_long | gai | Long Frost Earrings | 
-ph | brooch-emerald | gai | Emerald Brooch | 
-ph | earring-frost_star | gai | Frost Star Earrings | 
-ph | brooch-pearl | gai | Pearl Brooch | 
-ph | earring-gold_drop | gai | Gold Drop Earrings | 
-ph | earring-gold_diamond | gai | Gold Diamond Earrings | 
-ph | earring-emerald_star | gai | Emerald Star Earrings | 
-ph | earring-emerald_small | gai | Small Emerald Earrings | 
-ph | earring-pearl_drop | gai | Long Pearl Earrings | 
-ph | earring-pearl_pair | gai | Blue Pearl Earrings | 
+ph | luna-01-dress | gai | Rose Princess Dress | 
+ph | luna-01-shoes | gai | Rose Princess Shoes | A new shoes for the Rose Princess outfit. 4 more to go!
+ph | luna-01-necklace | gai | Rose Princess Necklace | A new necklace for the Rose Princess outfit. 3 more to go!
+ph | luna-01-earrings | gai | Rose Princess Earrings | A new earrings for the Rose Princess outfit. 2 more to go!
+ph | luna-01-bow | gai | Rose Princess Bow | A new bow for the Rose Princess outfit. 1 more to go!
+ph | luna-01-crown | gai | Rose Princess Crown | The last piece of the Rose Princess outfit! Luna is fully dressed!
+ph | luna-02-dress | gai | Sapphire Gala Dress | The Sapphire Gala outfit is ready! Collect 5 more pieces to complete it.
+ph | luna-02-shoes | gai | Sapphire Gala Shoes | A new shoes for the Sapphire Gala outfit. 4 more to go!
+ph | luna-02-necklace | gai | Sapphire Gala Necklace | A new necklace for the Sapphire Gala outfit. 3 more to go!
+ph | luna-02-earrings | gai | Sapphire Gala Earrings | A new earrings for the Sapphire Gala outfit. 2 more to go!
+ph | luna-02-bow | gai | Sapphire Gala Bow | A new bow for the Sapphire Gala outfit. 1 more to go!
+ph | luna-02-crown | gai | Sapphire Gala Crown | The last piece of the Sapphire Gala outfit! Luna is fully dressed!
+ph | luna-03-dress | gai | Emerald Muse Dress | The Emerald Muse outfit is ready! Collect 5 more pieces to complete it.
+ph | luna-03-shoes | gai | Emerald Muse Shoes | A new shoes for the Emerald Muse outfit. 4 more to go!
+ph | luna-03-necklace | gai | Emerald Muse Necklace | A new necklace for the Emerald Muse outfit. 3 more to go!
+ph | luna-03-earrings | gai | Emerald Muse Earrings | A new earrings for the Emerald Muse outfit. 2 more to go!
+ph | luna-03-bow | gai | Emerald Muse Bow | A new bow for the Emerald Muse outfit. 1 more to go!
+ph | luna-03-flower | gai | Emerald Muse Hair flower | The last piece of the Emerald Muse outfit! Luna is fully dressed!
+ph | luna-04-dress | gai | Lady Lavender Dress | The Lady Lavender outfit is ready! Collect 5 more pieces to complete it.
+ph | luna-04-shoes | gai | Lady Lavender Shoes | A new shoes for the Lady Lavender outfit. 4 more to go!
+ph | luna-04-necklace | gai | Lady Lavender Necklace | A new necklace for the Lady Lavender outfit. 3 more to go!
+ph | luna-04-earrings | gai | Lady Lavender Earrings | A new earrings for the Lady Lavender outfit. 2 more to go!
+ph | luna-04-bow | gai | Lady Lavender Bow | A new bow for the Lady Lavender outfit. 1 more to go!
+ph | luna-04-bag | gai | Lady Lavender Handbag | The last piece of the Lady Lavender outfit! Luna is fully dressed!
 ct | ten-the-gioi | trai | Discovery World
 ct | cu | trai | Tee the Owl
 ct | phong | trai | The spaceship cabin

@@ -1,0 +1,19 @@
+/* ===== v9.1: đồng hồ Phòng thay đồ + trang Chuyên đề nâng cao ===== */
+#roomClock{flex:none;align-self:center;width:max-content;margin:4px auto;background:#fff;color:#1D355E;border:2px solid #1D355E;border-radius:999px;padding:0 12px;font:800 .88rem/1.5 'Baloo 2',sans-serif;font-variant-numeric:tabular-nums}
+#roomClock.low{background:#FFE1E1;border-color:#B83E3E;color:#B83E3E}
+.roombonus{margin:10px 0}
+.chap.cd{border-color:#6D4BD0;box-shadow:0 4px 0 #6D4BD0}
+.chap.cd .chap-h{color:#4B2FA8}
+.lrow.cdrow .bn{background:#6D4BD0;color:#fff}
+.cdpage{padding-bottom:28px}
+.cdintro ul{margin:6px 0 8px;padding-left:20px;font-weight:700;line-height:1.45}
+.cdintro p,.cdcard p{margin:0}
+.cdcard{margin-top:12px}
+.cdcard h3{margin:0 0 2px;font:800 1.15rem 'Baloo 2',sans-serif}
+.cdsteps{margin-top:8px}
+.cdex .cdq{font-weight:800;font-size:1.05rem;line-height:1.45;margin:6px 0 4px}
+.cdex .cdhint{margin:0 0 8px;font-size:.9rem}
+.cdex .cdlist{margin:0 0 10px;padding-left:22px;line-height:1.5;font-weight:700}
+.cdex .cdlist li{margin-bottom:6px}
+.cdex .cdans{background:#E7F8EE;border:2px solid #2E9E5B;border-radius:14px;padding:8px 12px;margin-bottom:10px;font-weight:800}
+.gift .gskip{display:block;margin:6px auto 0;font-size:.95rem;opacity:.9}

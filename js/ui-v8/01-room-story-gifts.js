@@ -13,7 +13,8 @@
   var MODE = { trai: "boy", gai: "girl" };
   var ZONES = ["so", "toan", "ps", "hinh"];
   var SLOT_NAME = { dau: LT("Đội đầu", "Hat"), lung: LT("Đeo lưng", "Backpack"), tay: LT("Cầm tay", "Gadget"), nguoi: LT("Bộ đồ", "Outfit"), ke: LT("Kệ trưng bày", "Trophy shelf"), thucung: LT("Thú cưng", "Pet"), anhdd: LT("Ảnh đại diện", "Profile picture"), nhanvat: LT("Nhân vật", "Hero"), luna: LT("Đồ của Luna", "Luna's item") };
-  var TIER_NAME = { 1: LT("Dễ", "Easy"), 2: LT("Vừa", "Medium"), 3: LT("Khó", "Hard") };
+  var TIER_NAME = { 1: LT("Dễ", "Easy"), 2: LT("Vừa", "Medium"), 3: LT("Khó", "Hard") , 4: LT("Nâng cao", "Advanced") };
+  var TIER_KEY = { de: 1, vua: 2, kho: 3, nc: 4 };
 
   /* ---------- Đọc 3 bảng Notepad ---------- */
   function table(txt) {
@@ -78,6 +79,13 @@
       ["dau", "lung", "tay", "nguoi"].forEach(function (s) { if (o[s] === undefined || (o[s] && !findR(o[s], m))) o[s] = ""; });
       o.seen = Array.isArray(o.seen) ? o.seen : [];
       o.picked = o.picked || 0; o.story = o.story || 0; o.fin = o.fin || 0;
+      /* v9.2: tủ đồ Luna mới. Món bé đã đạt điều kiện thì coi như đã nhận, không bật hàng loạt hộp quà */
+      if (m === "girl" && !o.luna94) {
+        try {
+          RW.forEach(function (r) { if (r.mode === "girl" && r.slot === "luna" && r.cond !== "cosan" && owned(r) && o.seen.indexOf(r.id) < 0) o.seen.push(r.id); });
+          o.luna94 = 1; o.lunaState = null; o.lunaWear = null;
+        } catch (e) {}
+      }
     });
     return d.v8;
   }
@@ -86,10 +94,20 @@
   var list = function (slot, m) { m = m || themeMode(); return RW.filter(function (r) { return r.mode === m && (!slot || r.slot === slot); }); };
   var byId = function (id) { return LESSONS.find(function (l) { return l.id === id; }); };
 
+  /* v9.3.0: các món Luna trong một bộ phải lấy lần lượt (váy → giày → vòng cổ → bông tai → nơ → vương miện/cài hoa/túi). Món sau chỉ mở khi đã có món trước. */
+  function lunaPrev(r) {
+    var m = r.slot === "luna" && /^luna-(\d\d)-/.exec(r.id); if (!m) return null;
+    var items = RW.filter(function (x) { return x.mode === r.mode && x.slot === "luna" && x.id.indexOf("luna-" + m[1] + "-") === 0; });
+    var i = items.indexOf(r); return i > 0 ? items[i - 1] : null;
+  }
   function owned(r) {
+    var prev = lunaPrev(r);
+    return ownedBase(r) && (!prev || owned(prev));
+  }
+  function ownedBase(r) {
     var c = r.cond.split(":");
     if (c[0] === "cosan" || !c[0]) return true;
-    if (c[0] === "bai") return byId(c[1]) ? G.lessonPassed(c[1], { de: 1, vua: 2, kho: 3 }[c[2] || "de"] || 1) : false;
+    if (c[0] === "bai") return byId(c[1]) ? G.lessonPassed(c[1], TIER_KEY[c[2] || "de"] || 1) : false;
     if (c[0] === "trum") return (Store.d.boss && Store.d.boss[c[1]] > 0);
     if (c[0] === "sao") return G.totalStars() >= (+c[1] || 0);
     if (c[0] === "thi") { var e = (Store.d.exam || {})[c[1]]; return !!e && e.best >= (+c[2] || 8); }
@@ -97,7 +115,7 @@
   }
   function condText(r) {
     var c = r.cond.split(":");
-    if (c[0] === "bai") { var l = byId(c[1]); return LT("Qua mức " + (TIER_NAME[{ de: 1, vua: 2, kho: 3 }[c[2] || "de"] || 1]) + " bài “" + (l ? l.title : c[1]) + "”", "Pass the " + (TIER_NAME[{ de: 1, vua: 2, kho: 3 }[c[2] || "de"] || 1]) + " level of “" + (l ? l.title : c[1]) + "”"); }
+    if (c[0] === "bai") { var l = byId(c[1]); return LT("Qua mức " + (TIER_NAME[TIER_KEY[c[2] || "de"] || 1]) + " bài “" + (l ? l.title : c[1]) + "”", "Pass the " + (TIER_NAME[TIER_KEY[c[2] || "de"] || 1]) + " level of “" + (l ? l.title : c[1]) + "”"); }
     if (c[0] === "trum") return LT("Thắng " + T("vung:" + c[1] + ":trum", "bài trùm") + " (" + T("vung:" + c[1] + ":ten") + ")", "Beat the " + T("vung:" + c[1] + ":trum", "boss challenge") + " (" + T("vung:" + c[1] + ":ten") + ")");
     if (c[0] === "sao") return LT("Có đủ " + c[1] + " ⭐", "Have " + c[1] + " ⭐");
     if (c[0] === "thi") return LT("Đạt từ " + (+c[2] || 8) + " điểm " + (c[1] === "tong" ? "Bài thi tổng hợp" : "Phòng thi " + T("vung:" + c[1] + ":ten")), "Score at least " + (+c[2] || 8) + " points on " + (c[1] === "tong" ? "the Comprehensive Exam" : "the " + T("vung:" + c[1] + ":ten") + " Exam Room")); 
@@ -393,6 +411,7 @@
       '<div class="lunabox"><iframe id="lunaF" title="' + LT("Phòng thay đồ của Luna", "Luna's dress-up room") + '" src="luna/phong-luna.html?lang=' + window.LANG + '"></iframe></div></div></div>' + window.NAVBAR("home");
     app.innerHTML = h;
     markSeen(newOnes());
+    var o92 = cur(); if (o92.luna94 === 1) { o92.luna94 = 2; Store.save(); setTimeout(function () { G.toast(LT("Luna có 4 bộ đồ mới! Nhận từng món theo thứ tự để Luna mặc đủ bộ nhé.", "Luna has 4 new outfits! Collect the pieces in order to complete each one.")); }, 800); }
     voOnce("luna-hello", function (V) { setTimeout(function () { V.say(LT("Hôm nay mình mặc gì nhỉ?", "What should I wear today?")); }, 600); });
     lunaQuiet = Date.now() + 4000;
   }
@@ -405,7 +424,7 @@
     var o = cur();
     if (d.toan4 === "ready") {
       var wear = o.lunaWear || null; o.lunaWear = null;
-      if (!o.lunaState) o.lunaState = { dress: "approved-7", bow: "bow-denim", necklace: "necklace-denim", earring: "earring-denim" };
+      if (o.lunaState && !o.lunaState.o) o.lunaState = null;   /* v9.3.0: chỉ nhận trạng thái kiểu mới (bộ đang chọn: o) */
       f.contentWindow.postMessage({ toan4: "init", owned: lunaOwned(), state: o.lunaState || null, wear: wear }, "*");
     } else if (d.toan4 === "state") { o.lunaState = d.v; Store.save(); if (window.VO && Date.now() > lunaQuiet && Date.now() - lunaLast > 9000) { lunaLast = Date.now(); window.VO.say("Mình thích bộ đồ bé chọn!"); } }
     else if (d.toan4 === "locked") { var r = findR(d.id); window.VO && window.VO.say("Món này đang khoá. Học bài để nhận nhé!"); r && pathSheet(r); }
@@ -417,11 +436,11 @@
     var need = function (id) {
       if (seen[id]) return; seen[id] = 1;
       var l = byId(id); if (!l) return;
-      if (!Store.d.set.unlockAll) l.links.forEach(function (k) { if (!G.lessonPassed(k, 1)) need(k); });
+      /* v9.1: bài nào cũng mở sẵn nên không cần đi qua bài liên kết trước */
       steps.push({ l: l, t: 1 });
     };
     if (c[0] === "bai") {
-      var t = { de: 1, vua: 2, kho: 3 }[c[2] || "de"] || 1, l = byId(c[1]);
+      var t = TIER_KEY[c[2] || "de"] || 1, l = byId(c[1]);
       if (!l) return [];
       if (!G.lessonPassed(l.id, 1)) need(l.id);
       if (t > 1) steps.push({ l: l, t: t });
@@ -586,15 +605,18 @@
   /* ---------- Nhận quà ---------- */
   function showGifts(rs, done) {
     if (!rs.length) { done && done(); return; }
+    if (document.querySelector(".gift")) return;   /* v9.1: không chồng nhiều hộp quà */
     var r = rs[0], rest = rs.slice(1);
     var bg = document.createElement("div");
     bg.className = "gift";
-    bg.innerHTML = '<button class="gclose" data-g="ok" aria-label="' + LT('Đóng', 'Close') + '">✕</button><div class="gbox" style="background-image:url(' + IMG("nen/nhan-qua.webp") + ')">' + (rs.length > 1 ? '<span class="gcount">+' + rs.length + "</span>" : "") +
+    bg.innerHTML = '<button class="gclose" data-g="skip" aria-label="' + LT('Đóng', 'Close') + '">✕</button><div class="gbox" style="background-image:url(' + IMG("nen/nhan-qua.webp") + ')">' + (rs.length > 1 ? '<span class="gcount">+' + rs.length + "</span>" : "") +
       '<div class="gin"><img class="gt" src="' + IMG("ui/chu-nhan-qua.webp") + '" alt="' + LT('Nhận quà!', 'Get your gift!') + '"><div class="gstage"><img class="gchest" src="' + IMG("ui/ruong.webp") + '" alt="">' + pic(IMG(r.img), "gitem") + "</div>" +
       '<div class="gmsg">' + LT('Con đã mở khoá<b>', 'You unlocked<b>') + esc(r.name) + "</b>" + esc(r.msg || LT(SLOT_NAME[r.slot] + " đã được cất vào " + T("phong"), SLOT_NAME[r.slot] + " was put away in " + T("phong"))) + "</div>" +
       '<div class="gbtns"><button class="v8btnimg" data-g="ok"><img src="' + IMG("ui/nut-tuyet-voi.webp") + '" alt="' + LT('Tuyệt vời!', 'Awesome!') + '"></button>' +
       (r.slot === "ke" ? "" : '<button class="glink" data-g="room">' + (r.slot === "luna" ? LT("👗 Mặc thử cho Luna ngay", "👗 Try it on Luna now") : "👕 " + (r.slot === "anhdd" ? LT("Dùng làm ảnh đại diện", "Use as profile picture") : r.slot === "thucung" ? LT("Cho đi cùng ngay", "Take along now") : r.slot === "nhanvat" ? LT("Chọn bạn này ngay", "Choose this friend now") : LT("Mặc thử ngay", "Try it on now"))) + "</button>") + "</div></div></div>";
+    if (rest.length) { var sk = document.createElement("button"); sk.className = "glink gskip"; sk.dataset.g = "skip"; sk.textContent = LT("Bỏ qua " + rest.length + " quà còn lại", "Skip " + rest.length + " more gifts"); var gb = bg.querySelector(".gbtns"); gb && gb.appendChild(sk); }
     document.body.appendChild(bg);
+    var auto = setTimeout(function () { var k = bg.isConnected && bg.querySelector("[data-g=ok].v8btnimg"); k && k.click(); }, 10000);   /* v9.1: tự đóng sau 10 giây */
     markSeen([r]);
     try { G.Sfx.win(); } catch (e) {}
     try { window.VO && (r.msg && window.VO.say(r.msg) || window.VO.say("Con vừa mở khóa một món quà mới!")); } catch (e) {}
@@ -606,7 +628,8 @@
     bg.addEventListener("click", function (e) {
       var b = e.target.closest("[data-g]");
       if (!b) { if (e.target !== bg) return; b = bg.querySelector("[data-g=ok]"); }   /* bấm ra ngoài khung = Tuyệt vời! */
-      bg.remove();
+      clearTimeout(auto); bg.remove();
+      if (b.dataset.g === "skip") { markSeen(rest); done && done(); return; }
       if (b.dataset.g === "room") {
         if (r.slot === "nguoi") { var mainCh = list("nhanvat").find(function (c) { return (CH[themeMode() + ":" + c.id] || {}).main; }); mainCh && (cur().nhanvat = mainCh.id); }
         if (r.slot === "luna") cur().lunaWear = r.id; else { cur()[r.slot] = ""; equip(r); }
@@ -623,9 +646,10 @@
     G.sheet('<div style="text-align:center"><img src="' + IMG("ui/hai-chu-cu.webp") + '" style="width:70%" alt=""><h2 class="disp" style="font-size:1.6rem">' + LT('Hoàn thành hành trình!', 'Journey complete!') + '</h2><p style="font-size:1.08rem;line-height:1.5">' + esc(T("ket")) + '</p><button class="btn pri block" id="fin0">' + LT('Tuyệt vời!', 'Awesome!') + '</button></div>', function (bg, close) { bg.querySelector("#fin0").onclick = close; window.VO && window.VO.story("ket"); });
     try { G.confetti(); } catch (e) {}
   }
-  var origResult = SC.result;
+  var origResult = SC.result, giftT = 0;
   SC.result = function (r) {
     origResult(r);
+    clearTimeout(giftT);
     var rs = newOnes();
     if (rs.length) {
       var p = document.createElement("div");
@@ -633,7 +657,7 @@
       p.innerHTML = LT("🎁 Con vừa mở khoá " + rs.length + " món quà cho " + esc(T("phong")) + "!", "🎁 You just unlocked " + rs.length + (rs.length === 1 ? " gift" : " gifts") + " for " + esc(T("phong")) + "!");
       var parts = app.querySelector("main .parts");
       parts && parts.parentNode.insertBefore(p, parts);
-      setTimeout(function () { showGifts(rs, finaleCheck); }, 1300);
+      giftT = setTimeout(function () { var t = UI.stack[UI.stack.length - 1]; if (t && (t.n === "result" || t.n === "home")) showGifts(rs, finaleCheck); }, 1300);
     } else setTimeout(finaleCheck, 900);
   };
 

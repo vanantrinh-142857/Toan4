@@ -41,3 +41,12 @@ freq      | 60  | 90  | 120
 # Thời gian thi tổng hợp (phút)
 thi-tong  | 40
 `;
+
+/* ============================================================
+   PHÒNG THAY ĐỒ – giới hạn thời gian mỗi ngày (v9.1, sửa bằng Notepad)
+   phut        : số phút được ở Phòng thay đồ mỗi ngày
+   thuong      : số phút thưởng thêm mỗi khi bé làm xong một bài luyện tập (từ 3 câu trở lên)
+   chiKhiDat   : true = chỉ thưởng khi bài luyện tập ĐẠT; false = làm xong là thưởng
+   bat         : false = tắt hẳn giới hạn này
+   ============================================================ */
+window.PHONG_THAY_DO = { bat: true, phut: 5, thuong: 2, chiKhiDat: false };

@@ -73,68 +73,37 @@ cupvang   | trai | ke      | Cúp vàng Vô địch     | do/cup-vang.webp      
 cuti      | trai | thucung | Cú Tí                | thu-cung/cu-ti.webp             | cosan              |
 cumi      | trai | thucung | Cú Mi                | thu-cung/cu-mi.webp             | bai:fracmul:de     |
 bip       | trai | thucung | Chó robot Bíp        | thu-cung/cho-robot.webp         | trum:ps            | Bíp vẫy đuôi chào con!
-# ---------- THẾ GIỚI KỲ DIỆU (bé gái): phòng thay đồ Luna ----------
-# Chỗ đặt luôn là 'luna'. Mã món PHẢI trùng mã trong phòng Luna (approved-1..9 là váy; các mã khác là phụ kiện).
-# File ảnh nằm trong anh\luna\ . Muốn đổi điều kiện nhận quà, sửa cột Điều kiện.
-approved-7 | gai | luna | Váy Denim xinh | luna/thumb7.webp | cosan | Bộ váy mới đã vào tủ đồ của con!
-bow-denim | gai | luna | Nơ tóc Denim | luna/n7_hairbow.webp | cosan | Phụ kiện đi cùng váy Denim xinh.
-necklace-denim | gai | luna | Vòng cổ Denim | luna/n7_choker.webp | cosan | Phụ kiện đi cùng váy Denim xinh.
-earring-denim | gai | luna | Bông tai Denim | luna/n7_earring1.webp | cosan | Phụ kiện đi cùng váy Denim xinh.
-approved-5 | gai | luna | Váy Xanh lá kem | luna/thumb5.webp | trum:so | Bộ váy mới đã vào tủ đồ của con!
-bow-kem | gai | luna | Nơ tóc Xanh lá kem | luna/n9_hairbow.webp | trum:so | Phụ kiện đi cùng váy Xanh lá kem.
-necklace-kem | gai | luna | Vòng cổ Xanh lá kem | luna/n9_choker.webp | trum:so | Phụ kiện đi cùng váy Xanh lá kem.
-earring-kem | gai | luna | Bông tai Xanh lá kem | luna/n9_earring1.webp | trum:so | Phụ kiện đi cùng váy Xanh lá kem.
-brooch-kem | gai | luna | Trâm cài Xanh lá kem | luna/n9_brooch.webp | trum:so | Phụ kiện đi cùng váy Xanh lá kem.
-approved-8 | gai | luna | Váy Tím lavender | luna/thumb8.webp | trum:toan | Bộ váy mới đã vào tủ đồ của con!
-bow-lavender | gai | luna | Nơ tóc Tím lavender | luna/n10_hairbow.webp | trum:toan | Phụ kiện đi cùng váy Tím lavender.
-necklace-lavender | gai | luna | Vòng cổ Tím lavender | luna/n10_choker.webp | trum:toan | Phụ kiện đi cùng váy Tím lavender.
-earring-lavender | gai | luna | Bông tai Tím lavender | luna/n10_earring1.webp | trum:toan | Phụ kiện đi cùng váy Tím lavender.
-approved-9 | gai | luna | Váy Hồng tweed | luna/thumb9.webp | trum:ps | Bộ váy mới đã vào tủ đồ của con!
-bow-tweed | gai | luna | Nơ tóc Hồng tweed | luna/n11_hairbow.webp | trum:ps | Phụ kiện đi cùng váy Hồng tweed.
-necklace-tweed | gai | luna | Vòng cổ Hồng tweed | luna/n11_choker.webp | trum:ps | Phụ kiện đi cùng váy Hồng tweed.
-earring-tweed | gai | luna | Bông tai Hồng tweed | luna/n11_earring1.webp | trum:ps | Phụ kiện đi cùng váy Hồng tweed.
-approved-3 | gai | luna | Váy Bầu trời sao | luna/thumb3.webp | trum:hinh | Bộ váy mới đã vào tủ đồ của con!
-approved-6 | gai | luna | Váy Sóng ngọc trai | luna/thumb6.webp | sao:40 | Bộ váy mới đã vào tủ đồ của con!
-approved-1 | gai | luna | Váy Hồng corset đen | luna/thumb1.webp | sao:80 | Bộ váy mới đã vào tủ đồ của con!
-bow-corset | gai | luna | Nơ tóc Corset đen | luna/n8_hairbow.webp | sao:80 | Phụ kiện đi cùng váy Hồng corset đen.
-necklace-corset | gai | luna | Vòng cổ Corset đen | luna/n8_choker.webp | sao:80 | Phụ kiện đi cùng váy Hồng corset đen.
-earring-corset | gai | luna | Bông tai Corset đen | luna/n8_earring1.webp | sao:80 | Phụ kiện đi cùng váy Hồng corset đen.
-brooch-corset | gai | luna | Trâm cài Corset đen | luna/n8_brooch.webp | sao:80 | Phụ kiện đi cùng váy Hồng corset đen.
-approved-2 | gai | luna | Váy Bướm tím pha lê | luna/thumb2.webp | sao:120 | Bộ váy mới đã vào tủ đồ của con!
-approved-4 | gai | luna | Váy Vàng kim rực rỡ | luna/thumb4.webp | thi:tong:8 | Bộ váy mới đã vào tủ đồ của con!
-# ---------- Phụ kiện nhận theo từng bài ----------
-earring-ruby_drop | gai | luna | Bông tai hồng ruby | luna/earring_ruby_drop.webp | bai:place:de | 
-newbow | gai | luna | Nơ xanh ngọc | luna/bow.webp | bai:round:de | 
-brooch-ruby | gai | luna | Trâm hồng ruby | luna/brooch_ruby.webp | bai:addsub:de | 
-newneck | gai | luna | Vòng cổ cầu vồng | luna/necklace.webp | bai:mul:de | 
-newshoes | gai | luna | Giày tím đính ngọc | luna/shoes.webp | bai:quick:de | 
-newcrown | gai | luna | Vương miện bướm | luna/crown.webp | bai:div:de | 
-earring-ruby_cluster | gai | luna | Bông tai hoa hồng | luna/earring_ruby_cluster.webp | bai:avg:de | 
-pinkbow | gai | luna | Nơ pha lê | luna/oldbow.webp | bai:unit:de | 
-brooch-amethyst | gai | luna | Trâm thạch anh tím | luna/brooch_amethyst.webp | bai:sumdiff:de | 
-pinkneck | gai | luna | Pha lê hồng | luna/oldneck.webp | bai:trees:de | 
-pinkshoes | gai | luna | Giày hồng | luna/oldshoes.webp | bai:chick:de | 
-mooncrown | gai | luna | Vương miện trăng | luna/oldcrown.webp | bai:frac:de | 
-earring-amethyst_long | gai | luna | Bông tai tím dài | luna/earring_amethyst_long.webp | bai:simplify:de | 
-purplebow | gai | luna | Nơ tím | luna/bow_purple.webp | bai:fraccmp:de | 
-brooch-frost | gai | luna | Trâm tuyết băng | luna/brooch_frost.webp | bai:fraddsub:de | 
-blueneck | gai | luna | Pha lê xanh | luna/neck_blue.webp | bai:fracmul:de | 
-lilacshoes | gai | luna | Giày tím | luna/shoes_lilac.webp | bai:angle:de | 
-pinkcrown | gai | luna | Vương miện hồng | luna/crown_pink.webp | bai:lines:de | 
-earring-amethyst_drop | gai | luna | Bông tai tím giọt | luna/earring_amethyst_drop.webp | bai:hbh:de | 
-bluebow | gai | luna | Nơ xanh | luna/bow_blue.webp | bai:mass:de | 
-brooch-gold | gai | luna | Trâm vàng kim | luna/brooch_gold.webp | bai:area:de | 
-goldneck | gai | luna | Nắng lấp lánh | luna/neck_gold.webp | bai:time:de | 
-goldshoes | gai | luna | Giày ánh vàng | luna/shoes_gold.webp | bai:chart:de | 
-silvercrown | gai | luna | Vương miện bạc | luna/crown_silver.webp | bai:cmpnum:de | 
-earring-frost_long | gai | luna | Bông tai tuyết dài | luna/earring_frost_long.webp | bai:x10:de | 
-brooch-emerald | gai | luna | Trâm ngọc lục bảo | luna/brooch_emerald.webp | bai:fracdiv:de | 
-earring-frost_star | gai | luna | Bông tai sao tuyết | luna/earring_frost_star.webp | bai:fracprop:de | 
-brooch-pearl | gai | luna | Trâm ngọc trai | luna/brooch_pearl.webp | bai:fracof:de | 
-earring-gold_drop | gai | luna | Bông tai vàng giọt | luna/earring_gold_drop.webp | bai:protract:de | 
-earring-gold_diamond | gai | luna | Bông tai kim cương | luna/earring_gold_diamond.webp | bai:datalist:de | 
-earring-emerald_star | gai | luna | Bông tai ngọc lục sao | luna/earring_emerald_star.webp | bai:freq:de | 
-earring-emerald_small | gai | luna | Bông tai ngọc lục nhỏ | luna/earring_emerald_small.webp | bai:sumdiff:vua | 
-earring-pearl_drop | gai | luna | Bông tai ngọc trai dài | luna/earring_pearl_drop.webp | bai:trees:vua | 
-earring-pearl_pair | gai | luna | Bông tai ngọc trai xanh | luna/earring_pearl_pair.webp | bai:chick:vua | 
+# ---------- THẾ GIỚI KỲ DIỆU (bé gái): phòng Luna (v9.3.0: 4 bộ đồ, mỗi bộ 6 món lấy theo thứ tự) ----------
+# Chỗ đặt luôn là 'luna'. Mã món: luna-<số bộ 01..04>-<loại>. Thứ tự BẮT BUỘC trong từng bộ (dòng nào đứng trước thì phải có trước):
+#   1 dress (váy) → 2 shoes (giày) → 3 necklace (vòng cổ) → 4 earrings (bông tai) → 5 bow (nơ) → 6 crown (vương miện) | flower (cài hoa) | bag (túi xách)
+# Món sau chỉ mở khi đã có món trước, dù bé đã đủ điều kiện của nó. Mỗi món nhận thêm thì Luna đổi sang hình tương ứng (luna\bo\<bộ>-<bước>.webp).
+# Điều kiện :nc = qua mức Nâng cao của bài. File ảnh nhỏ nằm trong anh\luna\ . Muốn đổi điều kiện, sửa cột Điều kiện (giữ nguyên thứ tự các dòng).
+# --- Bộ 01: Công chúa hoa hồng ---
+luna-01-dress | gai | luna | Váy Công chúa hoa hồng | luna/01-dress.webp | cosan | 
+luna-01-shoes | gai | luna | Giày Công chúa hoa hồng | luna/01-shoes.webp | bai:place:de | Luna có thêm giày cho bộ Công chúa hoa hồng. Còn 4 món nữa!
+luna-01-necklace | gai | luna | Vòng cổ Công chúa hoa hồng | luna/01-necklace.webp | bai:cmpnum:de | Luna có thêm vòng cổ cho bộ Công chúa hoa hồng. Còn 3 món nữa!
+luna-01-earrings | gai | luna | Bông tai Công chúa hoa hồng | luna/01-earrings.webp | bai:round:de | Luna có thêm bông tai cho bộ Công chúa hoa hồng. Còn 2 món nữa!
+luna-01-bow | gai | luna | Nơ Công chúa hoa hồng | luna/01-bow.webp | bai:addsub:de | Luna có thêm nơ cho bộ Công chúa hoa hồng. Còn 1 món nữa!
+luna-01-crown | gai | luna | Vương miện Công chúa hoa hồng | luna/01-crown.webp | bai:mul:de | Món cuối của bộ Công chúa hoa hồng! Luna mặc đủ bộ rồi!
+# --- Bộ 02: Dạ tiệc Sapphire ---
+luna-02-dress | gai | luna | Váy Dạ tiệc Sapphire | luna/02-dress.webp | trum:so | Bộ Dạ tiệc Sapphire đã sẵn sàng! Gom thêm 5 món nữa để Luna mặc đủ bộ.
+luna-02-shoes | gai | luna | Giày Dạ tiệc Sapphire | luna/02-shoes.webp | bai:avg:de | Luna có thêm giày cho bộ Dạ tiệc Sapphire. Còn 4 món nữa!
+luna-02-necklace | gai | luna | Vòng cổ Dạ tiệc Sapphire | luna/02-necklace.webp | bai:unit:de | Luna có thêm vòng cổ cho bộ Dạ tiệc Sapphire. Còn 3 món nữa!
+luna-02-earrings | gai | luna | Bông tai Dạ tiệc Sapphire | luna/02-earrings.webp | bai:sumdiff:de | Luna có thêm bông tai cho bộ Dạ tiệc Sapphire. Còn 2 món nữa!
+luna-02-bow | gai | luna | Nơ Dạ tiệc Sapphire | luna/02-bow.webp | bai:trees:de | Luna có thêm nơ cho bộ Dạ tiệc Sapphire. Còn 1 món nữa!
+luna-02-crown | gai | luna | Vương miện Dạ tiệc Sapphire | luna/02-crown.webp | bai:chick:de | Món cuối của bộ Dạ tiệc Sapphire! Luna mặc đủ bộ rồi!
+# --- Bộ 03: Nàng thơ ngọc lục bảo ---
+luna-03-dress | gai | luna | Váy Nàng thơ ngọc lục bảo | luna/03-dress.webp | trum:toan | Bộ Nàng thơ ngọc lục bảo đã sẵn sàng! Gom thêm 5 món nữa để Luna mặc đủ bộ.
+luna-03-shoes | gai | luna | Giày Nàng thơ ngọc lục bảo | luna/03-shoes.webp | bai:frac:de | Luna có thêm giày cho bộ Nàng thơ ngọc lục bảo. Còn 4 món nữa!
+luna-03-necklace | gai | luna | Vòng cổ Nàng thơ ngọc lục bảo | luna/03-necklace.webp | bai:fracdiv:de | Luna có thêm vòng cổ cho bộ Nàng thơ ngọc lục bảo. Còn 3 món nữa!
+luna-03-earrings | gai | luna | Bông tai Nàng thơ ngọc lục bảo | luna/03-earrings.webp | bai:fracprop:de | Luna có thêm bông tai cho bộ Nàng thơ ngọc lục bảo. Còn 2 món nữa!
+luna-03-bow | gai | luna | Nơ Nàng thơ ngọc lục bảo | luna/03-bow.webp | bai:simplify:de | Luna có thêm nơ cho bộ Nàng thơ ngọc lục bảo. Còn 1 món nữa!
+luna-03-flower | gai | luna | Cài hoa Nàng thơ ngọc lục bảo | luna/03-flower.webp | bai:fraccmp:de | Món cuối của bộ Nàng thơ ngọc lục bảo! Luna mặc đủ bộ rồi!
+# --- Bộ 04: Tiểu thư Lavender ---
+luna-04-dress | gai | luna | Váy Tiểu thư Lavender | luna/04-dress.webp | trum:ps | Bộ Tiểu thư Lavender đã sẵn sàng! Gom thêm 5 món nữa để Luna mặc đủ bộ.
+luna-04-shoes | gai | luna | Giày Tiểu thư Lavender | luna/04-shoes.webp | bai:angle:de | Luna có thêm giày cho bộ Tiểu thư Lavender. Còn 4 món nữa!
+luna-04-necklace | gai | luna | Vòng cổ Tiểu thư Lavender | luna/04-necklace.webp | bai:protract:de | Luna có thêm vòng cổ cho bộ Tiểu thư Lavender. Còn 3 món nữa!
+luna-04-earrings | gai | luna | Bông tai Tiểu thư Lavender | luna/04-earrings.webp | bai:lines:de | Luna có thêm bông tai cho bộ Tiểu thư Lavender. Còn 2 món nữa!
+luna-04-bow | gai | luna | Nơ Tiểu thư Lavender | luna/04-bow.webp | bai:hbh:de | Luna có thêm nơ cho bộ Tiểu thư Lavender. Còn 1 món nữa!
+luna-04-bag | gai | luna | Túi xách Tiểu thư Lavender | luna/04-bag.webp | bai:fraddsub:nc | Món cuối của bộ Tiểu thư Lavender! Luna mặc đủ bộ rồi!
 `;

@@ -1,7 +1,7 @@
 'use strict';
  (() => {
   var CONFIG = {
-   version: "9.0.2",
+   version: "9.3.3",
    schema: 4,
    curriculumNote: LT("theo SGK Kết nối tri thức Toán 4", "based on the Vietnamese Grade 4 math textbook (Kết nối tri thức)"),
    tiers: [{
@@ -6845,7 +6845,7 @@
        },
        parts: [chp(r.shuffle([ans, thoi ? LT("Bốn góc đều là góc vuông", "All four angles are right angles") : LT("Bốn cạnh bằng nhau và bốn góc vuông", "All four sides are equal and all four angles are right angles"), LT("Chỉ có một cặp cạnh song song", "Only one pair of sides is parallel")]), ans)],
        steps: [st(LT("Hình " + (thoi ? "thoi" : "bình hành") + ": " + ans.toLowerCase(), "A " + (thoi ? "rhombus" : "parallelogram") + ": " + ans.toLowerCase()))],
-       tip: LT("Hình bình hành: các cạnh đối song song và bằng nhau. Hình thoi: có thêm bốn cạnh bằng nhau. Không có góc vuông.", "Parallelogram: opposite sides are parallel and equal. Rhombus: all four sides are also equal. Neither needs right angles.")
+       tip: LT("Hình bình hành: hai cặp cạnh đối song song và bằng nhau. Hình thoi: có thêm bốn cạnh bằng nhau. Cả hai không nhất thiết có góc vuông.", "Parallelogram: opposite sides are parallel and equal. Rhombus: all four sides are also equal. Neither needs right angles.")
       })
      }
      let sides = [
@@ -11259,7 +11259,7 @@
       mn = Math.min.apply(null, vs),
       L = ["A", "B", "C", "D"],
       noun = r.pick([
-       [LT("Trường", "School"), LT("học sinh", "students")],
+       [LT("Thư viện", "Library"), LT("quyển sách", "books")],
        [LT("Xã", "Village"), LT("người", "people")]
       ]),
       nms = L.map(x => noun[0] + " " + x),
@@ -12972,7 +12972,7 @@ LESSON({
    list.sort((p, q) => p - q);
    const dd = ds.slice().sort((p, q) => p - q);
    return QQ({
-    q: LT("Từ ba chữ số **" + dd.join("; ") + "**, lập các số có ba chữ số, mỗi chữ số dùng một lần và đứng đầu không là 0. Có bao nhiêu số " + cond[1] + "?", "Using the three digits **" + dd.join("; ") + "** once each (no leading 0), make 3-digit numbers. How many are " + (cond[0] === 10 ? "divisible by both 2 and 5" : "divisible by " + cond[0]) + "?"),
+    q: LT("Từ ba chữ số **" + dd.join("; ") + "**, lập các số có ba chữ số, mỗi chữ số dùng một lần" + (ds.indexOf(0) >= 0 ? " và đứng đầu không là 0" : "") + ". Có bao nhiêu số " + cond[1] + "?", "Using the three digits **" + dd.join("; ") + "** once each" + (ds.indexOf(0) >= 0 ? " (no leading 0)" : "") + ", make 3-digit numbers. How many are " + (cond[0] === 10 ? "divisible by both 2 and 5" : "divisible by " + cond[0]) + "?"),
     parts: [num(LT("Số các số", "How many"), list.length, LT("số", "numbers"))],
     steps: [st(cond[0] === 2 ? LT("Chia hết cho 2 thì chữ số tận cùng là 0, 2, 4, 6 hoặc 8.", "Divisible by 2 means the last digit is 0, 2, 4, 6 or 8.") : cond[0] === 5 ? LT("Chia hết cho 5 thì chữ số tận cùng là 0 hoặc 5.", "Divisible by 5 means the last digit is 0 or 5.") : LT("Chia hết cho cả 2 và 5 thì chữ số tận cùng là 0.", "Divisible by both 2 and 5 means the last digit is 0."), cond[0]),
      st(LT("Chọn chữ số tận cùng phù hợp, hai chữ số còn lại đổi chỗ cho nhau (số 0 không đứng đầu).", "Choose a suitable last digit and swap the other two (0 cannot be first)."), list.length),
@@ -15007,7 +15007,7 @@ LESSON({
   var lessonPassed = (id, t) => Store.lesson(id).pass[t - 1] > 0;
 
   function unlocked(l) {
-   return Store.d.set.unlockAll || l.links.every(id => lessonPassed(id, 1))
+   return !0 /* v9.1: mọi bài đều mở sẵn; thứ tự Học → Dễ → Vừa → Khó trong từng bài vẫn giữ (tierOpen) */
   }
 
   function lessonDone(l) {
@@ -15355,7 +15355,10 @@ LESSON({
     let s = Store.lesson(l.id);
     T.th ? s.theory || (s.theory = 1, Store.save()) : s.taught || (s.taught = 1, Store.save()), end.innerHTML = (l.rule ? '<section class="rule"><h3 class="disp">' + esc(l.rule.h) + "</h3><ul>" + l.rule.items.map(i => "<li>" + rich(i) + "</li>").join("") + "</ul></section>" : "") + '<div class="row" style="margin-top:12px"><button class="btn grow" data-act="tagain">' + LT("↺ Xem lại", "↺ Watch again") + '</button>' + (T.th ? '<button class="btn grn grow" data-act="teach" data-id="' + l.id + '">' + LT("Học cách làm ▶", "Learn How ▶") + '</button>' : '<button class="btn grn grow" data-act="prac" data-id="' + l.id + '" data-t="0">' + LT("Thử nhanh ▶", "Quick Try ▶") + '</button>') + '</div>'
    } else end.innerHTML = "";
-   speak(st2.say)
+   /* v9.3.1: vừa trả lời đúng câu "Cùng làm" thì đọc lời khen + giải thích (ask.good), không đọc lại câu hỏi */
+   let pr = T.praise && st2.ask;
+   T.praise = 0;
+   speak(pr ? (/^(Đúng|Giỏi|Chính xác|Tuyệt|Correct|Right|Great|Exactly|Awesome|Yes|Well done)/i.test(st2.ask.good) ? "" : LT("Đúng! ", "Correct! ")) + st2.ask.good : st2.say)
   }
 
   function newQ(q) {
@@ -15917,7 +15920,7 @@ LESSON({
    },
    tans(el) {
     let st2 = UI.teach.l.teach[UI.teach.i];
-    if (el.dataset.o === st2.ask.ans) Sfx.ok(), UI.teach.ok[UI.teach.i] = 1, teachShow();
+    if (el.dataset.o === st2.ask.ans) Sfx.ok(), UI.teach.ok[UI.teach.i] = 1, UI.teach.praise = 1, teachShow();
     else {
      Sfx.bad();
      let f = $("#tfb");

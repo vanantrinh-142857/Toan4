@@ -60,12 +60,6 @@ en/p052.ogg | Ready for the forest! | Sẵn sàng vào rừng!
 en/p053.ogg | Wow, you round so well! | Làm tròn chuẩn ghê!
 en/p054.ogg | The spaceship has its engine back! | Phi thuyền đã có lại động cơ!
 en/p055.ogg | Beep wags its tail to say hi! | Bíp vẫy đuôi chào con!
-en/p056.ogg | A new dress is in your closet! | Bộ váy mới đã vào tủ đồ của con!
-en/p057.ogg | A matching accessory for the Denim dress. | Phụ kiện đi cùng váy Denim xinh.
-en/p058.ogg | A matching accessory for the Lime Cream dress. | Phụ kiện đi cùng váy Xanh lá kem.
-en/p059.ogg | A matching accessory for the Lavender dress. | Phụ kiện đi cùng váy Tím lavender.
-en/p060.ogg | A matching accessory for the Pink Tweed dress. | Phụ kiện đi cùng váy Hồng tweed.
-en/p061.ogg | A matching accessory for the Pink and Black Corset dress. | Phụ kiện đi cùng váy Hồng corset đen.
 en/p062.ogg | What should I wear today? | Hôm nay mình mặc gì nhỉ?
 en/p063.ogg | I love the outfit you picked! | Mình thích bộ đồ bé chọn!
 en/p064.ogg | I'm ready to try the next one! | Mình sẵn sàng thử món tiếp theo!
@@ -412,4 +406,534 @@ en/t252.ogg | Heads showed up **7 times** and tails showed up **3 times**. Heads
 en/t253.ogg | The box has 3 red balls and 2 blue balls. Pick 1 ball at random. The event "getting a red ball" is **possible** (but not certain).
 en/t254.ogg | The box has **no yellow balls**, so the event "getting a yellow ball" is **impossible**.
 en/t255.ogg | If the box has **only red balls**, the ball you take out is **certain** to be red. So there are three levels: **certain**, **possible**, **impossible**.
+# === v9.3.1 Lý thuyết / Học / lời khen "Cùng làm" (Kokoro af_heart) ===
+en/lt-0001.ogg | Correct! The 3 is in the hundreds place, and its value is 300. |
+en/lt-0002.ogg | Let us pack candy: **10 pieces** make **1 ten**. **10 tens** make **1 hundred**. **10 hundreds** make **1 thousand**. Every 10 moves up one step! |
+en/lt-0003.ogg | Each digit sits in a **place**. The number **321** has 3 hundreds, 2 tens and 1 one. A digit's value depends on its place. For example, the digit 2 in the tens place is worth 20. |
+en/lt-0004.ogg | Big numbers have many places. We group every **3 places** into one **period**: ones, thousands, millions. Read left to right, saying the period name after each group. |
+en/lt-0005.ogg | Look at the thousands period **506**. Read it like a 3-digit number: five hundred six. Then say the period name: **thousand**. |
+en/lt-0006.ogg | Reading the whole number **4,506,321**: read each period from left to right. Say the name after the millions and thousands groups. The ones group is just read as a number. |
+en/lt-0007.ogg | Right! |
+en/lt-0008.ogg | The value of a digit = the digit × the value of its place. The digit **6** is in the thousands place, so it is worth **6,000**. The digit **0** in the ten-thousands place is worth **0**. |
+en/lt-0009.ogg | Exactly! |
+en/lt-0010.ogg | Careful with **0**! "Two thousand five" is written **2,005**. The hundreds and tens places are empty, so we write 0 to hold the place. |
+en/lt-0011.ogg | Correct! 10,234 has 5 digits, which is more than the 4 digits of 9,876. |
+en/lt-0012.ogg | Correct! 8 tens is more than 4 tens, so 5,382 > 5,346. |
+en/lt-0013.ogg | An has 99 stickers and Bo has 100. Who has more? **Bo**! Why? Look at how many digits each number has. |
+en/lt-0014.ogg | The number with **more digits** is **greater**. 123,456 has 6 digits and 45,678 has only 5, so 123,456 is greater. |
+en/lt-0015.ogg | Two numbers with the **same number of digits**: compare place by place, **left to right**. 7,281 and 7,259: thousands 7 = 7, hundreds 2 = 2. Same? Check the next place. |
+en/lt-0016.ogg | Tens place: **8 > 5**. Stop at the first digits that differ, no need to check more! So **7,281 > 7,259**. |
+en/lt-0017.ogg | The sign **<** means less than, **>** means greater than, **=** means equal. Trick: the sign is like a crocodile mouth that always **opens toward the bigger number**. |
+en/lt-0018.ogg | Order 5,304, 53,040 and 5,340 from least to greatest. 53,040 has 5 digits, so it is the greatest. For 5,304 and 5,340: tens 0 < 4, so 5,304 is less. |
+en/lt-0019.ogg | Careful! Do not just look at the first digit. 9,876 has 4 digits and 12,000 has 5, so 12,000 is greater. **Count the digits first.** |
+en/lt-0020.ogg | Correct! It is closer to 400,000. |
+en/lt-0021.ogg | Mom looks at the price tag, **372,000 dong**, and says: "About **400,000 dong**". Giving a close, easy number like this is called **rounding**. |
+en/lt-0022.ogg | 372,000 sits between 300,000 and 400,000. It is only 28,000 from 400,000 but 72,000 from 300,000. It is closer to **400,000**, so it rounds to 400,000. |
+en/lt-0023.ogg | The halfway point is **350,000**. A number before it goes back to **300,000**. A number at the halfway point or after it goes up to **400,000**. |
+en/lt-0024.ogg | Round **462,815** to the hundred-thousands place. The digit in that place is **4**. Now look at the digit **right next to it** on the right: it is **6**. |
+en/lt-0025.ogg | 6 is **5 or more**, so we round **up**: 4 becomes 5. All the digits after it become 0. So 462,815 ≈ **500,000**. |
+en/lt-0026.ogg | If the next digit is **less than 5** (0, 1, 2, 3, 4), round **down**: 237,400 ≈ 200,000. From 5 to 9, round **up**, and exactly 5 goes up too: 350,000 ≈ 400,000. |
+en/lt-0027.ogg | Careful! After rounding, every digit to the right of the rounding place becomes **0**. Do not write 500,815 or just 500. |
+en/lt-0028.ogg | Right! 12: write 2, carry 1. |
+en/lt-0029.ogg | Right! 12 − 4 = 8. Write 8 and remember to pay back 1 in the hundreds place. |
+en/lt-0030.ogg | You have 6 blue and 9 orange marbles. 6 + 9 = 15. Bundle 10 into **1 ten**, leaving **5** ones. That is exactly what **carrying** means! |
+en/lt-0031.ogg | To work out **4,786 + 2,539**, write one number under the other, **lined up**: ones under ones, tens under tens… Then work **from right to left**. |
+en/lt-0032.ogg | Ones place: 6 + 9 = 15. That makes a ten! Write **5** and **carry 1** to the tens place (the ten we just bundled). |
+en/lt-0033.ogg | Tens place: 8 + 3 = 11, plus the **1 carried** makes 12. Write **2** and carry **1** to the hundreds. |
+en/lt-0034.ogg | Hundreds: 7 + 5 + 1 = 13, write **3**, carry 1. Thousands: 4 + 2 + 1 = 7. So **4,786 + 2,539 = 7,325**. |
+en/lt-0036.ogg | Careful! Never forget to add the **carried number**. 46 + 38: forgetting the carry gives 74 (wrong), carrying 1 gives **84** (right). |
+en/lt-0037.ogg | Right! 10: write 0, carry 1. |
+en/lt-0038.ogg | Right! 236 × 2 = 472; since it is 2 tens, the second partial product is written one column to the left (it is really 4,720). |
+en/lt-0039.ogg | Each box has 124 marbles, and there are 3 boxes. Add 124 + 124 + 124, or write it shorter as **3 × 124**. Multiplication is adding **equal** groups many times. |
+en/lt-0040.ogg | Split 124 = 100 + 20 + 4, then multiply each part by 3: 300, 60 and 12. Add them up: **372** marbles. |
+en/lt-0041.ogg | Column multiplication makes it neat. **1,234 × 3**: multiply 3 by each digit, right to left. Ones: 4 × 3 = 12, write **2**, carry **1**. |
+en/lt-0042.ogg | Tens: 9 + 1 = 10, write **0**, carry 1. Hundreds: 2 × 3 + 1 = 7. Thousands: 1 × 3 = 3. So **1,234 × 3 = 3,702**. |
+en/lt-0043.ogg | Multiplying by a 2-digit number: **236 × 24**. Split 24 = 20 + 4. Times **4** gives 944. Times **20**: multiply by 2, then write a **0** at the end, giving 4,720. |
+en/lt-0044.ogg | Add the two partial products: 944 + 4,720 = 5,664. So **236 × 24 = 5,664**. Check by estimating: round 236 to 240 and 24 to 20, then multiply. Is it close to 5,664? |
+en/lt-0045.ogg | Careful! When you multiply by the tens digit, do not forget the **0** at the end (or shift one column). 944 + 472 is **wrong**; 944 + 4,720 is right. |
+en/lt-0046.ogg | **Commutative property**: swapping the two factors does **not change** the product: **3 × 4 = 4 × 3 = 12**. If 25 × 8 = 200, what is 8 × 25? |
+en/lt-0047.ogg | Right! 8 × 25 = 25 × 8 = 200. |
+en/lt-0048.ogg | **Associative property**: with three numbers, grouping the first two or the last two gives the **same** result. Use it to calculate fast: **5 × 17 × 2** – which two numbers should we group? |
+en/lt-0049.ogg | Right! 5 × 2 = 10, then 10 × 17 = 170. |
+en/lt-0050.ogg | **Times 1 and times 0**: any number times **1** is itself; any number times **0** is **0**. What is 2 026 × 0? |
+en/lt-0051.ogg | Right! Any number times 0 is 0. |
+en/lt-0052.ogg | To sum up, multiplication has three properties: **commutative**, **associative**, **times 1 and 0**. Multiplying by a sum (difference) comes next in the Properties lesson. |
+en/lt-0053.ogg | Tip 1 – **Split it**: to multiply by a 2-digit number, split it into **tens** and **ones**. 24 × 13 = 24 × 10 + 24 × 3 = 240 + 72 = **312**. Try it: 15 × 12 = 150 + 30 = ? |
+en/lt-0054.ogg | Right! 150 + 30 = 180. |
+en/lt-0055.ogg | Tip 2 – **Times 11**: "split, add, slot in". 35 × 11: move 3 and 5 apart, add 3 + 5 = 8 and **slot it in the middle**: **385**. Your turn: 42 × 11 = ? |
+en/lt-0056.ogg | Great! 4 + 2 = 6 in the middle: 462. |
+en/lt-0057.ogg | What if the sum is **10 or more**? 78 × 11: 7 + 8 = 15. Write **5** in the middle and **carry 1** to the left digit: 7 + 1 = 8. The answer is **858**. Try: 67 × 11 = ? |
+en/lt-0058.ogg | Right! 6 + 7 = 13, write 3, carry 1: 737. |
+en/lt-0059.ogg | Tip 3 – **Round to tens**: 19 is close to 20. Multiply by 20 (easy!) then **take one away**: 23 × 19 = 460 − 23 = **437**. With 21, **add one more**: 23 × 21 = 460 + 23 = 483. Try: 15 × 19 = ? |
+en/lt-0060.ogg | Right! 300 − 15 = 285. |
+en/lt-0061.ogg | Tip 4 – **Times 25, 50**: 4 × 25 = 100, so **× 25 = × 100 then ÷ 4**. 36 × 25 = 3,600 ÷ 4 = **900**. **× 50 = × 100 then ÷ 2**: 46 × 50 = 2,300. Try: 48 × 25 = ? |
+en/lt-0062.ogg | Right! 4,800 ÷ 4 = 1,200. |
+en/lt-0063.ogg | Tip 5 – **Halve and double**: **halve** one factor and **double** the other; the product **stays the same**. 16 × 35 = 8 × 70 = **560**. Great when a number ends in **5**. Try: 18 × 15 = ? |
+en/lt-0064.ogg | Right! 9 × 30 = 270. |
+en/lt-0065.ogg | **Bonus trick**: two numbers with the **same tens digit** whose ones digits **add up to 10**. 23 × 27: 2 × 3 = 6 (tens digit times the next number), then 3 × 7 = 21 written after it: **621**. Always write the second part with **2 digits** (09). Try: 45 × 45 = ? |
+en/lt-0066.ogg | Awesome! 4 × 5 = 20, 5 × 5 = 25: 2,025. |
+en/lt-0067.ogg | Before multiplying, **look at the numbers** and pick a tip. If none fits, use **Tip 1 – split it**; it always works! Which tip suits **44 × 25**? |
+en/lt-0068.ogg | Right! 4,400 ÷ 4 = 1,100. |
+en/lt-0069.ogg | Right! 4 × 25 = 100. |
+en/lt-0070.ogg | Try 3 + 5 and 5 + 3: both make 8! When you add (or multiply), **swapping** the numbers does **not** change the answer. This is the **commutative** property. |
+en/lt-0071.ogg | Let's do **25 + 37 + 75** the quick way. Don't just go left to right! Mi the owl looks for two numbers that make a **round hundred**. Which two? |
+en/lt-0072.ogg | Right! 25 + 75 = 100, a round hundred. |
+en/lt-0073.ogg | Swap, then **group** 25 and 75 with brackets: 25 + 37 + 75 = 37 + (25 + 75) = 37 + 100 = **137**. This is the **associative** property. Much faster in your head! |
+en/lt-0074.ogg | **3 × (4 + 2)** is 3 rows, each with 4 blue dots and 2 orange dots. Count by color: 3 × 4 and 3 × 2. So **3 × (4 + 2) = 3 × 4 + 3 × 2**. This is the **distributive** property. |
+en/lt-0075.ogg | It works backward too! **36 × 7 + 36 × 3** share the factor 36. Join the two rectangles: 36 × (…) = 36 × 10 = **360**. What goes in the brackets? |
+en/lt-0076.ogg | Right! 36 × (7 + 3) = 36 × 10. |
+en/lt-0077.ogg | Careful with the order! In **5 + 4 × 3**, **multiplication comes first**, then addition. What is the result? |
+en/lt-0078.ogg | Right! 4 × 3 = 12 first, then 5 + 12 = 17. |
+en/lt-0079.ogg | **Expressions with letters**: a letter stands for a number. With a = 5, b = 4, c = 3, a + b × c = 5 + 4 × 3 = 5 + 12 = **17**. Replace the letters with numbers, then calculate. |
+en/lt-0080.ogg | To calculate **quickly**, do 3 steps: **FIND** equal numbers or a nice pair, **GROUP** them in brackets, **SOLVE** the bracket first. Colours help: **orange** = same number, **blue** = other numbers, **green** = a pair that adds to a round number. |
+en/lt-0081.ogg | **Sign:** two numbers add up to a **round ten or hundred**. **How:** colour the pair, put them side by side, add them first. Try: 46 + 128 + 54, which pair? |
+en/lt-0082.ogg | Right! 46 + 54 = 100, then 100 + 128 = 228. |
+en/lt-0083.ogg | **Sign:** two numbers taken away **one after another** that add up to a **round** number. **How:** a − b − c = a − (b + c). Try: 540 − 73 − 27 = 540 − (…) |
+en/lt-0084.ogg | Right! 540 − 100 = 440. |
+en/lt-0085.ogg | **Sign:** a **golden pair** (makes 10, 100, 1,000): 2×5, 4×25, 2×50, 8×125. **How:** multiply the golden pair first. Try: 2 × 39 × 50, which pair? |
+en/lt-0086.ogg | Right! 2 × 50 = 100, 100 × 39 = 3,900. |
+en/lt-0087.ogg | **Sign:** two products share **the same number** (orange). **How:** write it **once** outside the bracket, add the blue numbers inside. Try: 45 × 6 + 45 × 4 = 45 × (…) |
+en/lt-0088.ogg | Right! 45 × 10 = 450. |
+en/lt-0089.ogg | **Sign:** like M4 but with a **minus** between the products. **How:** orange number outside, **subtract** the blue numbers inside. Try: 57 × 15 − 57 × 5 = ? |
+en/lt-0090.ogg | Right! 57 × (15 − 5) = 57 × 10 = 570. |
+en/lt-0091.ogg | **Sign:** the orange number stands **alone**. **How:** any number equals itself **× 1**, then use M4. Try: 83 × 99 + 83 = 83 × (99 + …) |
+en/lt-0092.ogg | Right! 83 × 100 = 8,300. |
+en/lt-0093.ogg | **Sign:** the same number sits in **different places**. **How:** **swap** 22 × 31 into 31 × 22, then use M4. Try: in 64 × 25 + 75 × 64, which is the common number? |
+en/lt-0094.ogg | Right! 64 × (25 + 75) = 6,400. |
+en/lt-0095.ogg | **Sign:** multiplying by a number **close to a round one** (9, 99, 11, 101). **How:** split it into round ± 1, multiply each part. Try: 24 × 11 = 24 × (10 + 1) = ? |
+en/lt-0096.ogg | Right! 240 + 24 = 264. |
+en/lt-0097.ogg | **Sign:** two divisions with **the same divisor** (orange). **How:** add (or subtract) the dividends first, then **divide once**. Try: 96 : 4 − 56 : 4 = ? |
+en/lt-0098.ogg | Right! (96 − 56) : 4 = 40 : 4 = 10. |
+en/lt-0099.ogg | **Sign:** **three or more** products share the orange number. **How:** like M4, with more blue numbers in the bracket; keep any minus signs. |
+en/lt-0100.ogg | **Sign:** a long expression, **many pairs and operations**. **How:** do not go left to right! **Step 1:** a golden pair makes a common number. **Step 2:** take it out. Try: 8 × 23 × 125 + 1,000 × 77 = ? |
+en/lt-0101.ogg | Right! 1,000 × 23 + 1,000 × 77 = 1,000 × 100 = 100,000. |
+en/lt-0102.ogg | Right! 5 × 3 = 15, exactly. |
+en/lt-0103.ogg | **Sharing equally** means making equal parts. Share 12 candies equally among 3 friends: each gets **4**. We write **12 ÷ 3 = 4**. |
+en/lt-0104.ogg | What about big numbers? Let's divide **756 ÷ 3**. The number 756 has 7 hundreds, 5 tens and 6 ones. We share one place at a time among 3 friends. Which place do we start with? |
+en/lt-0105.ogg | Right! We start from the biggest place, on the left. |
+en/lt-0106.ogg | Share 7 hundreds among 3: **7 ÷ 3 = 2**, write 2. **Multiply**: 2 × 3 = 6. **Subtract**: 7 − 6 = 1 (1 hundred is left). |
+en/lt-0107.ogg | **Bring down** the 5 to make 15. Divide again: 15 ÷ 3 = ? Then multiply back and subtract: 15 − 15 = 0. |
+en/lt-0108.ogg | Bring down the 6. 6 ÷ 3 = 2, multiply 2 × 3 = 6, subtract 6 − 6 = 0. Nothing left to bring down. So **756 ÷ 3 = 252**. Remember 4 jobs: divide, multiply, subtract, bring down! |
+en/lt-0109.ogg | Dividing by two digits: **1,596 ÷ 38**. Take 159 (because 15 < 38). **Estimate** with round numbers: 160 ÷ 40 = 4. Try 5 × 38 = 190, more than 159, so we cannot pick 5. Quick question: which number can we pick? |
+en/lt-0110.ogg | Right! 152 is not over 159, so we pick 4. |
+en/lt-0111.ogg | Sometimes it doesn't divide evenly. 17 candies into boxes of 5: **3 boxes** and **2 left over**. The remainder is always **smaller than the divisor** (2 < 5), or we could keep dividing. When dividing by 5, can the remainder be 6? |
+en/lt-0112.ogg | Right! With 6 left, we could still make another group of 5. |
+en/lt-0113.ogg | Tip 1 – **Drop the zeros**: if both numbers **end in 0**, cross out the **same number** of zeros from each. 840 ÷ 20 = 84 ÷ 2 = **42**. 4,500 ÷ 50 = 450 ÷ 5 = 90. Try: 960 ÷ 30 = ? |
+en/lt-0114.ogg | Right! 96 ÷ 3 = 32. |
+en/lt-0115.ogg | Tip 2 – **Divide by 25, 50**: 100 is 4 lots of 25, so **÷ 25 = × 4 then ÷ 100**. 700 ÷ 25 = 2,800 ÷ 100 = **28**. **÷ 50 = × 2 then ÷ 100**: 650 ÷ 50 = 13. Try: 900 ÷ 25 = ? |
+en/lt-0116.ogg | Right! 3,600 ÷ 100 = 36. |
+en/lt-0117.ogg | Tip 3 – **Divide in steps**: break the divisor into **two small factors**. 12 = 4 × 3, so 432 ÷ 12 = 432 ÷ 4 ÷ 3 = 108 ÷ 3 = **36**. To divide by 16, **halve 4 times**: 336 → 168 → 84 → 42 → 21. Try: 360 ÷ 15 = ? (15 = 3 × 5) |
+en/lt-0118.ogg | Right! 360 ÷ 3 = 120, 120 ÷ 5 = 24. |
+en/lt-0119.ogg | Tip 4 – **Split the dividend** into parts that the divisor **goes into exactly**. 312 = 240 + 72; 240 ÷ 12 = 20 and 72 ÷ 12 = 6. So 312 ÷ 12 = **26**. 714 ÷ 14 = (700 + 14) ÷ 14 = 50 + 1 = 51. Try: 1,326 ÷ 13 = ? |
+en/lt-0120.ogg | Right! (1,300 + 26) ÷ 13 = 100 + 2. |
+en/lt-0121.ogg | Tip 5 – **Double both**: multiply both numbers by the **same number** and the answer **does not change**. If the divisor ends in 5, double both to get a round number: 270 ÷ 45 = 540 ÷ 90 = 54 ÷ 9 = **6**. Try: 315 ÷ 45 = ? |
+en/lt-0122.ogg | Right! 630 ÷ 90 = 63 ÷ 9 = 7. |
+en/lt-0123.ogg | Tip 6 – **Estimate, then check**: round the divisor to tens to guess: 1,596 ÷ 38 ≈ 1,600 ÷ 40 = 40. Then **multiply back** to check: 42 × 38 = 1,596. Correct! Always check after mental math. 26 × 12 = ? |
+en/lt-0124.ogg | Right! It matches the dividend, so the division is correct. |
+en/lt-0125.ogg | Before dividing, **look at the divisor** and pick a tip. Always **check with multiplication** afterwards. Which tip suits **1,200 ÷ 25**? |
+en/lt-0126.ogg | Right! 4,800 ÷ 100 = 48. |
+en/lt-0127.ogg | Correct! Add three zeros: 24,000. |
+en/lt-0128.ogg | Correct! Remove the three zeros from 8,000 and 8 is left. |
+en/lt-0129.ogg | 1 bundle has **10** sticks. How many sticks in 3 bundles? 10 + 10 + 10 = 30, so **3 × 10 = 30**. Multiplying by 10 makes that number 10 times bigger. |
+en/lt-0130.ogg | 35 has 3 tens and 5 ones. Times 10: **every digit moves one place to the left**. The empty ones place gets a **0** to hold it. So 35 × 10 = **350**. |
+en/lt-0131.ogg | Times **100** shifts **two places**: add **two zeros**. Times **1,000**: add **three zeros**. Try it: 36 × 100 = ? |
+en/lt-0132.ogg | Right! Add two zeros. |
+en/lt-0133.ogg | Division goes the other way. **5,400 ÷ 100**: 100 has two zeros, so **remove two zeros** from the right of 5,400. We get **54**. Every digit moves 2 places to the right. |
+en/lt-0134.ogg | Memory trick: count the zeros in 10, 100, 1,000. **Multiply**: **add** that many zeros. **Divide**: **remove** that many zeros. Try it: 8,000 ÷ 1,000 = ? |
+en/lt-0135.ogg | Right! Remove three zeros and 8 is left. |
+en/lt-0136.ogg | Careful! 6 × 100 needs **two** zeros: **600**. With only one zero you get 60, which is 6 × 10. Try it: 7 × 1,000 = ? |
+en/lt-0137.ogg | Right! 1,000 has three zeros. |
+en/lt-0138.ogg | Correct! The sum is 12 oranges. |
+en/lt-0139.ogg | Correct! The average is 4. |
+en/lt-0140.ogg | An has 6 oranges, Bình has 2, and Chi has 4. An has a lot, Bình has few. If all three share equally, how many does each get? |
+en/lt-0141.ogg | An moves 2 oranges to Bình. Now everyone has **4**: all equal! The number 4 is called the **average** (mean) of 6, 2 and 4. |
+en/lt-0142.ogg | No need to move every orange! We put them all together, then share equally among 3 friends. First, put the three friends together. |
+en/lt-0143.ogg | Right! The sum is 12 oranges. |
+en/lt-0144.ogg | **Average = sum ÷ how many numbers**. Example: scores on 4 tests: 8; 5; 6; 9. The sum is 28. We divide 28 by how many? |
+en/lt-0145.ogg | Right! 4 tests, so divide by 4. The average is 7. |
+en/lt-0146.ogg | What about going backward? If the **average** is 4 oranges per friend and there are 3 friends, together they have **4 × 3 = 12**. If you know the average, **multiply** to find the sum. |
+en/lt-0147.ogg | The average of 4 numbers is 40. The first three are 38; 44; 41. Find the fourth. First find the **sum** of all 4 numbers: 40 × 4 = ? |
+en/lt-0148.ogg | Right! Then subtract the three known numbers: 160 − 123 = 37. |
+en/lt-0149.ogg | Common mistake: **forgetting to divide**. A check: the average always lies **between** the smallest and the largest number. So what could the average of 3; 9; 6 be? |
+en/lt-0150.ogg | Right! 18 ÷ 3 = 6, between 3 and 9. |
+en/lt-0151.ogg | Correct! 6 × 7 = 42. |
+en/lt-0152.ogg | Correct! 162 ÷ 27 = 6 (bags). |
+en/lt-0153.ogg | Problem: **4 identical boxes of pens** hold **24 pens** in all. How many pens in **7 such boxes**? We can't tell yet! First we need to know how many pens are in **1 box**. |
+en/lt-0154.ogg | Step 1 – **find the unit value**: find **one box**. Share 24 pens equally among 4 boxes: 24 ÷ 4 = **6** pens. Each box has 6 pens. |
+en/lt-0155.ogg | Step 2: if 1 box has 6 pens, then 7 boxes have 6 × 7 = ? pens. |
+en/lt-0156.ogg | Right! 6 × 7 = 42. |
+en/lt-0157.ogg | Remember the three-level chart: **4 boxes → 1 box → 7 boxes**. Go down to the middle with **division**, then up to the last level with **multiplication**. The middle level (one part) is the bridge. |
+en/lt-0158.ogg | **Type 2**: 4 identical bags hold **108 kg** of rice. How many such bags can 162 kg fill? Step 1 is still the unit value: 108 ÷ 4 = **27** kg per bag. |
+en/lt-0159.ogg | This time Step 2 is **division**: each bag holds 27 kg, so split 162 kg into parts of 27 kg. 162 ÷ 27 = ? |
+en/lt-0160.ogg | Right! 6 bags, because 27 × 6 = 162. |
+en/lt-0161.ogg | Don't skip ahead! Many kids do 24 × 7 = 168, which is wrong because they skip finding **one box**. 7 boxes is less than double 4 boxes, so there must be fewer than 48 pens, not 168. What is the first step? |
+en/lt-0162.ogg | Right! Always find one part first. |
+en/lt-0163.ogg | Correct! 70 − 16 = 54. |
+en/lt-0164.ogg | Correct! 54 ÷ 2 = 27. |
+en/lt-0165.ogg | Nam and Mai have **20** stickers in all. Mai has **6** more than Nam. How many does each one have? We do not know yet, so let us draw a picture! |
+en/lt-0166.ogg | Draw each friend as a **bar**. Mai's bar is longer than Nam's bar by exactly a piece of **6**. Both bars together make **20**. |
+en/lt-0167.ogg | Mi the owl says: "Take away Mai's extra 6!" Now the two bars are **equal**. After we take it away, how much do the two bars make together? |
+en/lt-0168.ogg | Right! 20 − 6 = 14. |
+en/lt-0169.ogg | The remaining **14** is shared by **2 equal bars**. One bar is 14 ÷ 2 = **7**. That is exactly Nam's number of stickers! |
+en/lt-0170.ogg | Nam has 7. Mai has 6 more than Nam. So how many does Mai have? Then check: do the two numbers add up to 20? |
+en/lt-0171.ogg | Right! Mai: 7 + 6 = 13. Check: 13 + 7 = 20. |
+en/lt-0172.ogg | Careful! Do not just do 20 ÷ 2 = 10. The friends are **not equal**: Mai has 6 more. **Take away the 6 first**, then split in two. Try: sum 10, difference 2. What is the smaller number? |
+en/lt-0173.ogg | Right! (10 − 2) ÷ 2 = 4. The larger number is 4 + 2 = 6. |
+en/lt-0174.ogg | Remember: **take away the difference, split in two** to get the **smaller number**. For the larger number, add the difference back. |
+en/lt-0175.ogg | Correct! 40 ÷ 10 = 4 (gaps). |
+en/lt-0176.ogg | Correct! With trees at both ends, there is 1 more tree than gaps. |
+en/lt-0177.ogg | Correct! Closed path: number of trees = number of gaps = 40 ÷ 10 = 4. |
+en/lt-0178.ogg | The school wants to plant trees along a **20 m** path. There are trees at both ends, and one tree every **5 m**. How many trees are needed? Take a guess! |
+en/lt-0179.ogg | A **gap** is the stretch of path between two neighboring trees. Look: 3 trees but only 2 gaps. When both ends have a tree, there is **1 more tree than gaps**. |
+en/lt-0180.ogg | Step 1: count the **gaps**. The path is 20 m long and each gap is 5 m, so the number of gaps is 20 ÷ 5 = **4** (gaps). |
+en/lt-0181.ogg | Step 2: count the **trees**. There are 4 gaps, and both ends have a tree, so we **add 1**. So how many trees do we need? |
+en/lt-0182.ogg | Right! 20 ÷ 5 = 4 gaps, 4 + 1 = 5 trees. |
+en/lt-0183.ogg | If you plant at **only one end**, take away 1 tree: trees = gaps = 4. If **neither end** has a tree, take away 2: trees = gaps − 1 = 3. The dashed circles are places with no tree. |
+en/lt-0184.ogg | When trees go **around a pond**, the path is a closed loop: the last tree joins up with the first one, so **trees = gaps**. If a pond has 8 gaps, how many trees are there? |
+en/lt-0185.ogg | Right! Closed loop: trees = gaps. |
+en/lt-0186.ogg | Careful! Many kids forget to **add 1** and miss the tree at the last end. Try it: a path is 30 m long, trees at both ends, one tree every 5 m. How many trees? |
+en/lt-0187.ogg | Right! 30 ÷ 5 = 6 gaps, 6 + 1 = 7 trees. |
+en/lt-0188.ogg | Correct! 5 × 2 = 10 legs. |
+en/lt-0189.ogg | Correct! 4 ÷ 2 = 2 (rabbits). |
+en/lt-0190.ogg | A pen has chickens and rabbits: **6 animals** and **16 legs** in all. We cannot see each animal, we only counted heads and legs. How many of each kind are there? |
+en/lt-0191.ogg | A chicken has **2 legs** and a rabbit has **4 legs**. A rabbit has 2 more legs than a chicken. If all 6 animals were chickens, how many legs would there be? |
+en/lt-0192.ogg | Right! 6 × 2 = 12 legs. |
+en/lt-0193.ogg | Mi the owl says: "Let us **suppose** all 6 are chickens." Then there are 6 × 2 = **12** legs. But the problem says 16 legs, so we are **missing** some! |
+en/lt-0194.ogg | The problem says 16 legs, and our guess gives 12. The number of **missing** legs is 16 − 12 = **4** (legs). We add legs by swapping chickens for rabbits. |
+en/lt-0195.ogg | Swap **1 chicken for 1 rabbit**: the number of animals stays the same, but legs go up by 4 − 2 = **2**. We are missing 4 legs and each swap adds 2. How many swaps, that is, how many rabbits? |
+en/lt-0196.ogg | Right! 4 ÷ 2 = 2 (rabbits). |
+en/lt-0197.ogg | There are **2 rabbits**. The number of chickens is 6 − 2 = **4**. Check: 4 × 2 + 2 × 4 = 8 + 8 = 16 legs. Correct! |
+en/lt-0198.ogg | Careful! Missing 4 legs does **not** mean 4 rabbits. Each swap adds only 2 legs, so we must **divide by 2**. Missing legs ÷ 2 = number of rabbits. |
+en/lt-0199.ogg | Correct! 3 of the 4 parts are colored. |
+en/lt-0200.ogg | A pizza is cut into **4 equal slices**. You eat **1 slice**. You ate a part of the pizza, and there is a special way to write that part: a **fraction**. |
+en/lt-0201.ogg | To talk about fractions, the parts must be **equal**, like pizza slices of the same size. The picture on the right has parts of different sizes, so it does **not** work. |
+en/lt-0202.ogg | Count how many equal parts the shape is cut into: 4 parts. We write 4 **below** the line and call it the **denominator**. |
+en/lt-0203.ogg | Color in **3 parts**: write 3 **above** the line and call it the **numerator**. We get the fraction {3/4}, read as **three fourths**. The numerator is the number of colored parts! |
+en/lt-0204.ogg | Your turn! The shape is cut into 5 equal parts and 2 are colored. Which fraction shows the colored part? Remember: numerator on top, denominator below. |
+en/lt-0205.ogg | Right! 2 of 5 parts colored: {2/5}. |
+en/lt-0206.ogg | Compare two fractions with the **same denominator**: the parts are the same size. More colored parts means bigger. Since 2 < 4, {2/5} < {4/5}. |
+en/lt-0207.ogg | Careful! A bigger denominator does **not** mean a bigger fraction. For example, {1/2} is bigger than {1/8}. With the same numerator 1, the more parts you cut, the smaller each part is. So which is bigger, {1/3} or {1/6}? |
+en/lt-0208.ogg | Right! {1/3} is bigger than {1/6}, because cutting into 3 parts makes bigger parts. |
+en/lt-0209.ogg | Correct! 5 ÷ 6 = {5/6}. |
+en/lt-0210.ogg | Correct! The numerator 9 is greater than the denominator 4. |
+en/lt-0211.ogg | Share 6 candies among 3 friends: 6 ÷ 3 = **2**. This division works out evenly, so we get a whole number. But what if it **does not** divide evenly? Let us see! |
+en/lt-0212.ogg | There is only **1 cake** to share equally among **4 friends**. Each friend gets **1 of 4 equal parts**, that is {1/4} of the cake. So 1 ÷ 4 = {1/4}. |
+en/lt-0213.ogg | Now there are **2 cakes** to share equally among **3 friends**. Cut **each cake into 3 equal parts**, because there are 3 friends. Mi says: after cutting we have 6 small pieces in all. |
+en/lt-0214.ogg | Each friend takes **1 piece from each cake**, so each gets **2 pieces**. Each piece is 1 of 3 parts of a cake. So each friend gets 2 of 3 parts: {2/3} of a cake. |
+en/lt-0215.ogg | The rule: the answer to dividing a whole number by a whole number (not 0) can be written as a **fraction**. The **dividend** is the **numerator**, the **divisor** is the **denominator**: 2 ÷ 3 = {2/3}. |
+en/lt-0216.ogg | Try it! There are 3 cakes shared equally by 5 friends. The dividend is 3 and the divisor is 5. So which fraction is 3 ÷ 5? |
+en/lt-0217.ogg | Right! 3 ÷ 5 = {3/5}. |
+en/lt-0218.ogg | Careful! If the dividend is **bigger** than the divisor, the fraction is **more than 1**. For example 5 ÷ 3 = {5/3}: each friend gets 1 whole cake and 2 more parts. So 7 ÷ 4 = ? |
+en/lt-0219.ogg | Right! 7 ÷ 4 = {7/4}. |
+en/lt-0220.ogg | Correct! 3 × 3 = 9 and 4 × 3 = 12. |
+en/lt-0221.ogg | Correct! 10 ÷ 5 = 2 and 15 ÷ 5 = 3. |
+en/lt-0222.ogg | Mi the owl has a pizza cut into 3 equal slices. Mi eats 2 slices, so Mi eats {2/3} of the pizza. |
+en/lt-0223.ogg | Mi cuts every slice in half. Now there are 6 slices and Mi eats 4. Mi still eats the **same amount**! So {2/3} = {4/6}. |
+en/lt-0224.ogg | Cut even smaller: {2/3} = {4/6} = {8/12}. The shaded part is **exactly as long**, so these fractions are **equal**. They are just written differently. |
+en/lt-0225.ogg | Quick way: **multiply the top and the bottom by the same number** (not 0) and the fraction stays equal. Try it: {3/5} = ?/10 |
+en/lt-0226.ogg | Right! 5 × 2 = 10, so 3 × 2 = 6. |
+en/lt-0227.ogg | You can also **divide** the top and the bottom by the same number, as long as both divide **evenly**. {6/9}: divide both by 3 and you get {2/3}. Simpler, but still equal! |
+en/lt-0228.ogg | **Careful!** Only **multiply** or **divide** the top and the bottom. If you **add** 1 to both, the fraction changes: {2/3} is not {3/4}. |
+en/lt-0229.ogg | Remember: multiply or divide **both numbers** by the **same number**. Quick question: which fraction equals {3/5}? |
+en/lt-0230.ogg | Yes! {3/5}: multiply both by 2 to get {6/10}. |
+en/lt-0231.ogg | Correct! 12 ÷ 6 = 2 and 18 ÷ 6 = 3. |
+en/lt-0232.ogg | Mi eats 4 slices of a cake cut into 8, that is {4/8}. Saying "one half" ({1/2}) is simpler and **equal**. Making it simpler is called **simplifying**. |
+en/lt-0233.ogg | **Simplifying** means **dividing** the top and the bottom by the same number (evenly). Example {8/12}: divide both by 4 and get {2/3}. They are **equal**. |
+en/lt-0234.ogg | Simplify {12/18}. Both 12 and 18 are even, so both are **divisible by 2**. 12 ÷ 2 = 6 and 18 ÷ 2 = 9. We get {6/9}. |
+en/lt-0235.ogg | Next {6/9}: both divide by 3, giving {2/3}. 2 and 3 are **not both divisible** by any number (except 1), so {2/3} is in **simplest form**. Quick question: {10/25} simplifies to? |
+en/lt-0236.ogg | Right! Divide both by 5: {10/25} = {2/5}. |
+en/lt-0237.ogg | Tip for finding the divisor: use the **divisibility tricks**. To go faster, divide by the biggest number: {12/18} divided by 6 on both gives {2/3} right away. |
+en/lt-0238.ogg | **Careful!** Divide **both** the top and the bottom, and keep going until it is simplest. Quick question: which fraction is already in **simplest form**? |
+en/lt-0239.ogg | Right! 3 and 8 share nothing except 1. |
+en/lt-0240.ogg | Correct! Same denominator, and the numerator 10 > 7. So {5/6} > {7/12}. |
+en/lt-0241.ogg | Two equal cakes: Mi eats {2/3} of one, Bi eats {3/4} of the other. Who ate more? The pieces are **different sizes**, so it is hard to tell. |
+en/lt-0242.ogg | To compare easily, cut so the pieces are **equal**: both into 12 pieces. Then {2/3} = {8/12} and {3/4} = {9/12}. This is called finding a **common denominator**. |
+en/lt-0243.ogg | How to: the common denominator is **12** (3 × 4). {2/3}: multiply top and bottom by 4 to get {8/12}. {3/4}: multiply by 3 to get {9/12}. |
+en/lt-0244.ogg | With the same denominator, the **bigger top means the bigger fraction**. 8 < 9, so {2/3} < {3/4}. Bi ate more! |
+en/lt-0245.ogg | If one denominator **divides evenly** into the other, use the bigger one: 12 is a multiple of 6, so {5/6} = {10/12}. Quick question: {3/4} or {7/12}, which is bigger? |
+en/lt-0246.ogg | Right! {3/4} = {9/12} > {7/12}. |
+en/lt-0247.ogg | **Careful!** Same top: the **smaller bottom is the bigger fraction**, because fewer slices are bigger. {1/3} > {1/5}. Quick question: {1/4} or {1/8}, which is bigger? |
+en/lt-0248.ogg | Right! 4 parts are bigger than 8 parts. |
+en/lt-0249.ogg | Correct! 5 parts, still eighths. |
+en/lt-0250.ogg | The cake is cut into 8 equal pieces. Mi eats {3/8}, Bi eats {2/8}. How much did they eat together? The pieces are the **same size**, so we just count pieces. |
+en/lt-0251.ogg | Same denominator: **add the tops, keep the bottom**. 3 pieces + 2 pieces = 5 pieces, so {3/8} + {2/8} = {5/8}. Quick question: {2/7} + {3/7} = ? |
+en/lt-0252.ogg | Right! 2 + 3 = 5, and the 7 stays. |
+en/lt-0253.ogg | Subtracting works the same way: **subtract the tops, keep the bottom**. {5/8} of a cake is left; give away 2 pieces and {5/8} − {2/8} = {3/8} is left. |
+en/lt-0254.ogg | Now add {1/2} of a cake and {1/4} of a cake. The pieces are **different sizes** (different denominators), so we cannot count them together yet. First make them the same size. |
+en/lt-0255.ogg | Common denominator: {1/2}, multiply top and bottom by 2, becomes {2/4}. Now both are "quarters", the same size as {1/4}. |
+en/lt-0256.ogg | Same denominator now: {2/4} + {1/4} = {3/4}. So {1/2} + {1/4} = {3/4}. Remember: **common denominator first, add after**! |
+en/lt-0257.ogg | **Careful!** Never add the bottoms! {1/2} + {1/3} is not {2/5}. Use a common denominator: {3/6} + {2/6} = {5/6}. Simplify the answer if you can. |
+en/lt-0258.ogg | Your turn: {1/3} + {1/6} = ? Hint: use denominator 6, and simplify the answer at the end. |
+en/lt-0259.ogg | Right! {2/6} + {1/6} = {3/6} = {1/2}. |
+en/lt-0260.ogg | Correct! Numerator times numerator, denominator times denominator. |
+en/lt-0261.ogg | Mi has {1/3} of a cake left and eats **half** of it. Cut that piece in two: the whole cake has 6 pieces and Mi eats 1: half of {1/3} is {1/6}. That is **multiplying**: {1/2} × {1/3} = {1/6}. |
+en/lt-0262.ogg | Take a board with 4 columns and 3 rows, so 12 cells. Shade {3/4} of it: shade 3 columns (blue). |
+en/lt-0263.ogg | Now shade {2/3} of the height: 2 of 3 rows (pink). The part where **both colors overlap** (orange) is 6 of 12 cells. So {2/3} of {3/4} is {6/12}. |
+en/lt-0264.ogg | Multiplying fractions: **top × top, bottom × bottom**. Simplify if you can: {6/12} = {1/2}. Quick question: {3/5} × {2/7} = ? |
+en/lt-0265.ogg | Right! 3 × 2 = 6 and 5 × 7 = 35. |
+en/lt-0266.ogg | Dividing asks: "how many fit?" How many {1/4} pieces are in {1/2} of a cake? **2 pieces**. So {1/2} ÷ {1/4} = 2. |
+en/lt-0267.ogg | Dividing: keep the first fraction and **multiply by the second one flipped** (swap top and bottom). {3/4} ÷ {2/5} = {3/4} × {5/2} = {15/8}. Quick question: the flip of {3/7} is? |
+en/lt-0268.ogg | Right! Swap top and bottom: {3/7} becomes {7/3}. |
+en/lt-0269.ogg | **Careful!** Only flip the **second fraction** (the one after the divide sign). When multiplying, **never flip** anything. Simplify at the end. |
+en/lt-0270.ogg | Correct! Divide by the denominator 5, then multiply by the numerator 2. |
+en/lt-0271.ogg | Correct! 20 − 5 = 15 (kg). |
+en/lt-0272.ogg | Mi has 12 candies, shared into 3 equal groups. Mi takes **1 group**, that is {1/3} of the candies. Each group has 12 ÷ 3 = 4. So {1/3} of 12 is 4. |
+en/lt-0273.ogg | Find {3/4} of 12: split 12 candies into **4 equal groups** (bottom 4), 3 in each. Then **take 3 groups** (top 3): 3 × 3 = 9 candies. |
+en/lt-0274.ogg | The rule: to find {3/4} of 12, **divide 12 by the bottom 4**, then **multiply by the top 3**. 12 ÷ 4 × 3 = 9. |
+en/lt-0275.ogg | Try {3/7} of 35 stamps: 7 parts, each 35 ÷ 7 = 5 stamps; take 3 parts: 5 × 3 = 15 stamps. Quick question: what is {2/5} of 20? |
+en/lt-0276.ogg | Right! 20 ÷ 5 = 4, then 4 × 2 = 8. |
+en/lt-0277.ogg | How many stamps are left? **Way 1**: whole minus the part taken: 35 − 15 = 20. **Way 2**: the rest is {4/7}, and 35 ÷ 7 × 4 = 20. Both ways agree. |
+en/lt-0278.ogg | **Careful!** Divide by the **bottom**, multiply by the **top**, not the other way round. Check: a fraction less than 1 gives an answer **smaller** than the number. Quick question: {1/5} of 40 is? |
+en/lt-0279.ogg | Right! 40 ÷ 5 = 8, then 8 × 1 = 8. |
+en/lt-0280.ogg | Correct! 90° is a right angle. |
+en/lt-0281.ogg | Correct! It is greater than 90° but less than 180°. |
+en/lt-0282.ogg | Open a door a little. The **door** and the **door frame** make an **angle**. The wider the door opens, the [[bigger]] the angle gets. |
+en/lt-0283.ogg | An angle has **one vertex** (where the two sides meet) and **two sides**. How wide it opens is measured in **degrees**, written **°**. |
+en/lt-0284.ogg | The corner of a **notebook** is a [[right]] angle. You see right angles on desks, boards and windows. Can you guess how many degrees a right angle is? |
+en/lt-0285.ogg | Right! A right angle is 90°. |
+en/lt-0286.ogg | An angle that is **narrower** than a right angle is an [[acute]] angle. It is **less than 90°**, like 30° or 60°. Sharp like a pencil tip! |
+en/lt-0287.ogg | An angle that is **wider** than a right angle is an [[obtuse]] angle. It is **more than 90°** but **less than 180°**, like 120°. |
+en/lt-0288.ogg | Open it all the way and the two sides make a straight line: a [[straight]] angle, **180°**. From small to big: acute, right (90°), obtuse, straight. |
+en/lt-0289.ogg | Careful! An angle is big or small because of how **wide it opens**, not how long its sides are. Angle B has short sides but opens wider. Which angle is bigger? |
+en/lt-0290.ogg | Right! 70° is more than 40°, even though B has shorter sides. |
+en/lt-0291.ogg | To count angles **without missing or repeating**, count **one vertex at a time**. The yellow ring shows the **vertex we are counting**. Let us start at vertex **A**. |
+en/lt-0292.ogg | Standing at A, count the sides **one way round** (left to right). Side **①** is **AB** (the side being counted is thick). |
+en/lt-0293.ogg | Press Next and the next side appears: side **②** is **AD**. |
+en/lt-0294.ogg | Side **③** is **AE**. |
+en/lt-0295.ogg | Side **④** is **AC**. Vertex A has **4 sides**: AB, AD, AE, AC. |
+en/lt-0296.ogg | Side **①** with side **②**: angle **BAD**. Counted **1** angle. |
+en/lt-0297.ogg | Side **①** with side **③**: angle **BAE**. Counted **2** angles. |
+en/lt-0298.ogg | Side **①** with side **④**: angle **BAC**. Counted **3** angles. |
+en/lt-0299.ogg | Side ① is done. Move to **side ②**: Side **②** with side **③**: angle **DAE**. Counted **4** angles. |
+en/lt-0300.ogg | Side **②** with side **④**: angle **DAC**. Counted **5** angles. |
+en/lt-0301.ogg | Side ② is done. Move to **side ③**: Side **③** with side **④**: angle **EAC**. Counted **6** angles at A (3 + 2 + 1 = 6). |
+en/lt-0302.ogg | Now vertex **D** (yellow ring). It has 3 sides, counted left to right: **①** DB, **②** DA, **③** DE. |
+en/lt-0303.ogg | Side **①** with side **②**: angle **BDA** (a right angle). Counted **1** angle. |
+en/lt-0304.ogg | Side **①** with side **③**: DB and DE are **in a line**, so they make the **straight angle BDE** (red line). We **still count it** and call it a **straight angle**. Counted **2** angles. |
+en/lt-0305.ogg | Side ① is done. Side **②** with side **③**: angle **ADE** (a right angle). Vertex D has **3** angles, including **1 straight angle**. |
+en/lt-0306.ogg | Do the same at the other vertices: vertex **B** has 1 angle, **C** has 1 angle, **E** has 3 angles (including 1 **straight angle**). |
+en/lt-0307.ogg | Add up the vertices: 6 + 1 + 1 + 3 + 3 = **14 angles**, including **2 straight angles** (one at D, one at E). |
+en/lt-0308.ogg | What if the problem says **do not count straight angles**? Count as usual, then **subtract the straight angles**. Vertex D has 3 angles, and DB, DE are **in a line**, making 1 straight angle (red). Without straight angles: 3 − 1 = **2 angles** (BDA and ADE). |
+en/lt-0309.ogg | Vertex **F**: 4 sides → 3 + 2 + 1 = **6 angles**. There are **2 pairs of sides in a line** (FA with FD, FB with FE), so **2 straight angles**. Without straight angles: 6 − 2 = **4 angles**. |
+en/lt-0310.ogg | Tip: **angles without straight = all angles − pairs of sides in a line**. In this fan, point O has 6 sides (6 sides → 15 angles), and OX, OY are in a line. Without straight angles, how many angles are there? |
+en/lt-0311.ogg | Right! 15 − 1 = 14 angles. |
+en/lt-0312.ogg | Tip: at a vertex with **n sides**, the number of angles is (n − 1) + (n − 2) + … + 1. 2 sides → 1 angle; 3 → 3; 4 → 6; 5 → 10. |
+en/lt-0313.ogg | Your turn! From point O there are **5 sides** (OA, OB, OC, OD, OE). Count the way we learned: 4 + 3 + 2 + 1. How many angles? |
+en/lt-0314.ogg | Right! 4 + 3 + 2 + 1 = 10 angles. |
+en/lt-0315.ogg | Step 3: See which mark the other side, **OB**, crosses. Here OB crosses the **50** mark, so angle AOB is **50°**. Now compare 50° with 90°! |
+en/lt-0316.ogg | Correct! 50° is less than 90°, so it is an acute angle. |
+en/lt-0317.ogg | Look at the picture: the **0** mark is on side **OA**, so we read the **purple row**. Reading the other row gives a wrong answer. Remember: read the row whose **0 is on the side** you lined up. |
+en/lt-0318.ogg | Correct! Read the row whose 0 mark is on OA. |
+en/lt-0319.ogg | A ruler measures **length**. To find how wide an **angle** opens, we use a half-circle **protractor**. |
+en/lt-0320.ogg | The protractor has a **center** (red dot) in the middle of its straight edge and a **0 mark** at each end. It has **two rows of numbers**: one counts from the right, one from the left. |
+en/lt-0321.ogg | **Step 1:** put the **center** of the protractor on the **vertex O**. **Step 2:** turn it so side OA lies exactly on the **0 mark**. |
+en/lt-0322.ogg | **Step 3:** look at which mark side OB crosses. Here OB crosses a mark on the row that starts at 0 on the right. How many degrees is this angle? |
+en/lt-0323.ogg | Right! Side OA is on the right, so we read the row that starts at 0 on the right. |
+en/lt-0324.ogg | **Careful!** Now side OA is on the **left**, so read the row with **0 on the left**. OB shows **40°**, not 140°. |
+en/lt-0325.ogg | We name an angle with three letters, with the **vertex O in the middle**: angle **AOB**. We write angle AOB = 50°, which means it measures 50 degrees. |
+en/lt-0326.ogg | Checking trick: an **acute** angle must be **less than 90°** (smaller than the dashed right angle). If an acute angle gives 40 and 140, which one is right? |
+en/lt-0327.ogg | Right! An acute angle is less than 90°. |
+en/lt-0328.ogg | Correct! Angle A is a right angle, so AB is perpendicular to AD (and to BC too). |
+en/lt-0329.ogg | A crossroads has two roads that **cross**. Railway tracks have two rails that **run side by side and never meet**. |
+en/lt-0330.ogg | Two lines that **cross and make 4 right angles** are **perpendicular**. The little squares mark right angles. How many right angles are there? |
+en/lt-0331.ogg | Right! There are 4 right angles. |
+en/lt-0332.ogg | To check if lines are perpendicular, use a **set square**. Put its right-angle corner where the lines cross. If it **fits exactly**, the lines are **perpendicular**. |
+en/lt-0333.ogg | **Parallel** lines are **always the same distance apart**. Even if you extend them forever in both directions, they **never cross**. |
+en/lt-0334.ogg | A rectangle has both kinds: **opposite** sides are **parallel** (arrow marks), and sides **next to each other** are **perpendicular** (little square). |
+en/lt-0335.ogg | Careful! These two pieces look like they do not cross, but **when we extend them, they cross**. So they are **not** parallel. If two extended lines cross, are they parallel? |
+en/lt-0336.ogg | Right! Parallel lines never cross. |
+en/lt-0337.ogg | Correct! A rhombus has four equal sides: 5 × 4 = 20 cm. |
+en/lt-0338.ogg | Correct! 8 × 5 = 40 cm². |
+en/lt-0339.ogg | Try **pushing** a rectangle **sideways**, like a window frame. You get a new shape: a **parallelogram**. |
+en/lt-0340.ogg | **Parallelogram** ABCD has **two pairs of parallel opposite sides**: AB is parallel to DC, and AD is parallel to BC. Matching arrows mark parallel sides. |
+en/lt-0341.ogg | Opposite sides of a parallelogram are also **equal**: both long sides are 6 cm, both short sides are 4 cm. |
+en/lt-0342.ogg | A **rhombus** also has two pairs of parallel opposite sides, but it is more special: **all 4 sides are equal**. Like a diamond-shaped floor tile! |
+en/lt-0343.ogg | The **perimeter** is the distance around a shape. For a parallelogram, add the long and short sides, then **multiply by 2**: (6 + 4) × 2 = 20 cm. Sides 8 cm and 3 cm give a perimeter of? |
+en/lt-0344.ogg | Right! (8 + 3) × 2 = 22 cm. |
+en/lt-0345.ogg | A rhombus has **4 equal sides**, so we do not add them one by one: perimeter = side × 4. A 5 cm side gives 5 × 4 = 20 cm. A 7 cm side gives a perimeter of? |
+en/lt-0346.ogg | Right! 7 × 4 = 28 cm. |
+en/lt-0347.ogg | Careful! The left shape has sides that are **not equal** (different marks), so it is **not** a rhombus. Does every parallelogram have 4 equal sides? |
+en/lt-0348.ogg | Right! Only a rhombus has all 4 sides equal. |
+en/lt-0349.ogg | Right! Each step is 10 times the next. |
+en/lt-0350.ogg | Right! 1 metric ton = 1,000 kg. |
+en/lt-0351.ogg | A small bag of rice weighs **1 kilogram**. A big sack weighs 10 kg. A truck can carry 1,000 kg or more! The heavier something is, the **bigger unit than kg** we need. |
+en/lt-0352.ogg | Put **10 kg** together into one bundle and we call it **1 yến**. So **1 yến = 10 kg**. |
+en/lt-0353.ogg | **10 yến** together make **1 tạ**. One yến is 10 kg, so ten yến is 100 kg. So **1 tạ = 10 yến = 100 kg**. |
+en/lt-0354.ogg | For even heavier things we use the **ton**. **10 tạ** together make **1 ton**. So **1 ton = 10 tạ = 100 yến = 1,000 kg**. |
+en/lt-0355.ogg | From big to small: **ton, tạ, yến, kg**. Each step is **10 times** the next one. Going down (to a smaller unit) we **multiply by 10**; going up we **divide by 10**. |
+en/lt-0356.ogg | Change **3 tạ** to kg: tạ to yến, times 10 gives 30 yến; yến to kg, times 10 gives 300 kg. So 3 tạ = 300 kg. How many kg is 5 yến? |
+en/lt-0357.ogg | Right! 5 × 10 = 50 kg. |
+en/lt-0358.ogg | Careful! To compare two masses, change them to **the same unit** first. 2 tạ = 200 kg, so 2 tạ is **more than** 150 kg. Which mass is bigger: 3 yến or 25 kg? |
+en/lt-0359.ogg | Right! 3 yến = 30 kg, which is more than 25 kg. |
+en/lt-0360.ogg | Right! 1 dm² = 100 cm². |
+en/lt-0361.ogg | Tiling a floor with square tiles: to see how big the floor is, count **how many squares** fit. That number of squares is the **area**. |
+en/lt-0362.ogg | A square with a side of **1 decimeter** has an area of **1 dm²** (one square decimeter). Remember 1 dm = 10 cm. |
+en/lt-0363.ogg | Split the 1 dm side into 10 cm: each row has 10 squares of 1 cm², and there are 10 rows. So **1 dm² = 100 cm²**. |
+en/lt-0364.ogg | A square with a side of **1 meter** (10 dm) has an area of **1 m²**. It holds 10 rows with 10 squares of 1 dm² each. So **1 m² = 100 dm²**. |
+en/lt-0365.ogg | A square with a side of **1 cm** splits into 10 rows × 10 tiny squares. Each tiny square has a side of **1 mm** and an area of **1 mm²**. So **1 cm² = 100 mm²**. |
+en/lt-0366.ogg | Two neighboring area units differ by **100 times**. Going down we **multiply by 100**; going up we **divide by 100**. For example: 3 dm² = 300 cm². |
+en/lt-0367.ogg | Careful! For **length**, 1 m = **10** dm. But for **area**, 1 m² = **100** dm². Do not mix up 10 and 100! How many dm² is 2 m²? |
+en/lt-0368.ogg | Right! 2 × 100 = 200 dm². |
+en/lt-0369.ogg | Right! 2 × 60 = 120 seconds. |
+en/lt-0370.ogg | Look at a clock: the **second hand** goes once around in **60 seconds**. That one trip is also **1 minute**. |
+en/lt-0371.ogg | Each step is **60 times** the next: 1 hour = 60 minutes, 1 minute = 60 seconds. Going down to a smaller unit means **multiply by 60**. |
+en/lt-0372.ogg | Example: **3 minutes** = ? seconds. Each minute has 60 seconds and there are 3 minutes, so **3 × 60 = 180**. So 3 minutes = **180 seconds**. |
+en/lt-0373.ogg | The other way: **120 seconds** = ? minutes. Every 60 seconds make 1 minute, so **divide by 60**: 120 ÷ 60 = 2. Try it: 180 seconds = ? minutes. |
+en/lt-0374.ogg | Right! 180 ÷ 60 = 3 minutes. |
+en/lt-0375.ogg | For long times we use **centuries**. **1 century = 100 years**. Years 1 to 100 are century I, years 101 to 200 are century II, and so on. |
+en/lt-0376.ogg | To find the century of the year **1890**: **drop the last two digits** (18 is left), then **add 1** to get 19. So it is the **19th century, XIX**. Try: which century is the year 2025? |
+en/lt-0377.ogg | Right! 20 + 1 = 21, century XXI. |
+en/lt-0378.ogg | **Careful!** A round hundred is the **last year** of a century, so **do not add 1**: 1900 is in century XIX and 2000 is in century XX. Only 2001 starts century XXI. |
+en/lt-0379.ogg | Correct! The Wednesday bar goes up to 15: on Wednesday, Mai read 15 pages. |
+en/lt-0380.ogg | Mai read a book for 4 days. Instead of a list of numbers, we draw each day as **one bar**. The **taller the bar**, the **more pages** Mai read. |
+en/lt-0381.ogg | A bar chart has two main lines. The **vertical axis** (orange) shows the **number of pages**. The **horizontal axis** (blue) shows the **days**. Each day has one bar. |
+en/lt-0382.ogg | To find the pages on Tuesday: look at the **top of the bar** and slide across to the **vertical axis**. The top touches the mark **35**. So Mai read **35 pages** on Tuesday. |
+en/lt-0383.ogg | Sometimes the top of a bar is **between two marks**. Here the big marks are 10 apart and the small mark in the middle is 5. The Apple bar is between 20 and 30, so it is **25**. How tall is the Pear bar? |
+en/lt-0384.ogg | Right! Pear is between 10 and 20, so 15. |
+en/lt-0385.ogg | Looking at the bars you can compare at once: tallest is Tuesday (35), shortest is Wednesday (15). They differ by **35 − 15 = 20** pages. How many more pages on Thursday than Wednesday? |
+en/lt-0386.ogg | Right! 30 − 15 = 15 pages. |
+en/lt-0387.ogg | **Careful!** Two bars can be equally tall but have different scales, so the numbers are **different**: 10 on one side, 100 on the other. Always check the **numbers on the vertical axis** first. |
+en/lt-0388.ogg | Correct! 9 is the greatest number. |
+en/lt-0389.ogg | Correct! The number 5 appears 2 times. |
+en/lt-0390.ogg | The teacher asked 6 students how many books they read. Each one gave a number: An 5, Bình 8, Lan 6, Hà 5, Minh 9, Nam 7. She wrote them all in a **table**. |
+en/lt-0391.ogg | Write the numbers in a row: **5; 8; 6; 5; 9; 7**. This is a **data sequence**. Each number is **one data value**. We count **6 data values**. |
+en/lt-0392.ogg | To find the **greatest** or the **least** number, compare all numbers in the sequence. Try: which number is the greatest in **5; 8; 6; 5; 9; 7**? |
+en/lt-0393.ogg | Right! 9 is greatest, 5 is least. |
+en/lt-0394.ogg | Sort from **least to greatest**: **5; 5; 6; 7; 8; 9**. The number 5 appears **twice**, so we write **both**. Once sorted, the least and greatest sit at the two ends. |
+en/lt-0395.ogg | Difference: greatest − least = 9 − 5 = **4**. The **sum** of the values is 40. Try: how many students read **more than 6 books** (the numbers 5; 5; 6; 7; 8; 9)? |
+en/lt-0396.ogg | Right! They are 7, 8 and 9: 3 students. |
+en/lt-0397.ogg | **Careful!** If a number shows up many times (like 5), **each time is one data value**. Do not skip: this sequence has **6** values, not 5. |
+en/lt-0398.ogg | Correct! 5 + 2 = 7, so heads showed up 7 times. |
+en/lt-0399.ogg | Correct! You could get a red ball, or you could get a blue ball. |
+en/lt-0400.ogg | When you flip a coin, it can land **heads** (H) or **tails** (T). Each flip gives one **result**. We will count how many times each side shows up. |
+en/lt-0401.ogg | After 10 flips we get: H, T, H, H, T, H, T, H, H, H. A long row like this is easy to **miscount**. We need a neater way to record! |
+en/lt-0402.ogg | A neat way is **tallying**: each time a side shows up, we draw **one mark** in that side's row. After the first 4 flips: 3 marks for heads, 1 for tails. |
+en/lt-0403.ogg | At the **5th mark**, we **cross** the 4 marks before it to make **a group of 5**. Each group is quickly seen as 5. Example: 1 group and 3 single marks is 5 + 3 = **8**. |
+en/lt-0404.ogg | The tally of 10 flips: heads **7** times, tails **3** times. Adding gives 7 + 3 = 10, the number of flips. How many more times did heads show up than tails? |
+en/lt-0405.ogg | Right! 7 − 3 = 4 times. |
+en/lt-0406.ogg | **Careful!** After tallying, **add the counts**. The total must **equal the number of tries**. If it is too small or too big, count again from the start. |
+en/lt-0407.ogg | Let us work an example: we have 4 cards **4, 0, 7, 2**. We make 4-digit numbers, using each card exactly once. |
+en/lt-0408.ogg | **Largest**: biggest digits first: **7,420**. **Smallest**: small first would be 0 2 4 7, but 0 cannot be first, so swap: **2,047**. |
+en/lt-0409.ogg | The smallest **even** number: the last digit must be even (0, 2 or 4). For each, put the other cards smallest first. Which of the three is smallest? |
+en/lt-0410.ogg | Right! 2,047 ends in 7, so it is odd and not allowed. |
+en/lt-0411.ogg | Now **digit sum**. The smallest 3-digit number with digit sum 12: hundreds is the smallest, **1**; ones is the biggest, **9**; tens is 12 − 1 − 9 = **2**. The number is **129**. |
+en/lt-0412.ogg | In the same way, the smallest 4-digit number with digit sum 10 is **1,009**. Try: the smallest 4-digit number with digit sum 11? |
+en/lt-0413.ogg | Right! 1 + 0 + 1 + 9 = 11 and 1,019 is the smallest. |
+en/lt-0414.ogg | **Counting** the 2-digit numbers with digit sum 7: **list in order** by the tens digit 1, 2, 3, …: 16, 25, 34, 43, 52, 61, 70. There are **7 numbers**. |
+en/lt-0415.ogg | **Careful!** Do not forget **70**: 0 is allowed in the ones place. After listing, check that each number fits the rule. |
+en/lt-0416.ogg | The secret number has **rules**: it has 3 digits, all digits are **different**, it is an **odd number**, and it must be the **smallest** possible. Let us find it digit by digit. |
+en/lt-0417.ogg | The **largest** 4-digit number with different digits: put the **biggest** digits in the highest places: 9876. The **smallest**: small digits first, but the first place **cannot be 0**, so it is 1023. |
+en/lt-0418.ogg | **Even** numbers end in 0, 2, 4, 6, 8. **Odd** numbers end in 1, 3, 5, 7, 9. Just look at the **last digit**. Which is odd: 2,590, 4,806 or 6,137? |
+en/lt-0419.ogg | Right! 6,137 ends in 7, so it is odd. |
+en/lt-0420.ogg | Hundreds: the smallest digit that is **not 0** is **1**. Tens: the smallest digit left is **0**. The ones place must be an **odd** digit. |
+en/lt-0421.ogg | The smallest odd digit is 1 but **1 is already used**, so we pick **3**. The number is **103**. Try: what is the smallest **even** 3-digit number with different digits? |
+en/lt-0422.ogg | Right! 100 repeats 0; 102 is the smallest. |
+en/lt-0423.ogg | A digit is at most 9, so 3 digits add to at most 27, not enough for 30. We need **4 digits**: push 9s to the right and the left digit is 30 − 27 = **3**. The number is **3999**. Try: digit sum 20, smallest number? |
+en/lt-0424.ogg | Right! 2 + 9 + 9 = 20 and 299 is the smallest. |
+en/lt-0425.ogg | **Careful!** The smallest 4-digit number with different digits is not 0123 because **0 cannot come first**. The answer is **1023**. Afterwards, check **every rule** again. |
+en/lt-0426.ogg | A cafe has **3 main dishes** and **2 drinks**. You pick **one dish AND one drink**. How many ways are there to choose? |
+en/lt-0427.ogg | Pair each dish with each drink and we get this table. Each dish goes with **2** drinks, and there are 3 dishes. |
+en/lt-0428.ogg | There are **6** different combos. We do one task AND another, so we **multiply**: 3 × 2 = **6**. If the cafe adds one more drink (3 drinks), how many ways are there? |
+en/lt-0429.ogg | Right! 3 × 3 = 9 ways. |
+en/lt-0430.ogg | Make **2-digit** numbers from the digits 2, 5, 7, and digits **may repeat**. The tens place has 3 choices and so does the ones place: 3 × 3 = **9 numbers**. |
+en/lt-0431.ogg | If the digits must be **different**: the tens place has 3 choices, but the ones place has only **2** because one digit is already used in the tens place. 3 × 2 = **6 numbers**. |
+en/lt-0432.ogg | When the digit **0** is there, the tens place **cannot be 0**: only 2 choices. The ones place has 2 choices left: 2 × 2 = **4 numbers**. With the digits 0, 1, 2, 3 (all different), how many 2-digit numbers can you make? |
+en/lt-0433.ogg | Right! The tens place has 3 choices (not 0), the ones place has 3: 3 × 3 = 9 numbers. |
+en/lt-0434.ogg | When you pick only **one** of two kinds of ways (bus **OR** train) you **add**: 2 + 3 = **5 ways**. Remember: **AND means multiply, OR means add.** |
+en/lt-0435.ogg | Mai has **2 shirts** and **3 pairs of pants**. She wears **one shirt with one pair of pants**. How many different **ways** can she dress? |
+en/lt-0436.ogg | Pair each shirt with each pair of pants and we get this table: **6 different outfits**. Each shirt goes with 3 pants and there are 2 shirts, so we **multiply**: **2 × 3 = 6**. |
+en/lt-0437.ogg | Make **2-digit** numbers from the digits 1, 2, 3 (digits may repeat). The tens place has 3 choices and the ones place also 3: 3 × 3 = **9 numbers**. Try digits 4, 5, 6, 7 (repeats allowed): how many 2-digit numbers? |
+en/lt-0438.ogg | Right! 4 × 4 = 16 numbers. |
+en/lt-0439.ogg | If the digits must be **different**: the tens place has 3 choices, but the ones place has only **2** because one digit is used in the tens. 3 × 2 = **6 numbers**: 12, 13, 21, 23, 31, 32. |
+en/lt-0440.ogg | Make **4-digit numbers with different digits** from the digits 0, 3, 8, 9. The thousands place **cannot be 0**, so 3 choices. Hundreds: 3 digits left (0 included). Then 2, then 1: 3 × 3 × 2 × 1 = **18 numbers**. Your turn: with the digits 0, 1, 2, how many 3-digit numbers with different digits? |
+en/lt-0441.ogg | Right! 102, 120, 201, 210: 4 numbers. |
+en/lt-0442.ogg | Going from A to B **by bus or by train**: you pick **one** of the two. There are 2 bus routes and 3 train routes, so **add**: 2 + 3 = **5 ways**. Pick 1 item: 4 pens or 3 notebooks. How many ways? |
+en/lt-0443.ogg | Right! Choosing one item: 4 + 3 = 7 ways. |
+en/lt-0444.ogg | A trick: doing one task **AND** another means **multiply**. Choosing one task **OR** another means **add**. In a counting problem, ask yourself: AND or OR? |
+en/lt-0445.ogg | A book has **120 pages**. Split the page numbers into 3 groups: pages 1–9 (1 digit), pages 10–99 (2 digits), pages 100–120 (3 digits). |
+en/lt-0446.ogg | The 1-digit group has 9 numbers: 9 × 1 = **9** digits. The 2-digit group has 99 − 10 + 1 = 90 numbers: 90 × 2 = **180** digits. |
+en/lt-0447.ogg | The 3-digit group, from 100 to 120, has 120 − 100 + 1 = **21 numbers** (remember the +1!). So it uses 21 × 3 = **63** digits. |
+en/lt-0448.ogg | Let's try: add the three groups, 9 + 180 + 63 = ? |
+en/lt-0449.ogg | Right! It takes 252 digits. |
+en/lt-0450.ogg | Backwards: numbering a book used **300 digits**. Pages 1–99 used 189 digits. What is left is 300 − 189 = 111 digits. |
+en/lt-0451.ogg | From page 100 on, each page uses 3 digits. Let's try: 111 ÷ 3 = ? more pages. |
+en/lt-0452.ogg | Right! The book has 99 + 37 = 136 pages. |
+en/lt-0453.ogg | To number the pages of a book, we write **digits** one by one. Page 7 needs 1 digit, page 23 needs 2, page 145 needs 3. The longer the number, the more digits it uses. |
+en/lt-0454.ogg | We split the numbers into **groups** by length: 1-digit numbers (1–9), 2-digit numbers (10–99), 3-digit numbers (100–999). In one group every number uses the same count of digits. |
+en/lt-0455.ogg | How many numbers from 3 to 7? 7 − 3 + 1 = 5 numbers (remember to **add 1**!). In the same way, from 10 to 99 there are 99 − 10 + 1 = 90 numbers. |
+en/lt-0456.ogg | A book has 238 pages. 1-digit group: 9 numbers, 9 digits. 2-digit group: 90 numbers, 180 digits. 3-digit group: from 100 to 238 there are 238 − 100 + 1 = 139 numbers, 417 digits. Total: 606 digits. |
+en/lt-0457.ogg | Your turn: a book has 99 pages. How many digits are needed? The book has only the 1-digit and 2-digit groups, **no** 3-digit group. |
+en/lt-0458.ogg | Right! 9 + 90 × 2 = 189. |
+en/lt-0459.ogg | Backwards: if 234 digits were used, how many pages? Pages 1–99 used 189 digits. 234 − 189 = 45 digits are left, 3 per page, so 45 ÷ 3 = 15 more pages. Total 99 + 15 = 114 pages. |
+en/lt-0460.ogg | Careful! The count from 10 to 99 is 99 − 10 **+ 1** = 90, so never forget the +1. Then multiply by the number of digits of that group. |
+en/lt-0461.ogg | Right! 120 − 100 + 1 = 21. |
+en/lt-0462.ogg | Look at **7,830**. To check divisibility by 2 or 5, **look only at the last digit** (far right): here it is 0. |
+en/lt-0463.ogg | The last digit is 0, so 7,830 is divisible by **both 2 and 5**. Check: 7,830 ÷ 5 = 1,566 and 7,830 ÷ 2 = 3,915. Correct! |
+en/lt-0464.ogg | Right! 3,480 ends in 0. |
+en/lt-0465.ogg | For 3 and 9, **add up the digits**. Look at **5,382**. |
+en/lt-0466.ogg | 5 + 3 + 8 + 2 = **18**. Now we check whether 18 is divisible by 3 and by 9. |
+en/lt-0467.ogg | 18 ÷ 3 = 6 and 18 ÷ 9 = 2, so 5,382 is divisible by **both 3 and 9**. Check: 5,382 ÷ 9 = 598. |
+en/lt-0468.ogg | Right! 2 + 5 + 7 + 4 = 18 is divisible by 9. (3,462 has digit sum 15, so only 3.) |
+en/lt-0469.ogg | Find the digit x so that **47x2** is divisible by 9. The digit sum is 4 + 7 + x + 2 = 13 + x, and it must be divisible by 9. |
+en/lt-0470.ogg | 13 plus 5 makes 18, which is divisible by 9. So **x = 5**. The number is 4,752; check: 4,752 ÷ 9 = 528. |
+en/lt-0471.ogg | Share 12 candies onto 3 plates: 4 on each, none left. We say 12 is [[divisible]] by 3. With 13 candies, 1 is left over, so 13 is not divisible by 3. |
+en/lt-0472.ogg | To test divisibility by 2 or 5, **look only at the last digit** (the one on the far right). Last digit 0, 2, 4, 6, 8 means divisible by 2. Last digit 0 or 5 means divisible by 5. |
+en/lt-0473.ogg | Right! 7805 ends in 5. |
+en/lt-0474.ogg | For 3 and 9, **add the digits**. 456 gives 4 + 5 + 6 = 15. If the sum is divisible by 3, so is the number (15 ÷ 3 = 5). If the sum is divisible by 9, so is the number. 15 is not divisible by 9, so 456 is not either. |
+en/lt-0475.ogg | Why? 10 = 9 + 1 and 100 = 99 + 1. So 234 = (2 × 99 + 3 × 9) + (2 + 3 + 4). The first part is always divisible by 9. So we only need to check whether the digit sum 2 + 3 + 4 is divisible by 9. (99 and 9 are also divisible by 3, so the rule for 3 works the same way.) |
+en/lt-0476.ogg | Find the digit x so that the number 52x (x is the ones digit) is divisible by 9. The digit sum 5 + 2 + x must be divisible by 9. Since 5 + 2 = 7, x = 2 (7 + 2 = 9). Check: 522 ÷ 9 = 58. Correct! |
+en/lt-0477.ogg | Careful! A number divisible by 9 is divisible by 3, but **not the other way round**: 12 is divisible by 3 but not by 9. A number divisible by both 2 and 5 ends in 0. |
+en/lt-0478.ogg | Right! 40 ends in 0. |
+en/lt-0479.ogg | Let's work it out: Nam has 9 marbles and a friend gives him a mystery bag. Now he has 15. Call the number in the bag **x**: 9 + x = 15. |
+en/lt-0480.ogg | x is the unknown addend, so take the **sum minus the other addend**: x = 15 − 9 = **6**. Check: 9 + 6 = 15. Correct! |
+en/lt-0481.ogg | Take away 8 and 14 is left: x − 8 = 14. x is the minuend, so **add** back: x = 14 + 8 = 22. |
+en/lt-0482.ogg | Right! x − 15 = 20 so x = 20 + 15 = 35. |
+en/lt-0483.ogg | Now 30 − x = 12: x is the part taken away, so we **subtract**: x = 30 − 12 = **18**. Always look at where x sits! |
+en/lt-0484.ogg | Multiplying and dividing work the same way: do the **opposite** operation: factor = product ÷ other factor; dividend = quotient × divisor; divisor = dividend ÷ quotient. |
+en/lt-0485.ogg | Harder: 40 + 36 ÷ x = 49. Treat [[36 ÷ x]] as **one block** (the unknown addend): 36 ÷ x = 49 − 40 = 9. |
+en/lt-0486.ogg | Unknown divisor: x = 36 ÷ 9 = 4. Check: 40 + 36 ÷ 4 = 40 + 9 = 49. Correct! |
+en/lt-0487.ogg | Right! 24 ÷ 6 = 4, x = 10 − 4 = 6. |
+en/lt-0488.ogg | You have 5 candies and Mom gives you a mystery bag. Now you have 8. The letter **x** is the number in the bag, an **unknown number**. So x = 8 − 5 = 3. |
+en/lt-0489.ogg | Sum = addend + addend. If one addend is missing, take the **sum minus the other addend**. Example: x + 12 = 40, so x = 40 − 12 = 28. |
+en/lt-0490.ogg | Subtraction has two kinds. x − 7 = 5: x is the minuend (the number we start with), so we **add** back: x = 5 + 7 = 12. 12 − x = 5: x is the subtrahend (the number taken away), so we **subtract**: x = 12 − 5 = 7. |
+en/lt-0491.ogg | Right! x = 6 + 9 = 15. |
+en/lt-0492.ogg | Unknown factor = product ÷ other factor. Unknown dividend = quotient × divisor. Unknown divisor = dividend ÷ quotient. Always do the **opposite** operation! |
+en/lt-0493.ogg | Harder: 50 + 24 ÷ x = 56. Treat [[24 ÷ x]] as **one block**. This block is the unknown addend, so 24 ÷ x = 56 − 50 = 6. |
+en/lt-0494.ogg | Unknown divisor: x = 24 ÷ 6 = 4. Always **check**: put x = 4 back, 50 + 24 ÷ 4 = 50 + 6 = 56. Correct! |
+en/lt-0495.ogg | Right! 18 ÷ 3 = 6, x = 11 − 6 = 5. |
+en/lt-0496.ogg | Mind the order: **divide and multiply first**, add and subtract after. Here 140 ÷ 35 = 4 comes first, and then we find x. |
+en/lt-0497.ogg | Look at the list 3; 7; 11; 15; 19. Take the **next number minus the one before**: 7 − 3 = 4, 11 − 7 = 4… always 4. So this is an equally spaced list with **step** 4. |
+en/lt-0498.ogg | To continue, add the step. What number comes after 19? |
+en/lt-0499.ogg | Right! 19 + 4 = 23. |
+en/lt-0500.ogg | The 5th number is 19. From the 1st to the 5th there are **4 jumps** (one less than the position), each +4: 3 + 4 × 4 = 19. |
+en/lt-0501.ogg | What is the 20th number? Make 20 − 1 = 19 jumps of +4: 3 + 19 × 4 = ? |
+en/lt-0502.ogg | Right! 19 × 4 = 76, plus 3 is 79. |
+en/lt-0503.ogg | How many numbers are in 3; 7; 11; …; 59? Count like fence posts: **gaps** (59 − 3) ÷ 4 = 14, then **add 1** to get 15 numbers. |
+en/lt-0504.ogg | Add 3 + 7 + 11 + 15 + 19 + 23: pair the first with the last, each pair makes 26. There are 6 ÷ 2 = 3 pairs, so the sum is 3 × 26 = 78. |
+en/lt-0505.ogg | A staircase has steps numbered 2, 5, 8, 11, 14. Each step is exactly 3 higher than the one before. A list where each number grows by the **same amount** is called an [[equally spaced sequence]]. |
+en/lt-0506.ogg | To find the rule, take the **next number minus the one before**. Here it is always 5, so the list adds 5 each time. What comes next? |
+en/lt-0507.ogg | Right! 24 + 5 = 29. |
+en/lt-0508.ogg | The 4th number is 11. From the 1st to the 4th you make **3 jumps** of +3. So the 4th = 2 + 3 × 3 = 11. The number of jumps is always **one less than the position**. |
+en/lt-0509.ogg | To find the 10th number: start at 2, make **9 jumps** (10 − 1) of +3. 10th = 2 + 9 × 3 = 29. Rule: the nth number = first + (n − 1) × step. |
+en/lt-0510.ogg | How many numbers are in 5; 10; 15; …; 50? Count like fence posts: count the **gaps**, then **add 1**. Gaps: (50 − 5) ÷ 5 = 9. Terms: 9 + 1 = 10. |
+en/lt-0511.ogg | Add 1 + 2 + … + 10: pair the first with the last, each pair makes 11. There are 10 ÷ 2 = 5 pairs, so the sum is 5 × 11 = 55. Sum = (first + last) × number of terms ÷ 2. |
+en/lt-0512.ogg | Right! 3 pairs of 7: 3 × 7 = 21. |
+en/lt-0513.ogg | Careful! The number of gaps is not the number of terms. Remember to **add 1**, just like 4 posts have only 3 gaps. |
+en/lt-0514.ogg | Right! (20 − 2) ÷ 2 + 1 = 10. |
+en/lt-0515.ogg | Let us solve one: write the digit 4 on the **right** of a number n, and the new number is **355** more than the old one. Find n. |
+en/lt-0516.ogg | The number n moves one place left, so it becomes 10 times bigger. New number = **n × 10 + 4**: 10 parts of n, plus 4. |
+en/lt-0517.ogg | Take away the old number (1 part n). The difference is **9 parts of n and 4**. So 9 × n + 4 = 355. Your turn: 9 × n = 355 − 4 = ? |
+en/lt-0518.ogg | Right! 9 × n = 351. |
+en/lt-0519.ogg | Now 9 parts of n equal 351. Your turn: n = 351 ÷ 9 = ? |
+en/lt-0520.ogg | Right! n = 39: the old number is 39 and the new one is 394. |
+en/lt-0521.ogg | Always **check**: 394 − 39 = 355. Just as the problem says! |
+en/lt-0522.ogg | Another trick: when you **swap** two digits, the difference of the numbers is always 9 × (the difference of the digits). For example 93 − 39 = 54 = 9 × 6, and 9 − 3 = 6. |
+en/lt-0523.ogg | The number 345 is 3 hundreds, 4 tens and 5 ones. Each digit has a **place**, and the place decides its value: the 3 in the hundreds place is 300, the 4 in the tens place is 40. |
+en/lt-0524.ogg | The letters a, b, c each stand for **one unknown digit**. The number abc has a hundreds, b tens, c ones, so abc = a × 100 + b × 10 + c. Example: 345 = 3 × 100 + 4 × 10 + 5. |
+en/lt-0525.ogg | Write a 2 at the **front** of 47 and you get 247 = 200 + 47. Write a 2 at the **end** and you get 472 = 47 × 10 + 2: the old number moves one place left, so it becomes 10 times bigger. |
+en/lt-0526.ogg | Cross out the last digit 5 and the number drops by 77. Call what is left A; the old number is 10 parts of A and 5. The difference is 9 × A + 5 = 77, so 9 × A = 72, A = 8. The old number is 85. |
+en/lt-0527.ogg | A number with repeated digits: aa = a × 10 + a = a × 11. In the same way aaa = a × 111. So aa × b and bb × a both equal 11 × a × b: they are **equal**! |
+en/lt-0528.ogg | Right! 66 = 6 × 11. |
+en/lt-0529.ogg | Careful! ab is a **two-digit number** (a tens, b ones), not a times b. To multiply you must write the × sign. Also 23 is not 32, because the places are different. |
+en/lt-0530.ogg | Right! 4 × 10 + 7 = 47. |
 `;
