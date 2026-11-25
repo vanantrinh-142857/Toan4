@@ -1,7 +1,7 @@
 'use strict';
  (() => {
   var CONFIG = {
-   version: "9.3.3",
+   version: "9.3.4",
    schema: 4,
    curriculumNote: LT("theo SGK Kết nối tri thức Toán 4", "based on the Vietnamese Grade 4 math textbook (Kết nối tri thức)"),
    tiers: [{
@@ -576,14 +576,16 @@
     nameOf = l => LANG === "en" ? l : l === "Lớn" ? "Số lớn" : l === "Bé" ? "Số bé" : l,
     left = Math.max(o.left != null ? o.left : 60, LANG === "en" ? 86 : 64) + 14,
     hasBr = scenes.some(s => s.br && s.br.length),
-    right = hasBr ? 64 : 18,
+    brLen = Math.max(0, ...scenes.map(s => Math.max(0, ...(s.br || []).map(b => String(b.t).length)))),
+    right = hasBr ? Math.max(64, 30 + brLen * 10.5) : 18,
     top = 54, pitch = 66, mx = 1, nr = 0,
-    hasNotes = scenes.some(s => s.notes && s.notes.length);
+    nNotes = Math.max(0, ...scenes.map(s => (s.notes || []).length)),
+    hasNotes = nNotes > 0;
    scenes.forEach(s => {
     nr = Math.max(nr, s.rows.length), s.rows.forEach(r => { mx = Math.max(mx, r.segs.reduce((a, g) => a + g.u, 0)) })
    });
    let sc = (W - left - right) / mx,
-    H = top + (nr - 1) * pitch + 54 + (hasNotes ? 30 : 0),
+    H = top + (nr - 1) * pitch + 54 + (hasNotes ? 30 + (nNotes - 1) * 26 : 0),
     thin = "", thick = "", vert = "";
    for (let y = 9; y < H; y += 9) y % 36 ? thin += "M0 " + y + "H" + W : thick += "M0 " + y + "H" + W;
    for (let x = 36; x < W; x += 36) vert += "M" + x + " 0V" + H;
@@ -620,7 +622,7 @@
       els.push(E.path("br" + k, vBrace(bx, ya, yb, 14), "none", col, {sw: 2.2}));
       els.push(E.text("brt" + k, bx + 20, (ya + yb) / 2 + 7, b.t, 20, col, {anchor: "start"}))
      });
-     (s.notes || []).forEach((n, k) => els.push(E.text("nt" + k, 180, n.y != null ? n.y : H - 10, n.t, n.s || 16, n.c || C.pen)));
+     (s.notes || []).forEach((n, k) => els.push(E.text("nt" + k, 180, n.y != null ? n.y : H - 10 - (s.notes.length - 1 - k) * 26, n.t, n.s || 16, n.c || C.pen)));
      return els
     }),
     vb: [W, H]
@@ -1003,11 +1005,11 @@
       sw: 3
      }));
      for (let z = 0; z < rs.length; z++) els.push(E.text("rm" + j + "_" + z, cxd(t.i - rs.length + 1 + z), yr, rs[z], 32, "ink"));
-     j === k && t.i + 1 < m && els.push(E.text("dn" + j, cxd(t.i + 1), yr, String(D[t.i + 1]), 32, "pink", {
+     t.i + 1 < m && els.push(E.text("dn" + j, cxd(t.i + 1), yr, String(D[t.i + 1]), 32, j === k ? "pink" : "ink", j === k ? {
       from: {
        m: [cxd(t.i + 1), yr - ch * (2 * k + 1) + 0]
       }
-     }))
+     } : {}))
     }
     frames.push(els)
    }
@@ -3127,23 +3129,23 @@
 
   function SDscenes(S, D, b, labs) {
    let L = labs || [LT("Lớn", "Larger"), LT("Bé", "Smaller")],
-    uD = Math.max(D, (b + D) * .14),
-    A = extra => ({
+    uD = Math.max(D, b * .25),
+    A = (extra, t) => ({
      lab: L[0],
      segs: [{
       id: 0,
       u: b,
       c: "orange",
-      t: "?"
+      t: t ?? "?"
      }].concat(extra || [])
     }),
-    B = extra => ({
+    B = (extra, t) => ({
      lab: L[1],
      segs: [{
       id: 0,
       u: b,
       c: "blue",
-      t: "?"
+      t: t ?? "?"
      }].concat(extra || [])
     }),
     br = [{
@@ -3159,31 +3161,36 @@
      t: t ?? String(D)
     });
    return [{
-    rows: [A(), B()]
+    rows: [A([yel("")]), B()]
    }, {
-    rows: [A(), B()],
+    rows: [A([yel("")]), B()],
     br
    }, {
     rows: [A([yel()]), B()],
     br
    }, {
-    rows: [A([yel()]), B([{
+    rows: [A([{
      id: 1,
      u: uD,
      c: "yellow",
      dash: 1,
      faded: 1,
      t: String(D)
-    }])],
-    br,
+    }]), B()],
+    br: [{
+     r1: 0,
+     r2: 1,
+     t: S + " − " + D,
+     c: "red"
+    }],
     notes: [{
-     t: LT("Cắt khúc hiệu → hai đoạn bằng nhau", "Two equal parts are left")
+     t: LT("Cắt khúc hiệu → hai đoạn bằng nhau", "Cut off the difference → two equal bars")
     }]
    }, {
-    rows: [A([yel()]), B()],
+    rows: [A([yel()], b + " + " + D), B(null, String(b))],
     br,
     notes: [{
-     t: LT("Hai đoạn bằng nhau: mỗi đoạn là số bé", "Each part = the smaller number")
+     t: LT("Hai đoạn bằng nhau: mỗi đoạn là số bé", "Each equal bar = the smaller number")
     }]
    }]
   }
@@ -3758,9 +3765,15 @@
      rows: [{
       lab: "An",
       segs: [{
+       id: 0,
        u: 1,
        c: "orange",
        t: "?"
+      }, {
+       id: 1,
+       u: .6,
+       c: "yellow",
+       t: ""
       }]
      }, {
       lab: "Bình",
@@ -3786,7 +3799,7 @@
        t: "?"
       }, {
        id: 1,
-       u: .34,
+       u: .6,
        c: "yellow",
        t: "16"
       }]
@@ -3815,7 +3828,7 @@
        t: "?"
       }, {
        id: 1,
-       u: .34,
+       u: .6,
        c: "yellow",
        dash: 1,
        faded: 1,
@@ -3837,8 +3850,7 @@
       c: "red"
      }],
      notes: [{
-      t: LT("Bớt khúc 16 → hai đoạn bằng nhau", "Remove the 16 piece → two equal bars"),
-      y: 176
+      t: LT("Bớt khúc 16 → hai đoạn bằng nhau", "Remove the 16 piece → two equal bars")
      }]
     }, {
      rows: [{
@@ -3847,10 +3859,10 @@
        id: 0,
        u: 1,
        c: "orange",
-       t: "27"
+       t: "27 + 16"
       }, {
        id: 1,
-       u: .34,
+       u: .6,
        c: "yellow",
        t: "16"
       }]
@@ -3870,11 +3882,9 @@
       c: "red"
      }],
      notes: [{
-      t: LT("Bình = (70 − 16) : 2 = 27", "Bình = (70 − 16) ÷ 2 = 27"),
-      y: 164
+      t: LT("Bình = (70 − 16) : 2 = 27", "Bình = (70 − 16) ÷ 2 = 27")
      }, {
-      t: "An = 27 + 16 = 43",
-      y: 190
+      t: "An = 27 + 16 = 43"
      }]
     }, {
      rows: [{
@@ -3883,10 +3893,10 @@
        id: 0,
        u: 1,
        c: "orange",
-       t: "27"
+       t: "43"
       }, {
        id: 1,
-       u: .34,
+       u: .6,
        c: "yellow",
        t: "16"
       }]
@@ -3899,9 +3909,10 @@
        t: "27"
       }, {
        id: 1,
-       u: .34,
+       u: .6,
        c: "green",
        dash: 1,
+       faded: 1,
        t: "16"
       }]
      }],
@@ -3912,11 +3923,9 @@
       c: "red"
      }],
      notes: [{
-      t: LT("An = (70 + 16) : 2 = 43", "An = (70 + 16) ÷ 2 = 43"),
-      y: 164
+      t: LT("An = (70 + 16) : 2 = 43", "An = (70 + 16) ÷ 2 = 43")
      }, {
-      t: "Bình = 43 − 16 = 27",
-      y: 190
+      t: "Bình = 43 − 16 = 27"
      }]
     }], {
      bottom: 60
@@ -4234,7 +4243,30 @@
    figs: {
     a: () => FB.trees(40, 10, "2"),
     b: () => FB.trees(40, 10, "1"),
-    c: () => FB.trees(40, 10, "0")
+    c: () => FB.trees(40, 10, "0"),
+    d: () => {
+     let els = [E.circ("lake", 180, 100, 52, "sky", {
+       sw: 2.5
+      }), E.text("lk", 180, 107, LT("Hồ", "Lake"), 20, "ink"), E.circ("ring", 180, 100, 78, "none", {
+       sw: 3,
+       stroke: "orange"
+      })];
+     for (let i = 0; i < 4; i++) {
+      let a = Math.PI / 2 * i - Math.PI / 2,
+       x = 180 + 78 * Math.cos(a),
+       y = 100 + 78 * Math.sin(a);
+      els.push(E.circ("t" + i, x, y, 13, "green", {
+       sw: 2.5
+      }), E.text("tn" + i, x, y + 6, String(i + 1), 15, "ink"))
+     }
+     let ask = els.slice();
+     ask.push(E.text("res", 180, 212, LT("Chu vi 40 m, cứ 10 m một cây", "Perimeter 40 m, a tree every 10 m"), 18, "ink"));
+     els.push(E.text("res", 180, 212, LT("Chu vi 40 m: 4 khoảng, 4 cây", "Perimeter 40 m: 4 gaps, 4 trees"), 18, "okc"));
+     return {
+      frames: [els, ask],
+      vb: [360, 228]
+     }
+    }
    },
    teach: [{
     key: "a",
@@ -4261,8 +4293,8 @@
     f: 3,
     say: LT("Nếu **hai đầu đường không trồng cây**: bớt cả hai cây ở hai đầu, còn 4 − 1 = **3** (cây). **Số cây = số khoảng − 1**.", "If **no trees are planted at either end** of the road: remove the trees at both ends, leaving 4 − 1 = **3** (trees). **Number of trees = number of gaps − 1**.")
    }, {
-    key: "b",
-    f: 3,
+    key: "d",
+    f: 0,
     say: LT("Trồng **quanh hồ, quanh vườn** (đường khép kín): đi hết một vòng thì cây cuối trùng cây đầu, nên **số cây = số khoảng**.", "When planting **around a lake or a garden** (a closed path): after going all the way around, the last tree lands on the first tree, so **number of trees = number of gaps**.")
    }],
    gen(tier, r) {
@@ -4335,6 +4367,7 @@
    good: LT("Đúng! Hai đầu đều trồng thì số cây nhiều hơn số khoảng 1.", "Correct! With trees at both ends, there is 1 more tree than gaps.")
   }, {
    after: 6,
+   f: 1,
    say: LT("Cùng làm: quanh hồ có chu vi 40 m, hai cây liền nhau cách nhau 10 m. Trồng được mấy cây?", "Let's do it together: a lake has a perimeter of 40 m, and two neighboring trees are 10 m apart. How many trees can be planted?"),
    opts: ["4", "5", "3"],
    ans: "4",
@@ -4682,6 +4715,21 @@
       t: LT("3/4 = 6/8: phần tô màu bằng nhau", "3/4 = 6/8: the colored parts are equal"),
       s: 19
      }]
+    }, {
+     pies: [{
+      cx: 110,
+      cy: 90,
+      r: 66,
+      den: 4,
+      num: 3
+     }],
+     fr: [{
+      x: 270,
+      y: 92,
+      n: "?",
+      d: "?",
+      s: 44
+     }]
     }], {
      h: 200
     })
@@ -4868,7 +4916,7 @@
   });
   addAsks("frac", [{
    after: 1,
-   f: 2,
+   f: 4,
    say: LT("Cùng làm: nhìn hình, phần tô màu là phân số nào?", "Let's do it together: look at the picture. Which fraction is colored?"),
    opts: ["{3/4}", "{4/3}", "{1/4}"],
    ans: "{3/4}",
@@ -6718,9 +6766,9 @@
       let d = [P2[i][0] - c[0], P2[i][1] - c[1]],
        l = Math.hypot(d[0], d[1]);
       els.push(E.text("v" + i, P2[i][0] + d[0] / l * 20, P2[i][1] + d[1] / l * 20 + 7, n, 21, "ink"))
-     }), f.note && els.push(E.text("note", 180, kind === "thoi" ? 240 : 198, f.note, 19, "ink")), els
+     }), f.note && els.push(E.text("note", 180, kind === "thoi" ? 254 : 198, f.note, 19, "ink")), els
     }),
-    vb: [360, kind === "thoi" ? 252 : 210]
+    vb: [360, kind === "thoi" ? 266 : 210]
    }
   };
   Object.assign(KIND_NAME, {
@@ -13412,7 +13460,7 @@ LESSON({
     a: () => RAWFIG([
       () => {
         let s = jumpRow([3, 7, 11, 15, 19], 90, { w: 52, h: 44, s: 22, jump: "+4", fills: FILLS });
-        s += T_(180, 180, "7 − 3 = 4     11 − 7 = 4", "7 − 3 = 4     11 − 7 = 4", { s: 18 });
+        s += T_(180, 180, "7 − 3 = 4;  11 − 7 = 4", "7 − 3 = 4;  11 − 7 = 4", { s: 18 });
         return TH.svg(205, s);
       },
       () => {

@@ -228,7 +228,7 @@ addsub:{memo:LT('Thẳng cột, tính từ phải sang trái. Đủ 10 thì nh�
  say:LT('Hàng chục: 8 + 3 = 11, cộng thêm **1 nhớ** là 12. Viết **2**, nhớ **1** sang hàng trăm.','Tens place: 8 + 3 = 11, plus the **1 carried** makes 12. Write **2** and carry **1** to the hundreds.')},
 {svg:function(){return colfig({top:'4786',bot:'2539',op:'+',res:['7','3','2','5'],carry:{2:'1',1:'1',0:'1'},foot:[['7 + 5 + 1 = 13; 4 + 2 + 1 = 7','7 + 5 + 1 = 13; 4 + 2 + 1 = 7'],['4 786 + 2 539 = 7 325','4,786 + 2,539 = 7,325']]})},
  say:LT('Hàng trăm: 7 + 5 + 1 = 13, viết **3**, nhớ 1. Hàng nghìn: 4 + 2 + 1 = 7. Vậy **4 786 + 2 539 = 7 325**.','Hundreds: 7 + 5 + 1 = 13, write **3**, carry 1. Thousands: 4 + 2 + 1 = 7. So **4,786 + 2,539 = 7,325**.')},
-{svg:function(){return colfig({top:'7325',bot:'2539',op:'−',act:3,strike:[3,2],adj:{3:'15',2:'1'},res:['','','','6'],foot:[['5 không trừ được 9: mượn 1 chục','5 is too small for 9: borrow 1 ten'],['15 − 9 = 6 (hàng chục còn 1)','15 − 9 = 6 (tens place left with 1)']]})},
+{svg:function(){return colfig({top:'7325',bot:'2539',op:'−',act:3,strike:[3],adj:{3:'15'},carry:{2:'1'},res:['','','','6'],foot:[['5 không trừ được 9: mượn 1 chục, 15 − 9 = 6','5 is too small for 9: borrow 1 ten, 15 − 9 = 6'],['Viết 6, nhớ 1 trả sang hàng chục','Write 6, pay back 1 to the tens']]})},
  say:LT('Trừ thì ngược lại: **7 325 − 2 539**. Hàng đơn vị: 5 không trừ được 9, nên **mượn 1 chục**: 15 − 9 = 6, nhớ 1. Hàng chục: 3 thêm 1 bằng 4; 2 không trừ được 4, mượn 1 trăm: 12 − 4 = 8, nhớ 1. Cứ mượn rồi trả như vậy ở các hàng sau, được **4 786**. Thử lại bằng phép cộng nhé!','Subtraction is the opposite: **7,325 − 2,539**. Ones: 5 is too small for 9, so **borrow 1 ten**: 15 − 9 = 6, carry 1. Tens: 3 plus 1 is 4; 2 is too small for 4, so borrow 1 hundred: 12 − 4 = 8, carry 1. Keep borrowing and paying back the same way to get **4,786**. Check it with addition!')},
 {svg:function(){var s='',p=function(ox,ok){var r='';
    r+=T(ox+80,30,ok?'Nhớ 1':'Quên nhớ',ok?'Carry the 1':'Forgot to carry',{s:17,c:ok?'green':'red'});
@@ -1152,7 +1152,7 @@ pages:[
 /* ---------------- BIỂU ĐỒ CỘT ---------------- */
 chart:{ memo:LT('Đọc tên biểu đồ, rồi trục ngang, trục dọc, cuối cùng nhìn đỉnh cột.','Read the title, then the horizontal axis, the vertical axis, and last look at the top of each bar.'),
 pages:[
-{ svg:()=>TH.svg(215,T(180,20,'Số trang Mai đọc trong 4 ngày','Pages Mai read in 4 days',{s:17})+bars({x0:50,y0:185,W:290,ph:3.4,max:40,step:100,vals:[20,35,15,30],labs:days(),hl:{1:'orange'}})+T(300,70,'cột cao','tall bar',{s:15,c:'orange'})),
+{ svg:()=>TH.svg(215,T(180,20,'Số trang Mai đọc trong 4 ngày','Pages Mai read in 4 days',{s:17})+bars({x0:50,y0:185,W:290,ph:3.4,max:40,step:100,vals:[20,35,15,30],labs:days(),hl:{1:'orange'}})+T(159,56,'cột cao nhất','tallest bar',{s:15,c:'orange'})),
   say:LT('Mai đọc truyện 4 ngày. Thay vì đọc một dãy số, ta vẽ mỗi ngày thành **một cột**. **Cột càng cao** thì Mai đọc **càng nhiều** trang.','Mai read a book for 4 days. Instead of a list of numbers, we draw each day as **one bar**. The **taller the bar**, the **more pages** Mai read.') },
 { svg:()=>TH.svg(218,bars({x0:44,y0:185,W:180,ph:4,max:40,step:10,vals:[20,35,15,30],labs:[LT('T2','Mon'),LT('T3','Tue'),LT('T4','Wed'),LT('T5','Thu')],axY:'orange',axX:'blue'})+TH.r(238,34,14,14,'orange',{rx:3,sw:2})+T(260,46,'Trục dọc','Vertical',{s:15,a:'start'})+T(260,66,'số trang','= pages',{s:15,a:'start'})+TH.r(238,92,14,14,'blue',{rx:3,sw:2})+T(260,104,'Trục ngang','Horizontal',{s:15,a:'start'})+T(260,124,'các ngày','= days',{s:15,a:'start'})+TH.r(238,150,14,14,'sky',{rx:3,sw:2})+T(260,162,'Cột','Bar',{s:15,a:'start'})+T(260,182,'mỗi ngày','one day',{s:15,a:'start'})),
   say:LT('Biểu đồ có hai đường chính. **Trục dọc** (màu cam) ghi **số trang**. **Trục ngang** (màu xanh) ghi **tên các ngày**. Mỗi ngày có một cột.','A bar chart has two main lines. The **vertical axis** (orange) shows the **number of pages**. The **horizontal axis** (blue) shows the **days**. Each day has one bar.') },
@@ -1230,7 +1230,7 @@ pages:[
 /* ---------------- LẬP SỐ VÀ QUY TẮC ĐẾM ---------------- */
 count:{ memo:LT('VÀ thì nhân, HOẶC thì cộng; số đầu không là 0; đã dùng rồi thì bớt đi.','AND means multiply, OR means add; the first digit is not 0; a used digit is not available again.'),
 pages:[
-{ svg:()=>TH.svg(150,shirt(30,24,'rose')+shirt(105,24,'sky')+T(90,112,'2 áo','2 shirts',{s:17})+pants(200,24,'green')+pants(255,24,'yellow')+pants(310,24,'lilac')+T(260,112,'3 quần','3 pants',{s:17})),
+{ svg:()=>TH.svg(150,shirt(30,24,'rose')+shirt(105,24,'sky')+T(90,112,'2 áo','2 shirts',{s:17})+pants(186,24,'green')+pants(242,24,'yellow')+pants(298,24,'lilac')+T(267,112,'3 quần','3 pants',{s:17})),
   say:LT('Mai có **2 cái áo** và **3 cái quần**. Mai mặc **một áo với một quần**. Hỏi Mai có bao nhiêu **cách** mặc khác nhau?','Mai has **2 shirts** and **3 pairs of pants**. She wears **one shirt with one pair of pants**. How many different **ways** can she dress?') },
 { svg:()=>{var sh=['rose','sky'],pn=['green','yellow','lilac'],s='',i,j;for(j=0;j<3;j++)s+=pants(55+j*80+6,2,pn[j]).replace(/.*/,'')+TH.c(105+j*80,26,10,pn[j]);for(i=0;i<2;i++){s+=TH.c(40,80+i*74,10,sh[i]);for(j=0;j<3;j++){var x=70+j*80,y=48+i*74;s+=TH.r(x,y,70,64,'white',{rx:8})+TH.r(x+8,y+7,54,24,sh[i],{rx:6,sw:2})+TH.r(x+8,y+34,54,24,pn[j],{rx:6,sw:2})}}return TH.svg(225,s+T(180,214,'2 × 3 = 6 cách','2 × 3 = 6 ways',{s:20,c:'orange'}))},
   say:LT('Ghép từng áo với từng quần, ta được bảng này: **6 bộ** khác nhau. Mỗi áo ghép được với 3 quần, có 2 áo, nên làm phép nhân: **2 × 3 = 6**.','Pair each shirt with each pair of pants and we get this table: **6 different outfits**. Each shirt goes with 3 pants and there are 2 shirts, so we **multiply**: **2 × 3 = 6**.') },
@@ -1333,7 +1333,7 @@ window.LY_THUYET = window.LY_THUYET || {};
         { /* 2 tìm quy luật */
           svg: function () {
             var s = row([4, 9, 14, 19, 24, '?'], 80, { w: 44, fills: ['sky', 'sky', 'sky', 'sky', 'sky', 'yellow'], jump: '+5' });
-            s += T(180, 160, '9 − 4 = 5     14 − 9 = 5', '9 − 4 = 5     14 − 9 = 5', { s: 18 });
+            s += T(180, 160, '9 − 4 = 5;  14 − 9 = 5', '9 − 4 = 5;  14 − 9 = 5', { s: 18 });
             s += T(180, 192, 'số sau trừ số trước', 'next number minus the one before', { s: 15 });
             return TH.svg(210, s);
           },
