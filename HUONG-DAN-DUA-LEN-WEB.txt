@@ -1,4 +1,4 @@
-TOÁN 4 PHIÊU LƯU v9.3.4 – BẢN WEB
+TOÁN 4 PHIÊU LƯU v9.3.5 – BẢN WEB
 Trang chính: index.html (mọi đường dẫn đều tương đối, chạy được ở bất kỳ thư mục nào trên web).
 
 Giọng đọc: chép thư mục am-thanh/ (trong gói âm thanh v8.9) vào thư mục này, cạnh index.html.

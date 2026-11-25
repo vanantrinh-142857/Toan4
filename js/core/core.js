@@ -1,7 +1,7 @@
 'use strict';
  (() => {
   var CONFIG = {
-   version: "9.3.4",
+   version: "9.3.5",
    schema: 4,
    curriculumNote: LT("theo SGK Kết nối tri thức Toán 4", "based on the Vietnamese Grade 4 math textbook (Kết nối tri thức)"),
    tiers: [{

@@ -12,9 +12,11 @@ html,body{margin:0;height:100%;background:#fdf6f9;color:var(--ink);font-family:N
 body{display:flex;flex-direction:column;overflow:hidden}
 button{font:inherit;color:inherit;cursor:pointer}
 .wrap{flex:1;display:flex;flex-direction:column;min-height:0}
-.stage{position:relative;flex:1 1 60%;min-height:210px;min-width:0;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#fff 18%,#fff5f9 55%,#f5e3ec 100%)}
-.floor{position:absolute;left:0;right:0;bottom:0;height:12%;background:linear-gradient(#f7e9f0,#f1dbe6)}
-.fig{position:absolute;left:50%;bottom:3%;height:92%;transform:translateX(-50%);display:flex;justify-content:center}
+.stage{position:relative;flex:1 1 60%;min-height:210px;min-width:0;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#fff 18%,#fff5f9 55%,#f5e3ec 100%);transition:box-shadow .15s}
+.stage.over{box-shadow:inset 0 0 0 4px var(--accent),inset 0 0 40px #c0659a66}
+/* ảnh phòng (anh/nen/phong-gai.webp, 720×866) – Luna đứng trên bục tròn */
+.room{position:absolute;left:50%;bottom:0;height:100%;aspect-ratio:720/866;max-width:100%;transform:translateX(-50%);background:url(../anh/nen/phong-gai.webp) center bottom/100% 100% no-repeat}
+.fig{position:absolute;left:50%;bottom:21%;height:64%;transform:translateX(-50%);display:flex;justify-content:center}
 .body{position:relative;height:100%;transform-origin:50% 100%;animation:idle 3.6s ease-in-out infinite;will-change:transform}
 .body img{height:100%;width:auto;display:block;user-select:none;-webkit-user-drag:none;pointer-events:none}
 .body.pop{animation:pop .7s ease-out}
@@ -33,10 +35,16 @@ button{font:inherit;color:inherit;cursor:pointer}
 @media (prefers-reduced-motion:reduce){.body,.spark{animation:none!important}}
 /* tủ đồ */
 .closet{flex:0 0 auto;height:40%;min-height:190px;min-width:0;display:flex;flex-direction:column;background:#fff;border-top:2px solid var(--line)}
-.tabs{display:flex;gap:6px;overflow-x:auto;padding:8px 8px 6px;scrollbar-width:none;flex:0 0 auto}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:8px 8px 6px;scrollbar-width:none;flex:0 0 auto;background:linear-gradient(#fff,#fbeef5)}
 .tabs::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;border:2px solid var(--line);background:#fff;border-radius:16px;padding:7px 14px;font-weight:800;font-size:14px;color:var(--muted);white-space:nowrap}
-.tab.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tab{position:relative;flex:0 0 auto;border:2px solid #e3c9a0;background:linear-gradient(#fffaf0,#f7e6c8);border-radius:12px;padding:5px 10px 4px;font-weight:800;font-size:12px;color:#8a6a3c;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:1px;min-width:62px;box-shadow:0 2px 0 #d9bd8a}
+.tab em{font-style:normal;font-size:20px;line-height:1.1}
+.tab.on{background:linear-gradient(#d86fa6,#c0659a);border-color:#a8507f;color:#fff;box-shadow:0 2px 0 #8e3f68}
+.tab i{position:absolute;right:-4px;top:-5px;min-width:18px;height:18px;border-radius:9px;background:#fff;color:var(--accent);border:2px solid var(--accent);font-style:normal;font-size:10.5px;display:flex;align-items:center;justify-content:center;padding:0 3px}
+.drawerhint{grid-column:1/-1;font-size:12px;font-weight:700;color:var(--muted);padding:2px 2px 0}
+.it{touch-action:pan-x}
+.it.drag{opacity:.35}
+.ghost{position:fixed;z-index:50;width:84px;height:84px;object-fit:contain;transform:translate(-50%,-60%) rotate(-6deg);pointer-events:none;filter:drop-shadow(0 6px 8px #4a334666)}
 .grid{flex:1;overflow-y:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:7px;padding:4px 8px 10px;align-content:start}
 .sec{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:800;font-size:13px;color:#a0698a;padding:4px 2px 0}
 .sec small{font-weight:700;color:var(--muted)}
@@ -59,7 +67,8 @@ button{font:inherit;color:inherit;cursor:pointer}
 @media (min-width:720px) and (min-aspect-ratio:1/1){.grid{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}.it img{height:78px}.it.big img{height:118px}.wrap{flex-direction:row}.stage{flex:1 1 50%}.closet{height:auto;flex:0 0 44%;border-top:0;border-left:2px solid var(--line)}}
 </style></head><body>
 <div class="wrap">
-  <div class="stage" id="stage"><div class="floor"></div>
+  <div class="stage" id="stage">
+    <div class="room"></div>
     <div class="fig"><div class="shadow"></div><div class="body" id="body"><img id="luna" alt="Luna"></div></div>
     <div class="oname" id="oname"></div><div class="dots" id="dots"></div><div class="toast" id="toast"></div></div>
   <div class="closet"><div class="tabs" id="tabs" role="tablist"></div><div class="grid" id="grid"></div></div>
@@ -131,46 +140,98 @@ button{font:inherit;color:inherit;cursor:pointer}
     post({ toan4: "locked", id: itemId(o, cat[0]) });
   }
 
-  /* ---------- Tủ đồ ---------- */
-  var TABS = [["bo", L("👗 Bộ đồ", "👗 Outfits")], ["mon", L("🧩 Món đồ", "🧩 Pieces")]];
+  /* ---------- Tủ nhiều ngăn + kéo thả ---------- */
+  /* Mỗi ngăn chứa 1 loại món của cả 4 bộ. Kéo món lên Luna (hoặc chạm) → Luna mặc đúng bộ & bước đó. */
+  var DR = [["bo", "👗", L("Bộ đồ", "Outfits")], ["dress", "👗", L("Váy", "Dresses")], ["shoes", "👠", L("Giày", "Shoes")], ["necklace", "📿", L("Vòng cổ", "Necklaces")], ["earrings", "💎", L("Bông tai", "Earrings")], ["bow", "🎀", L("Nơ", "Bows")], ["last", "👑", L("Phụ kiện", "Extras")]];
   var tab = "bo";
+  var stepIdx = function (o, cat) { return steps(o).findIndex(function (s) { return s[0] === cat; }); };
+  var catOf = function (o, d) { return d === "last" ? o.last : d; };
+  var nOwn = function (d) { return OUT.filter(function (o) { return d === "bo" ? count(o) > 0 : own(itemId(o, catOf(o, d))) && count(o) > stepIdx(o, catOf(o, d)); }).length; };
   function card(o) {
-    return '<button class="it' + (o.big ? " big" : "") + (o.on ? " on" : "") + (o.lock ? " lock" : "") + '" data-k="' + o.k + '" aria-pressed="' + !!o.on + '">' + (o.no ? '<b class="no">' + o.no + "</b>" : "") +
-      '<img src="' + IMG + o.img + '.webp" alt="" loading="lazy"><span>' + o.name + "</span>" + (o.sub || "") + "</button>";
+    return '<button class="it' + (o.big ? " big" : "") + (o.on ? " on" : "") + (o.lock ? " lock" : "") + '" data-k="' + o.k + '"' + (o.drag ? ' data-drag="1"' : "") + ' aria-pressed="' + !!o.on + '">' + (o.no ? '<b class="no">' + o.no + "</b>" : "") +
+      '<img src="' + IMG + o.img + '.webp" alt="" loading="lazy" draggable="false"><span>' + o.name + "</span>" + (o.sub || "") + "</button>";
   }
   function draw() {
-    document.getElementById("tabs").innerHTML = TABS.map(function (t) { return '<button class="tab' + (t[0] === tab ? " on" : "") + '" role="tab" data-t="' + t[0] + '">' + t[1] + "</button>"; }).join("");
-    var h = "", o = byN(st.o);
+    document.getElementById("tabs").innerHTML = DR.map(function (t) {
+      var n = nOwn(t[0]);
+      return '<button class="tab' + (t[0] === tab ? " on" : "") + '" role="tab" data-t="' + t[0] + '"><em>' + t[1] + "</em>" + t[2] + "<i>" + n + "</i></button>";
+    }).join("");
+    var h = "", k = stageOf();
     if (tab === "bo") {
+      h += '<div class="drawerhint">' + L("Kéo bộ đồ lên Luna hoặc chạm để chọn", "Drag an outfit onto Luna, or tap to pick") + "</div>";
       OUT.forEach(function (x) {
         var c = count(x), sub = c === 6 ? "<small>" + L("Đủ bộ ✓", "Complete ✓") + "</small>" : "<small>" + c + "/6" + L(" món", " pieces") + '</small><div class="bar"><i style="width:' + Math.round(c / 6 * 100) + '%"></i></div>';
-        h += card({ k: "bo:" + x.n, img: x.n + "-bo", big: 1, name: x.ten, sub: sub, on: st.o === x.n, lock: c === 0 });
+        h += card({ k: "bo:" + x.n, img: x.n + "-bo", big: 1, name: x.ten, sub: sub, on: st.o === x.n, lock: c === 0, drag: c > 0 });
       });
     } else {
-      var c = count(o), k = stageOf();
-      h += '<div class="sec"><span>' + o.ten + " · " + L("lấy theo thứ tự 1 → 6", "collect in order 1 → 6") + "</span>" + (st.k > 0 ? '<button data-k="latest">' + L("▶ Hình mới nhất", "▶ Latest look") + "</button>" : "<small>" + c + "/6</small>") + "</div>";
-      steps(o).forEach(function (s, i) { h += card({ k: "mon:" + (i + 1), img: o.n + "-" + s[0], no: i + 1, name: s[1], on: k === i + 1 && i < c, lock: i >= c }); });
+      h += '<div class="drawerhint">' + L("Kéo món lên Luna hoặc chạm để mặc. Lấy theo thứ tự váy → giày → vòng cổ → bông tai → nơ → phụ kiện.", "Drag a piece onto Luna, or tap to wear. Collect in order: dress → shoes → necklace → earrings → bow → extra.") + "</div>";
+      OUT.forEach(function (x) {
+        var cat = catOf(x, tab), i = stepIdx(x, cat), c = count(x), ok = i < c;
+        h += card({ k: "mon:" + x.n + ":" + (i + 1), img: x.n + "-" + cat, no: i + 1, big: 1, name: x.ten + " · " + steps(x)[i][1], on: ok && st.o === x.n && k >= i + 1, lock: !ok, drag: ok });
+      });
     }
     document.getElementById("grid").innerHTML = h;
   }
+  /* mặc một món: bộ x, bước i (1..6) */
+  function wearStep(x, i) {
+    if (i > count(x)) return locked(x);
+    st.o = x.n; st.k = i === count(x) ? 0 : i;
+    apply(true); draw(); save();
+  }
+  function useKey(key) {
+    var p = key.split(":");
+    if (p[0] === "bo") { var x = byN(p[1]); if (count(x) === 0) return locked(x); st.o = x.n; st.k = 0; apply(true); draw(); save(); }
+    else if (p[0] === "mon") wearStep(byN(p[1]), +p[2]);
+  }
   document.getElementById("tabs").addEventListener("click", function (e) { var b = e.target.closest("[data-t]"); if (!b) return; tab = b.dataset.t; draw(); document.getElementById("grid").scrollTop = 0; });
   document.getElementById("grid").addEventListener("click", function (e) {
-    var b = e.target.closest("[data-k]"); if (!b) return;
-    var p = b.dataset.k.split(":"), o = byN(st.o);
-    if (p[0] === "bo") {
-      var x = byN(p[1]); if (count(x) === 0) return locked(x);
-      st.o = x.n; st.k = 0;
-    } else if (p[0] === "mon") {
-      var i = +p[1]; if (i > count(o)) return locked(o);
-      st.k = i === count(o) ? 0 : i;
-    } else if (p[0] === "latest") st.k = 0;
-    apply(true); draw(); save();
+    if (Date.now() < ignoreUntil) { e.stopPropagation(); e.preventDefault(); return; }
+    var b = e.target.closest("[data-k]"); if (b) useKey(b.dataset.k);
   });
+
+  /* Kéo thả: giữ món trong ngăn, kéo lên khu vực Luna rồi thả */
+  var D = null, ignoreUntil = 0;
+  var stageEl = function () { return document.getElementById("stage"); };
+  function overStage(e) { var r = stageEl().getBoundingClientRect(); return e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; }
+  document.addEventListener("pointerdown", function (e) {
+    var b = e.target.closest && e.target.closest(".it[data-drag]");
+    if (!b || (e.pointerType === "mouse" && e.button !== 0)) return;
+    D = { key: b.dataset.k, x: e.clientX, y: e.clientY, pid: e.pointerId, b: b, moved: false, touch: e.pointerType !== "mouse" };
+  }, true);
+  document.addEventListener("pointermove", function (e) {
+    if (!D || D.pid !== e.pointerId) return;
+    var dx = e.clientX - D.x, dy = e.clientY - D.y;
+    if (!D.moved) {
+      /* cảm ứng: chỉ bắt đầu kéo khi vuốt lên/xuống rõ rệt (để vẫn cuộn ngang được ngăn tủ) */
+      var go = D.touch ? (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx) * 0.7) : Math.hypot(dx, dy) > 6;
+      if (!go) return;
+      D.moved = true;
+      var im = D.b.querySelector("img");
+      D.ghost = document.createElement("img"); D.ghost.className = "ghost"; D.ghost.draggable = false; D.ghost.src = im ? im.src : "";
+      document.body.appendChild(D.ghost); D.b.classList.add("drag");
+      try { D.b.setPointerCapture(e.pointerId); } catch (er) {}
+    }
+    D.ghost.style.left = e.clientX + "px"; D.ghost.style.top = e.clientY + "px";
+    stageEl().classList.toggle("over", overStage(e));
+    e.preventDefault();
+  }, true);
+  function endDrag(e, cancel) {
+    if (!D || D.pid !== e.pointerId) return;
+    var d = D; D = null;
+    if (!d.moved) return;
+    ignoreUntil = Date.now() + 400;
+    d.ghost && d.ghost.remove(); d.b.classList.remove("drag"); stageEl().classList.remove("over");
+    if (cancel) return;
+    if (overStage(e)) useKey(d.key); else toast(L("Thả món đồ lên Luna nhé", "Drop the piece onto Luna"));
+  }
+  document.addEventListener("pointerup", function (e) { endDrag(e, false); }, true);
+  document.addEventListener("pointercancel", function (e) { endDrag(e, true); }, true);
+  document.addEventListener("dragstart", function (e) { e.preventDefault(); });
 
   /* Món vừa nhận: mở đúng bộ, đúng bước, Luna đổi hình */
   function wear(id) {
     var m = /^luna-(\d\d)-(\w+)$/.exec(id || ""), o = m && byN(m[1]); if (!o) return;
-    st.o = o.n; st.k = 0; tab = "mon";
+    st.o = o.n; st.k = 0; var mm = /^luna-\d\d-(\w+)$/.exec(id); tab = ["dress","shoes","necklace","earrings","bow"].indexOf(mm[1]) >= 0 ? mm[1] : "last";
     var c = count(o);
     setTimeout(function () { toast(c >= 6 ? L("Đủ bộ " + o.ten + "! Luna mặc đủ rồi!", o.ten + " is complete! Luna is fully dressed!") : L("Luna có thêm món mới! Còn " + (6 - c) + " món nữa là đủ bộ.", "A new piece for Luna! " + (6 - c) + " more to complete the outfit.")); }, 500);
   }
